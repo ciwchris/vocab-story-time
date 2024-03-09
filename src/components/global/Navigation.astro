@@ -4,12 +4,6 @@
       x-data="{ open: false }"
       class="relative flex flex-col w-full py-5 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6">
       <div class="flex flex-row items-center justify-between lg:justify-start">
-        <div class="md:absolute">
-          <img src="public/VocabStoryTimeLogoSm.jpg" alt="Logo" class="inline-block" style="width: 40px" />
-          <a href="/" class="text-black inline-flex items-center gap-3">
-            <span class="font-bold font-display">Vocab Story Time</span>
-          </a>
-        </div>
         <button
           @click="open = !open"
           class="inline-flex items-center justify-center p-2 text-gray-400 hover:text-black focus:outline-none focus:text-black md:hidden">
@@ -40,11 +34,15 @@
         class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-center md:flex-row">
         <a
           class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400"
-          href="/#features">Features</a
+          href="/#episodes">Episodes</a
         >
         <a
           class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400"
-          href="/#pricing">Pricing</a
+          href="/#about">About</a
+        >
+        <a
+          class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400"
+          href="/#credits">Credits</a
         >
 
       </nav>
