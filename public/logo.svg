@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="inline" width="8em" height="4em" viewBox="0 0 170 32">
+  <line x1="0" y1="2" x2="8" y2="2" stroke="#ff7a00" stroke-width="2" stroke-linecap="round" />
+  <line x1="0" y1="7" x2="8" y2="7" stroke="#ff7a00" stroke-width="2" stroke-linecap="round" />
+  <line x1="0" y1="12" x2="5" y2="12" stroke="#ff7a00" stroke-width="2" stroke-linecap="round" />
+  <path d="M 3 19 v 11 h 21 v -6 m 0 -15 v -6 h -10" stroke="#ff7a00" stroke-width="2" fill="none" stroke-linecap="round" />
+      <text x="7.5" y="24"
+        fill="#ff7a00" stroke="#ff7a00" stroke-width="1"
+        font-family='"Segoe UI", Roboto, Helvetica, sans-serif'
+        font-size="19" >
+        V
+    </text>
+    <text x="28" y="24"
+        fill="#190C00" stroke="#190C00" stroke-width="1"
+        font-family='"Segoe UI", Roboto, Helvetica, sans-serif'
+        font-size="19" >
+        ocab Story Time
+    </text>
+</svg>
+
