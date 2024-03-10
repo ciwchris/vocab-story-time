@@ -38,9 +38,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        display: ["Bricolage Grotesque", ...defaultTheme.fontFamily.sans],
+        display: ["Segoe UI", "Roboto", "Helvetica", ...defaultTheme.fontFamily.sans],
       },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
-};
+}
