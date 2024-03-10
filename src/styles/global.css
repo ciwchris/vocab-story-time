@@ -21,6 +21,6 @@
 @supports (font-variation-settings: normal) {
   /* Use variable font if supported */
   :root {
-    font-family: InterVariable, sans-serif;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif
   }
 }
