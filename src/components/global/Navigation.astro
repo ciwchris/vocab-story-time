@@ -4,27 +4,9 @@
       x-data="{ open: false }"
       class="relative flex flex-col w-full py-5 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6">
       <div class="flex flex-row items-center justify-between lg:justify-start">
-        <div class="md:absolute">
-
-<svg xmlns="http://www.w3.org/2000/svg" class="inline" width="8em" height="4em" viewBox="0 0 170 32">
-  <line x1="2" y1="2" x2="8" y2="2" stroke="#ff7a00" stroke-width="2" stroke-linecap="round" />
-  <line x1="2" y1="6" x2="8" y2="6" stroke="#ff7a00" stroke-width="2" stroke-linecap="round" />
-  <line x1="2" y1="10" x2="5" y2="10" stroke="#ff7a00" stroke-width="2" stroke-linecap="round" />
-  <path d="M 3 17 v 13 h 21 v -5 m 0 -17 v -5 h -10" stroke="#ff7a00" stroke-width="2" fill="none" stroke-linecap="round" />
-      <text x="7.5" y="24"
-        fill="#ff7a00" stroke="#ff7a00" stroke-width="1"
-        font-family='"Segoe UI", Roboto, Helvetica, Arial, sans-serif'
-        font-size="19" >
-        V
-    </text>
-    <text x="28" y="24"
-        fill="#190C00" stroke="#190C00" stroke-width="1"
-        font-family='"Segoe UI", Roboto, Helvetica, Arial, sans-serif'
-        font-size="19" >
-        ocab Story Time
-    </text>
-</svg>
-        </div>
+        <a href="/" class="md:absolute">
+          <img alt="logo" src="/logo.svg" />
+        </a>
         <button
           @click="open = !open"
           class="inline-flex items-center justify-center p-2 text-gray-400 hover:text-black focus:outline-none focus:text-black md:hidden">
