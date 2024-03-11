@@ -1,10 +1,27 @@
+---
+const word1 = "Emollient";
+const definition1 =
+  "Having the power to soften or soothe; calming or relaxing. A substance that softens or soothes the skin.";
+const word2 = "Intractable";
+const definition2 =
+  "Impossible to deal with or solve; difficult to control or influence.";
+const word3 = "Obdurate";
+const definition3 =
+  "Stubbornly refusing to change one's mind or course of action; inflexible.";
+const word4 = "Obsequious";
+const definition4 =
+  "Excessively attentive or flattering, in a way that is intended to please someone.";
+---
+
 <section id="current-episode">
   <div
     class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
   >
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
-      <div class="text-center mb-8">
-        <p class="text-3xl tracking-tight font-medium text-black">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-6 lg:gap-x-12">
+      <div>
+        <p
+          class="text-3xl tracking-tight font-medium text-black text-center mb-8"
+        >
           Current word list
         </p>
         <div
@@ -20,7 +37,7 @@
               @click="setActiveAccordion(id)"
               class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
             >
-              <span>Emollient</span>
+              <span>{word1}</span>
               <svg
                 class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
                 :class="{ '-rotate-[45deg]': activeAccordion==id }"
@@ -37,8 +54,7 @@
             </button>
             <div x-show="activeAccordion==id" x-collapse="">
               <div class="p-4 pt-2 text-accent-600">
-                Having the power to soften or soothe; calming or relaxing. A
-                substance that softens or soothes the skin.
+                {definition1}
               </div>
             </div>
           </div>
@@ -56,7 +72,7 @@
               @click="setActiveAccordion(id)"
               class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
             >
-              <span>Intractable</span>
+              <span>{word2}</span>
               <svg
                 class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
                 :class="{ '-rotate-[45deg]': activeAccordion==id }"
@@ -73,8 +89,7 @@
             </button>
             <div x-show="activeAccordion==id" x-collapse="">
               <div class="p-4 pt-2 text-accent-600">
-                Impossible to deal with or solve; difficult to control or
-                influence.
+                {definition2}
               </div>
             </div>
           </div>
@@ -92,7 +107,7 @@
               @click="setActiveAccordion(id)"
               class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
             >
-              <span>Obdurate</span>
+              <span>{word3}</span>
               <svg
                 class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
                 :class="{ '-rotate-[45deg]': activeAccordion==id }"
@@ -109,8 +124,7 @@
             </button>
             <div x-show="activeAccordion==id" x-collapse="">
               <div class="p-4 pt-2 text-accent-600">
-                Stubbornly refusing to change one's mind or course of action;
-                inflexible.
+                {definition3}
               </div>
             </div>
           </div>
@@ -128,7 +142,7 @@
               @click="setActiveAccordion(id)"
               class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
             >
-              <span>Obsequious</span>
+              <span>{word4}</span>
               <svg
                 class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
                 :class="{ '-rotate-[45deg]': activeAccordion==id }"
@@ -145,14 +159,13 @@
             </button>
             <div x-show="activeAccordion==id" x-collapse="">
               <div class="p-4 pt-2 text-accent-600">
-                Excessively attentive or flattering, in a way that is intended
-                to please someone.
+                {definition4}
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="lg:text-center">
+      <div class="text-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="inline"
@@ -192,16 +205,93 @@
             stroke-width="1.5"
             stroke-linecap="round"></line>
           <path
-            d="M 3 15 v 15 h 18 m 8 -8 v -20 h -17"
+            d="M 3 15 v 11 h 18 m 8 -8 v -16 h -17"
             stroke="#ff7a00"
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="10" y="8">emollient</text>
-          <text class="word" x="9" y="14">intractable</text>
-          <text class="word" x="11" y="20">obdurate</text>
-          <text class="word" x="8" y="26">obsequious</text>
+          <text class="word" x="10" y="7">emollient</text>
+          <text class="word" x="9" y="12">intractable</text>
+          <text class="word" x="11" y="17">obdurate</text>
+          <text class="word" x="8" y="22">obsequious</text>
         </svg>
+      </div>
+      <div
+        x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+        class="col-span-2 md:w-3/4 mx-auto"
+      >
+        <p
+          class="text-2xl tracking-tight text-center font-medium text-black mb-4"
+        >
+          Story
+        </p>
+        <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
+          <p class="mb-4">
+            In the heart of Silicon Valley, amidst the sleek tech giants and
+            relentless innovation, resided Professor Alistair Hawthorne, a man
+            known for his intractable brilliance and equally intractable
+            personality. He was a genius, his mind a labyrinth of complex
+            algorithms and groundbreaking theories, but his demeanor was as cold
+            and unyielding as the steel beams that framed his laboratory.
+          </p>
+          <div
+            @click="setActiveAccordion(id)"
+            :class="activeAccordion==id ? 'hidden' : ''"
+            class="cursor-pointer text-opacity-70 underline hover:text-accent-900"
+          >
+            [Continue Reading]
+          </div>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <p class="mb-4">
+              One fateful day, a young intern named Emily, fresh out of college
+              and brimming with youthful enthusiasm, was assigned to assist
+              Professor Hawthorne. Emily, armed with an unwavering optimism and
+              an eagerness to learn, approached the professor with trepidation.
+              Professor Hawthorne, however, met her with an obdurate silence,
+              his gaze fixed on the holographic display flickering before him.
+            </p>
+            <p class="mb-4">
+              Undeterred, Emily persisted. She spent weeks patiently observing
+              the professor, meticulously documenting his research, and offering
+              her insights whenever possible. Slowly, ever so slowly, she began
+              to chip away at his gruff exterior. Her genuine curiosity and
+              unwavering dedication proved to be the emollient needed to soften
+              the professor's hardened edges.
+            </p>
+            <p class="mb-4">
+              One evening, as they delved into a particularly intricate problem,
+              a breakthrough emerged. Professor Hawthorne, for the first time,
+              acknowledged Emily's contribution, a flicker of warmth replacing
+              the usual stoicism in his eyes. From that moment on, a grudging
+              respect blossomed between them. The once-obsequious intern became
+              a valued collaborator, her fresh perspective challenging the
+              professor's established notions and pushing him to new heights of
+              creativity.
+            </p>
+            <p class="mb-4">
+              Professor Hawthorne, once a solitary figure shrouded in an
+              impenetrable fortress of his own making, found himself drawn to
+              Emily's genuine nature. He began to share his passion for science,
+              his voice no longer a monotone drone but filled with animated
+              fervor. In turn, Emily learned from the professor's vast knowledge
+              and unwavering dedication, her own talents flourishing under his
+              tutelage.
+            </p>
+            <p>
+              Their unique partnership, forged from an unlikely combination of
+              brilliance and perseverance, became a testament to the power of
+              human connection, proving that even the most intractable minds can
+              be softened by the right touch.
+            </p>
+            <div
+              @click="setActiveAccordion('')"
+              :class="activeAccordion==id ? '' : 'hidden'"
+              class="cursor-pointer text-opacity-70 underline hover:text-accent-900 mt-4"
+            >
+              [Hide]
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
