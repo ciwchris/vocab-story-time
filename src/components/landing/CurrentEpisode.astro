@@ -17,149 +17,151 @@ const definition4 =
   <div
     class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
   >
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-6 lg:gap-x-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-12">
       <div>
         <p
-          class="text-3xl tracking-tight font-medium text-black text-center mb-8"
+          class="text-4xl tracking-tight font-medium text-black text-center mb-8"
         >
           Current word list
         </p>
-        <div
-          x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
-          class="relative w-full mx-auto font-normal"
-        >
+        <div class="bg-accent-50 mb-4">
           <div
-            x-data="{ id: $id('accordion') }"
-            :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
-            class="cursor-pointer group text-black"
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
           >
-            <button
-              @click="setActiveAccordion(id)"
-              class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
             >
-              <span>{word1}</span>
-              <svg
-                class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
-                :class="{ '-rotate-[45deg]': activeAccordion==id }"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                ><path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 6v12m6-6H6"></path></svg
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
               >
-            </button>
-            <div x-show="activeAccordion==id" x-collapse="">
-              <div class="p-4 pt-2 text-accent-600">
-                {definition1}
+                <span>{word1}</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  {definition1}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
-          class="relative w-full mx-auto font-normal"
-        >
           <div
-            x-data="{ id: $id('accordion') }"
-            :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
-            class="cursor-pointer group text-black"
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
           >
-            <button
-              @click="setActiveAccordion(id)"
-              class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
             >
-              <span>{word2}</span>
-              <svg
-                class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
-                :class="{ '-rotate-[45deg]': activeAccordion==id }"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                ><path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 6v12m6-6H6"></path></svg
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
               >
-            </button>
-            <div x-show="activeAccordion==id" x-collapse="">
-              <div class="p-4 pt-2 text-accent-600">
-                {definition2}
+                <span>{word2}</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  {definition2}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
-          class="relative w-full mx-auto font-normal"
-        >
           <div
-            x-data="{ id: $id('accordion') }"
-            :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
-            class="cursor-pointer group text-black"
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
           >
-            <button
-              @click="setActiveAccordion(id)"
-              class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
             >
-              <span>{word3}</span>
-              <svg
-                class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
-                :class="{ '-rotate-[45deg]': activeAccordion==id }"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                ><path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 6v12m6-6H6"></path></svg
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
               >
-            </button>
-            <div x-show="activeAccordion==id" x-collapse="">
-              <div class="p-4 pt-2 text-accent-600">
-                {definition3}
+                <span>{word3}</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  {definition3}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
-          class="relative w-full mx-auto font-normal"
-        >
           <div
-            x-data="{ id: $id('accordion') }"
-            :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
-            class="cursor-pointer group text-black"
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
           >
-            <button
-              @click="setActiveAccordion(id)"
-              class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
             >
-              <span>{word4}</span>
-              <svg
-                class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
-                :class="{ '-rotate-[45deg]': activeAccordion==id }"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                ><path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 6v12m6-6H6"></path></svg
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
               >
-            </button>
-            <div x-show="activeAccordion==id" x-collapse="">
-              <div class="p-4 pt-2 text-accent-600">
-                {definition4}
+                <span>{word4}</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  {definition4}
+                </div>
               </div>
             </div>
           </div>
@@ -218,7 +220,7 @@ const definition4 =
       </div>
       <div
         x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
-        class="col-span-2 md:w-3/4 mx-auto"
+        class="md:col-span-2 md:w-3/4 mx-auto"
       >
         <p
           class="text-2xl tracking-tight text-center font-medium text-black mb-4"

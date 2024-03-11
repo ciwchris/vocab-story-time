@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Vocab Story Time</title>
+  <link>https://vocabstorytime.com</link>
+  <description>Your Podcast Description</description>
+  <language>en-us</language>
+  <copyright>© 2024 Christopher Lopes</copyright>
+  <image>
+  <url>https://vocabstorytime.com/VocabStoryTimeLogo.jpg</url>
+      <title>Vocab Story Time</title>
+  </image>
+
+  <item>
+    <title>Definitions: intractable, emollient, obdurate and obsequious</title>
+    <pubDate>Wed, 06 Mar 2024</pubDate>
+    <link>https://vocabstorytime.com/#current-episode</link>
+    <enclosure url="https://vocabstorytime.com/Vocab - Definitions - intractable, emollient, obdurate, obsequious.mp3 " type="audio/mpeg" length="1118592" />
+    <description>Definitions for the words intractable, emollient, obdurate and obsequious</description>
+  </item>
+  <item>
+    <title>Story: intractable, emollient, obdurate and obsequious</title>
+    <pubDate>Wed, 06 Mar 2024</pubDate>
+    <link>https://vocabstorytime.com/#current-episode</link>
+    <enclosure url="https://vocabstorytime.com/Vocab - Story - intractable, emollient, obdurate, obsequious.mp3 " type="audio/mpeg" length="3278592" />
+    <description>Short story using the words intractable, emollient, obdurate and obsequious</description>
+  </item>
+  <item>
+    <title>Second Story: intractable, emollient, obdurate and obsequious</title>
+    <pubDate>Fri, 08 Mar 2024</pubDate>
+    <link>https://vocabstorytime.com/#current-episode</link>
+    <enclosure url="https://vocabstorytime.com/Vocab - Second Story - intractable, emollient, obdurate, obsequious.mp3 " type="audio/mpeg" length="3477312" />
+    <description>Second short story using the words intractable, emollient, obdurate and obsequious</description>
+  </item>
+
+</channel>
+</rss>
