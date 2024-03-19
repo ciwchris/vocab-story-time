@@ -1,16 +1,15 @@
 ---
-const word1 = "Attenuate";
+const word1 = "Equivocate";
 const definition1 =
-  "To weaken, lessen, or reduce the intensity or force of something.";
-const word2 = "Credulity";
-const definition2 = "A tendency to believe readily; gullibility.";
-const word3 = "Piquant";
-const definition3 =
-  "Pleasingly sharp or stimulating to the taste or mind; having a pleasantly provocative quality.";
-
-const word4 = "Sententious";
+  "To use ambiguous language in order to avoid committing oneself to a clear position.";
+const word2 = "Idiom";
+const definition2 =
+  'A group of words established by usage as having a meaning not deducible from those of the individual words (e.g., "kick the bucket").';
+const word3 = "Predilection";
+const definition3 = "A preference or a liking for something.";
+const word4 = "Sanguine";
 const definition4 =
-  "Characterized by the expression of moral or pretentious opinions in a short, concise way; overly moralizing.";
+  "Optimistic or cheerful, especially in a way that is based on hope rather than reason.";
 ---
 
 <section id="current-episode">
@@ -212,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="10" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="10.5" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="8" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -229,11 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-            Agatha, known for her unwavering credulity, was an easy target for
-            traveling salesmen. One brisk morning, a man with a neatly trimmed
-            beard and a silver tongue arrived at her doorstep. He peddled a
-            device he claimed could "attenuate the negative ions" that were
-            causing Agatha's misfortunes.
+Mildred, a woman of unwavering sanguinity, had a peculiar predilection for collecting idioms.  Her quaint home was plastered with colorful posters, each showcasing a quirky idiom and its definition. One sunny afternoon, her nephew, Ethan, a notorious equivocator, came to visit.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -244,27 +239,37 @@ const definition4 =
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-              Intrigued by the scientific-sounding jargon and her own string of
-              recent bad luck, Agatha listened intently. The salesman's spiel
-              was peppered with piquant anecdotes about people whose lives were
-              miraculously improved by the device. Agatha, desperate for a
-              change, readily bought into his claims, her skepticism attenuated
-              by his smooth talk.
+"Aunt Mildred!" Ethan greeted, his voice dripping with false cheer. "Lovely weather we're having, wouldn't you say?"
             </p>
             <p class="mb-4">
-              Days turned into weeks, and Agatha religiously used the device,
-              convinced it was working its magic. However, her fortunes remained
-              unchanged. Finally, a neighbor, a man known for his blunt and
-              often sententious remarks, pointed out the obvious - the device
-              was nothing more than a cheap trinket.
+Mildred, ever the optimist, beamed. "Indeed, Ethan! Though some might say it's a bit too hot to 'kick the bucket.'"
+            </p>
+            <p class="mb-4">
+Ethan chuckled nervously. He wasn't there for pleasantries. He needed a loan. "Well, about that..." he began, "I'm in a bit of a 'sticky situation.'"
+            </p>
+            <p class="mb-4">
+Mildred's smile faltered. Sticky situation usually meant trouble, and Ethan had a well-earned reputation for finding it.
+            </p>
+            <p class="mb-4">
+"See," Ethan continued, "a friend of mine... well, let's just say he borrowed my car, and things went a bit 'south.'"
+            </p>
+            <p class="mb-4">
+Mildred's eyes narrowed. "South, as in lost your car gambling?"
+            </p>
+            <p class="mb-4">
+Ethan squirmed. "Not exactly lost," he equivocated. "More like... misplaced."
+            </p>
+            <p class="mb-4">
+Mildred sighed. Her hope for Ethan to become a responsible adult was starting to dwindle. "Ethan," she said sternly, "you can't keep 'beating around the bush.' If you want my help, you need to come clean."
+            </p>
+            <p class="mb-4">
+Ethan, cornered, finally confessed. He'd gotten into a speeding ticket mess and needed money to fix it. Relief washed over Mildred. A speeding ticket was a far cry from the more disastrous scenarios her mind had conjured.
+            </p>
+            <p class="mb-4">
+"Alright, alright," she conceded, "this once. But remember, honesty is the best policy."
             </p>
             <p>
-              Humiliated and frustrated, Agatha confronted the salesman, only to
-              find he had vanished, leaving her with a lighter wallet and a
-              valuable lesson about the dangers of credulity. From that day on,
-              Agatha vowed to approach fantastical claims with a healthy dose of
-              skepticism, never again allowing her credulity to cloud her
-              judgment.
+Ethan, sheepishly grateful, promised to repay her. As he left, he glanced at the colorful idiom posters lining the walls. Maybe, just maybe, some of his aunt's wisdom would finally rub off on him.
             </p>
             <div
               @click="setActiveAccordion('')"
