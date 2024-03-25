@@ -1,15 +1,15 @@
 ---
-const word1 = "Equivocate";
+const word1 = "Abeyance";
 const definition1 =
-  "To use ambiguous language in order to avoid committing oneself to a clear position.";
-const word2 = "Idiom";
+  "A state of temporary suspension or inactivity.";
+const word2 = "Ameliorate";
 const definition2 =
-  'A group of words established by usage as having a meaning not deducible from those of the individual words (e.g., "kick the bucket").';
-const word3 = "Predilection";
-const definition3 = "A preference or a liking for something.";
-const word4 = "Sanguine";
+  "To make something bad or unpleasant better.";
+const word3 = "Evanescent";
+const definition3 = "Lasting for a very short time; fleeting or ephemeral.";
+const word4 = "Incorrigible";
 const definition4 =
-  "Optimistic or cheerful, especially in a way that is based on hope rather than reason.";
+  "Not able to be corrected or improved.";
 ---
 
 <section id="current-episode">
@@ -212,9 +212,9 @@ const definition4 =
             fill="none"
             stroke-linecap="round"></path>
           <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
           <text class="word" x="8" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-Mildred, a woman of unwavering sanguinity, had a peculiar predilection for collecting idioms.  Her quaint home was plastered with colorful posters, each showcasing a quirky idiom and its definition. One sunny afternoon, her nephew, Ethan, a notorious equivocator, came to visit.
+Professor Finchley, a man whose patience had been placed in abeyance by years of dealing with incorrigible students, surveyed his latest challenge. Emily, with her perpetually distracted gaze and evanescent grasp of deadlines, was a test of even his most seasoned tactics.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,37 +239,22 @@ Mildred, a woman of unwavering sanguinity, had a peculiar predilection for colle
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-"Aunt Mildred!" Ethan greeted, his voice dripping with false cheer. "Lovely weather we're having, wouldn't you say?"
+Finchley's lectures, usually meticulously crafted to captivate, seemed to bounce harmlessly off Emily's daydream-filled bubble. He tried to ameliorate the situation with extra credit opportunities, but her efforts were sporadic, bursts of brilliance followed by weeks of radio silence.
             </p>
             <p class="mb-4">
-Mildred, ever the optimist, beamed. "Indeed, Ethan! Though some might say it's a bit too hot to 'kick the bucket.'"
+One day, during a particularly dense explanation of quantum mechanics, Emily blurted out, "Professor, it all feels so... insignificant. Like none of it matters in the grand scheme of things."
             </p>
             <p class="mb-4">
-Ethan chuckled nervously. He wasn't there for pleasantries. He needed a loan. "Well, about that..." he began, "I'm in a bit of a 'sticky situation.'"
+Finchley, surprised by her sudden insight, paused. He wasn't used to students questioning the fundamental importance of his subject. But something about her genuine curiosity sparked a different approach.
             </p>
             <p class="mb-4">
-Mildred's smile faltered. Sticky situation usually meant trouble, and Ethan had a well-earned reputation for finding it.
+He abandoned the textbook, instead weaving tales of scientific discovery, of the relentless curiosity that had unraveled the universe's secrets. He spoke of the evanescent nature of existence, how even the smallest discoveries added to the grand tapestry of human knowledge.
             </p>
             <p class="mb-4">
-"See," Ethan continued, "a friend of mine... well, let's just say he borrowed my car, and things went a bit 'south.'"
-            </p>
-            <p class="mb-4">
-Mildred's eyes narrowed. "South, as in lost your car gambling?"
-            </p>
-            <p class="mb-4">
-Ethan squirmed. "Not exactly lost," he equivocated. "More like... misplaced."
-            </p>
-            <p class="mb-4">
-Mildred sighed. Her hope for Ethan to become a responsible adult was starting to dwindle. "Ethan," she said sternly, "you can't keep 'beating around the bush.' If you want my help, you need to come clean."
-            </p>
-            <p class="mb-4">
-Ethan, cornered, finally confessed. He'd gotten into a speeding ticket mess and needed money to fix it. Relief washed over Mildred. A speeding ticket was a far cry from the more disastrous scenarios her mind had conjured.
-            </p>
-            <p class="mb-4">
-"Alright, alright," she conceded, "this once. But remember, honesty is the best policy."
+A change flickered in Emily's eyes. The daydreams receded, replaced by a spark of engagement. Slowly, with careful guidance, she began to bridge the gaps in her understanding. The A on her final paper wasn't just a testament to absorbed knowledge, but a symbol of a passion rekindled.
             </p>
             <p>
-Ethan, sheepishly grateful, promised to repay her. As he left, he glanced at the colorful idiom posters lining the walls. Maybe, just maybe, some of his aunt's wisdom would finally rub off on him.
+Professor Finchley, the man who thought he'd seen it all, realized that even the most incorrigible student could be reached. It just took the right approach, a willingness to abandon routine, and the knowledge that even the faintest spark of curiosity could illuminate the grand insignificance of existence.
             </p>
             <div
               @click="setActiveAccordion('')"
