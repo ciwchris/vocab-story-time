@@ -1,15 +1,15 @@
 ---
-const word1 = "Abeyance";
+const word1 = "Foible";
 const definition1 =
-  "A state of temporary suspension or inactivity.";
-const word2 = "Ameliorate";
+  "A minor weakness or character flaw.";
+const word2 = "Glib";
 const definition2 =
-  "To make something bad or unpleasant better.";
-const word3 = "Evanescent";
-const definition3 = "Lasting for a very short time; fleeting or ephemeral.";
-const word4 = "Incorrigible";
+  "Smooth, articulate, and superficially charming, but lacking sincerity or depth.";
+const word3 = "Repartee";
+const definition3 = "A clever, witty exchange of remarks.";
+const word4 = "Talisman";
 const definition4 =
-  "Not able to be corrected or improved.";
+  "An object that is believed to bring good luck or protect against harm.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="8" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="13" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-Professor Finchley, a man whose patience had been placed in abeyance by years of dealing with incorrigible students, surveyed his latest challenge. Emily, with her perpetually distracted gaze and evanescent grasp of deadlines, was a test of even his most seasoned tactics.
+Bartholomew "Bart" Bumbleton had a reputation.  It wasn't for his impressive wit, though he certainly tried. His attempts usually landed with a thud, but his glib tongue spun tales that made him seem more important than his position as assistant baker warranted. His one true talent was his ability to charm, weaseling his way into better ingredients and longer breaks with a wink and a fabricated story about his "talisman," a chipped porcelain thimble his grandmother swore brought good luck. 
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,22 +239,13 @@ Professor Finchley, a man whose patience had been placed in abeyance by years of
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-Finchley's lectures, usually meticulously crafted to captivate, seemed to bounce harmlessly off Emily's daydream-filled bubble. He tried to ameliorate the situation with extra credit opportunities, but her efforts were sporadic, bursts of brilliance followed by weeks of radio silence.
+One blustery afternoon, a new pastry chef named Beatrice arrived.  Unlike Bart, her skills were undeniable.  Her croissants were flaky perfection, her éclairs bursting with rich cream. Bart, threatened, tried to impress her with his usual repertoire of outlandish tales. Beatrice, unimpressed by his foible for exaggeration, countered with witty retorts and insightful critiques of his baking.  For the first time, Bart was speechless.  Beatrice, however, saw a flicker of genuine passion for baking in his eyes beneath the bluster.  She saw potential.
             </p>
             <p class="mb-4">
-One day, during a particularly dense explanation of quantum mechanics, Emily blurted out, "Professor, it all feels so... insignificant. Like none of it matters in the grand scheme of things."
-            </p>
-            <p class="mb-4">
-Finchley, surprised by her sudden insight, paused. He wasn't used to students questioning the fundamental importance of his subject. But something about her genuine curiosity sparked a different approach.
-            </p>
-            <p class="mb-4">
-He abandoned the textbook, instead weaving tales of scientific discovery, of the relentless curiosity that had unraveled the universe's secrets. He spoke of the evanescent nature of existence, how even the smallest discoveries added to the grand tapestry of human knowledge.
-            </p>
-            <p class="mb-4">
-A change flickered in Emily's eyes. The daydreams receded, replaced by a spark of engagement. Slowly, with careful guidance, she began to bridge the gaps in her understanding. The A on her final paper wasn't just a testament to absorbed knowledge, but a symbol of a passion rekindled.
+Beatrice, ever the pragmatist, suggested a competition. They would each create a new pastry, and the winner would earn bragging rights and the coveted late-morning shift.  Bart, desperate to prove himself, readily agreed.  He spent the night conjuring fantastical flavor combinations, convinced his lucky thimble would guide him. Beatrice, on the other hand, focused on classic technique with a modern twist.
             </p>
             <p>
-Professor Finchley, the man who thought he'd seen it all, realized that even the most incorrigible student could be reached. It just took the right approach, a willingness to abandon routine, and the knowledge that even the faintest spark of curiosity could illuminate the grand insignificance of existence.
+The next day, the bakery bustled with anticipation. Bart's creation was a monstrosity of clashing colors and questionable textures. Beatrice's, a simple tart with seasonal fruit and a delicate sugar glaze, was a masterpiece of flavor and presentation. The winner was clear.  Bart, defeated but strangely invigorated, watched Beatrice work.  Maybe, he thought, there was more to baking than tall tales and trinkets.  He sheepishly approached Beatrice and, for the first time, offered a genuine compliment on her tart.  Beatrice smiled.  "Perhaps," she said, "your talent is the real talisman."  From that day on, their days were filled with flour-dusted camaraderie and a playful repartee that was far more delightful than any boastful story. 
             </p>
             <div
               @click="setActiveAccordion('')"
