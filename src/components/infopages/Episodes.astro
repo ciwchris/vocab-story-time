@@ -1,176 +1,1291 @@
 <section>
   <div
-    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24"
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
   >
-    <div>
-      <div class="relative mx-auto max-w-[40rem] pt-20 pb-24">
-        <h1
-          class="text-4xl tracking-tight font-medium text-black md:text-5xl font-display"
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-12">
+      <div>
+        <p
+          class="text-4xl tracking-tight font-medium text-black text-center mb-8"
         >
-          Privacy policy
-        </h1>
-        <p class="mt-4 text-base lea ding-7 text-gray-500">
-          Last updated on January 01, 2023
+          April 7th word list
         </p>
+        <div class="bg-accent-50 mb-4">
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Benighted</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Shrouded in darkness; ignorant or unenlightened.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Carapace</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  The hard outer shell of a turtle, crab, or other invertebrate.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Gestural</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                   Expressed by gestures rather than words.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Temperance</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                   Moderation or self-control, especially in relation to alcohol.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline"
+          width="20em"
+          height="20em"
+          viewBox="0 0 32 32"
+        >
+          <style>
+            .word {
+              font-size: 3px;
+              fill: #ff7a00;
+              font-family: "Segoe UI", Roboto, Helvetica, sans-serif;
+            }
+          </style>
+          <line
+            x1="1"
+            y1="2"
+            x2="8"
+            y2="2"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="7"
+            x2="8"
+            y2="7"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="12"
+            x2="5"
+            y2="12"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <path
+            d="M 3 15 v 11 h 18 m 8 -8 v -16 h -17"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"></path>
+          <text class="word" x="10" y="7">benighted</text>
+          <text class="word" x="10" y="12">carapace</text>
+          <text class="word" x="11" y="17">gestural</text>
+          <text class="word" x="8" y="22">temperance</text>
+        </svg>
+      </div>
+      <div
+        x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+        class="md:col-span-2 md:w-3/4 mx-auto"
+      >
+        <p
+          class="text-2xl tracking-tight text-center font-medium text-black mb-4"
+        >
+          Story
+        </p>
+        <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
+          <p class="mb-4">
+The sandstorm raged, a relentless assault that whipped the desert into a frenzy.  Zahra, a wizened nomad with skin leathery from years under the unforgiving sun, found herself separated from her caravan.  Disoriented and benighted, she clung to the only landmark – a colossal, ancient baobab tree, its gnarled branches reaching towards the angry sky like skeletal claws.  Taking shelter in the hollow of its trunk, Zahra huddled, her worn cloak offering scant protection from the sand-laden wind.
+          </p>
+          <div
+            @click="setActiveAccordion(id)"
+            :class="activeAccordion==id ? 'hidden' : ''"
+            class="cursor-pointer text-opacity-70 underline hover:text-accent-900"
+          >
+            [Continue Reading]
+          </div>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <p class="mb-4">
+Fear gnawed at her.  She clutched the ornately carved wooden staff she always carried, a talisman passed down through generations.  It wasn't a weapon, but a symbol of temperance, a reminder to find peace within the storm.  Hunger gnawed at her stomach, but Zahra knew better than to consume desert foliage – a surefire way to dehydration.  She closed her eyes, focusing on the rhythm of her breath, a gestural prayer for guidance.
+            </p>
+            <p>
+As dawn approached, the storm began to wane.  Emerging from her sandy cocoon, Zahra scanned the horizon.  In the distance, a glint of metal – the unmistakable glint of the caravan's copper pots.  Relief flooded her.  She drew a deep breath, the air crisp and clean.  With renewed determination, Zahra set off, her weathered face set towards the distant gleam, the wind whispering secrets through the leaves of the ancient baobab.  She had faced the benighted desert alone, her courage and temperance her only shield, and emerged stronger, the bond with her caravan etched deeper than ever before.  The staff tapped rhythmically against the sand, a silent testament to her ordeal and a promise to never stray too far from the safety of the group.  The desert, once a menacing adversary, now held a newfound respect, its harsh beauty etched forever in her memory. 
+            </p>
+            <div
+              @click="setActiveAccordion('')"
+              :class="activeAccordion==id ? '' : 'hidden'"
+              class="cursor-pointer text-opacity-70 underline hover:text-accent-900 mt-4"
+            >
+              [Hide]
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div>
+  </div>
+</section>
+
+<section>
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
+  >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-12">
+      <div>
+        <p
+          class="text-4xl tracking-tight font-medium text-black text-center mb-8"
+        >
+          March 31st word list
+        </p>
+        <div class="bg-accent-50 mb-4">
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Foible</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  A minor weakness or character flaw.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Glib</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Smooth, articulate, and superficially charming, but lacking sincerity or depth.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Repartee</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  A clever, witty exchange of remarks.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Talisman</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                   An object that is believed to bring good luck or protect against harm.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline"
+          width="20em"
+          height="20em"
+          viewBox="0 0 32 32"
+        >
+          <style>
+            .word {
+              font-size: 3px;
+              fill: #ff7a00;
+              font-family: "Segoe UI", Roboto, Helvetica, sans-serif;
+            }
+          </style>
+          <line
+            x1="1"
+            y1="2"
+            x2="8"
+            y2="2"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="7"
+            x2="8"
+            y2="7"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="12"
+            x2="5"
+            y2="12"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <path
+            d="M 3 15 v 11 h 18 m 8 -8 v -16 h -17"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"></path>
+          <text class="word" x="12" y="7">foible</text>
+          <text class="word" x="13" y="12">glib</text>
+          <text class="word" x="10" y="17">repartee</text>
+          <text class="word" x="10" y="22">talisman</text>
+        </svg>
+      </div>
       <div
-        class="mx-auto max-w-[40rem] prose-base prose text-gray-500 prose-h3:text-black prose-a:font-semibold prose-a:text-accent-300 hover:prose-a:text-black"
+        x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+        class="md:col-span-2 md:w-3/4 mx-auto"
       >
-        <p>
-          This privacy policy sets out how Unwrapped AB collects, processes and
-          uses your Personal Information through your use of our Services.
+        <p
+          class="text-2xl tracking-tight text-center font-medium text-black mb-4"
+        >
+          Story
         </p>
-        <h3>Definitions</h3>
-        <h3>DPO</h3>
-        <p>
-          DPO means Data Protection Officer, and is the person specifically
-          appointed by us to deal with your enquiries with respect to this
-          privacy policy and your Personal Information.
-        </p>
-        <p>
-          Personal Information means any identifying information about you. This
-          includes, but is not limited to, the following: cookies and usage
-          data.
-        </p>
-        <p>
-          Services means all services provided by Michael Alexander Web Agency
-          to you, including (but not limited to) this Website.
-        </p>
-        <p>
-          Website means this website and all websites, applications and
-          communications that post a link to this Privacy Policy.
-        </p>
-        <h3>Personal Information Collection</h3>
-        <p>
-          We only collect and use Personal Information to the extent necessary
-          to provide you with the Services. We collect Personal Information for
-          the Website to provide you with a better online experience.
-        </p>
-        <h3>Personal Information Retention</h3>
-        <p>
-          We keep Personal Information for the shortest time necessary to
-          provide you with Services and to meet all our legal and compliance
-          obligations. To determine this retention period, we take into account
-          (i) the nature of the Personal Information gathered; and (ii) the
-          nature of our legal and compliance obligations. All Personal
-          Information no longer required by us is destroyed and/or erased.
-        </p>
-        <h3>Personal Data from Third Parties</h3>
-        <p>
-          We may, from time to time, obtain Personal Information from third
-          parties to enable us to better tailor our Services to you (Third Party
-          Personal Information). When we obtain Third Party Personal
-          Information, we will notify you within one month. If we use or share
-          Third Party Personal Information, we will notify you immediately.
-        </p>
-        <h3>Your Rights</h3>
-        <p>
-          With respect to Personal Information we hold, you have the following
-          rights:
-        </p>
-        <ul>
-          <li>
-            Access: You may request from us access to your data that we hold on
-            you.
-
-            <p></p> li
-          </li>
-          <li>
-            Rectification: If the data we hold on you is inaccurate, you may
-            request that we correct it. If the data we hold is incomplete, you
-            may request that we complete it.
-          </li>
-          <li>
-            Erasure: Subject to certain conditions, you may request that we
-            erase all of the data we hold on you. li Restrictions: Subject to
-            certain conditions, you may request that we restrict the processing
-            of data we hold on you.
-          </li>
-
-          <li>
-            Portability: Subject to certain conditions, you may request that we
-            transfer all the data we hold on you to a third party (including
-            yourself).
-          </li>
-          <li>
-            Objections: Subject to certain conditions, you may object to us
-            processing the data we hold on you.
-          </li>
-        </ul>
-        <h3>Social Media</h3>
-        <p>
-          You may choose to engage with our Services through a variety of social
-          media sites and platforms, for example Facebook, Instagram and
-          Twitter. When you interact with our Services through these social
-          media platforms, you may allow us to receive Personal Information on
-          how you are interacting with our Services. This will depend on your
-          privacy settings on each social media site and platform. The data we
-          are provided by you through your interaction with our Services on
-          social media sites and platforms will be used by us subject to the
-          terms of this privacy policy. Depending on your social media site’s
-          privacy settings, your Personal Information may become public to a
-          community of users if you choose to engage with our Services through
-          these platforms. For further information on how you can customize your
-          privacy settings on social media sites and how those sites handle your
-          privacy, please refer to the privacy policy of each particular social
-          media site.
-        </p>
-        <h3>Minors</h3>
-        <p>
-          We do not knowingly collect information on children under the age of
-          16 (“Child”). If you become aware that a Child has provided us with
-          Personal Information, please contact us. If we become aware that we
-          have collected Personal Information from a Child without their
-          parent's verifiable authorization to access our Services, we will take
-          steps to remove that information from our servers.
-        </p>
-        <h3>Third Party Links</h3>
-        <p>
-          Our website contains links to other third-party websites not owned or
-          managed by Unwrapped. This privacy policy applies to this website
-          only. If you click a link to a third-party website, the privacy policy
-          of that website will apply. We highly recommend that you read the
-          privacy policies of other websites as they may be different from ours.
-        </p>
-        <h3>Payment Vendors</h3>
-        <p>
-          You can make payments via our website. Our vendors are listed below:
-        </p>
-        <ul><li>Paypal</li></ul>
-        <p>
-          Their privacy policy can be viewed <a
-            href="https://www.paypal.com/webapps/mpp/ua/privacy-full">here</a
+        <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
+          <p class="mb-4">
+Bartholomew "Bart" Bumbleton had a reputation.  It wasn't for his impressive wit, though he certainly tried. His attempts usually landed with a thud, but his glib tongue spun tales that made him seem more important than his position as assistant baker warranted. His one true talent was his ability to charm, weaseling his way into better ingredients and longer breaks with a wink and a fabricated story about his "talisman," a chipped porcelain thimble his grandmother swore brought good luck. 
+          </p>
+          <div
+            @click="setActiveAccordion(id)"
+            :class="activeAccordion==id ? 'hidden' : ''"
+            class="cursor-pointer text-opacity-70 underline hover:text-accent-900"
           >
+            [Continue Reading]
+          </div>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <p class="mb-4">
+One blustery afternoon, a new pastry chef named Beatrice arrived.  Unlike Bart, her skills were undeniable.  Her croissants were flaky perfection, her éclairs bursting with rich cream. Bart, threatened, tried to impress her with his usual repertoire of outlandish tales. Beatrice, unimpressed by his foible for exaggeration, countered with witty retorts and insightful critiques of his baking.  For the first time, Bart was speechless.  Beatrice, however, saw a flicker of genuine passion for baking in his eyes beneath the bluster.  She saw potential.
+            </p>
+            <p class="mb-4">
+Beatrice, ever the pragmatist, suggested a competition. They would each create a new pastry, and the winner would earn bragging rights and the coveted late-morning shift.  Bart, desperate to prove himself, readily agreed.  He spent the night conjuring fantastical flavor combinations, convinced his lucky thimble would guide him. Beatrice, on the other hand, focused on classic technique with a modern twist.
+            </p>
+            <p>
+The next day, the bakery bustled with anticipation. Bart's creation was a monstrosity of clashing colors and questionable textures. Beatrice's, a simple tart with seasonal fruit and a delicate sugar glaze, was a masterpiece of flavor and presentation. The winner was clear.  Bart, defeated but strangely invigorated, watched Beatrice work.  Maybe, he thought, there was more to baking than tall tales and trinkets.  He sheepishly approached Beatrice and, for the first time, offered a genuine compliment on her tart.  Beatrice smiled.  "Perhaps," she said, "your talent is the real talisman."  From that day on, their days were filled with flour-dusted camaraderie and a playful repartee that was far more delightful than any boastful story. 
+            </p>
+            <div
+              @click="setActiveAccordion('')"
+              :class="activeAccordion==id ? '' : 'hidden'"
+              class="cursor-pointer text-opacity-70 underline hover:text-accent-900 mt-4"
+            >
+              [Hide]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
+  >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-12">
+      <div>
+        <p
+          class="text-4xl tracking-tight font-medium text-black text-center mb-8"
+        >
+          March 24th word list
         </p>
-        <h3>Merger, acquisition or asset sale</h3>
-        <p>
-          If we or our subsidiaries are involved in a merger, acquisition, or
-          asset sale, your Personal Information may be transferred.
-        </p>
-        <h3>Updates</h3>
-        <p>
-          We are constantly reviewing our privacy policy and procedures to
-          ensure that they meet best practices. This policy was last updated on
-          August 21, 2021.
-        </p>
-        <h3>Contact us</h3>
-        <p>
-          If you have any questions or suggestions about our privacy policy or
-          want to know more information about Personal Information we hold,
-          please contact us at support@unwrapped.design or write to us at
-          Mariehamn, Åland Islands..
-        </p>
-        <h3>Complaints</h3>
-        <p>
-          If you believe that we have breached our obligations to you under this
-          privacy policy or relevant privacy laws, please contact us at <a
-            href="">email@example</a
+        <div class="bg-accent-50 mb-4">
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
           >
-          If you are not satisfied with our response, you have the right to lodge
-          a complaint at any time to your relevant authority.
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Abeyance</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  A state of temporary suspension or inactivity.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Ameliorate</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  To make something bad or unpleasant better.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Evanescent</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Lasting for a very short time; fleeting or ephemeral.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Incorrigible</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                   Not able to be corrected or improved.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline"
+          width="20em"
+          height="20em"
+          viewBox="0 0 32 32"
+        >
+          <style>
+            .word {
+              font-size: 3px;
+              fill: #ff7a00;
+              font-family: "Segoe UI", Roboto, Helvetica, sans-serif;
+            }
+          </style>
+          <line
+            x1="1"
+            y1="2"
+            x2="8"
+            y2="2"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="7"
+            x2="8"
+            y2="7"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="12"
+            x2="5"
+            y2="12"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <path
+            d="M 3 15 v 11 h 18 m 8 -8 v -16 h -17"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"></path>
+          <text class="word" x="10" y="7">abeyance</text>
+          <text class="word" x="9" y="12">ameliorate</text>
+          <text class="word" x="8" y="17">evanescent</text>
+          <text class="word" x="9" y="22">incorrigible</text>
+        </svg>
+      </div>
+      <div
+        x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+        class="md:col-span-2 md:w-3/4 mx-auto"
+      >
+        <p
+          class="text-2xl tracking-tight text-center font-medium text-black mb-4"
+        >
+          Story
         </p>
+        <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
+          <p class="mb-4">
+Professor Finchley, a man whose patience had been placed in abeyance by years of dealing with incorrigible students, surveyed his latest challenge. Emily, with her perpetually distracted gaze and evanescent grasp of deadlines, was a test of even his most seasoned tactics.
+          </p>
+          <div
+            @click="setActiveAccordion(id)"
+            :class="activeAccordion==id ? 'hidden' : ''"
+            class="cursor-pointer text-opacity-70 underline hover:text-accent-900"
+          >
+            [Continue Reading]
+          </div>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <p class="mb-4">
+Finchley's lectures, usually meticulously crafted to captivate, seemed to bounce harmlessly off Emily's daydream-filled bubble. He tried to ameliorate the situation with extra credit opportunities, but her efforts were sporadic, bursts of brilliance followed by weeks of radio silence.
+            </p>
+            <p class="mb-4">
+One day, during a particularly dense explanation of quantum mechanics, Emily blurted out, "Professor, it all feels so... insignificant. Like none of it matters in the grand scheme of things."
+            </p>
+            <p class="mb-4">
+Finchley, surprised by her sudden insight, paused. He wasn't used to students questioning the fundamental importance of his subject. But something about her genuine curiosity sparked a different approach.
+            </p>
+            <p class="mb-4">
+He abandoned the textbook, instead weaving tales of scientific discovery, of the relentless curiosity that had unraveled the universe's secrets. He spoke of the evanescent nature of existence, how even the smallest discoveries added to the grand tapestry of human knowledge.
+            </p>
+            <p class="mb-4">
+A change flickered in Emily's eyes. The daydreams receded, replaced by a spark of engagement. Slowly, with careful guidance, she began to bridge the gaps in her understanding. The A on her final paper wasn't just a testament to absorbed knowledge, but a symbol of a passion rekindled.
+            </p>
+            <p>
+Professor Finchley, the man who thought he'd seen it all, realized that even the most incorrigible student could be reached. It just took the right approach, a willingness to abandon routine, and the knowledge that even the faintest spark of curiosity could illuminate the grand insignificance of existence.
+            </p>
+            <div
+              @click="setActiveAccordion('')"
+              :class="activeAccordion==id ? '' : 'hidden'"
+              class="cursor-pointer text-opacity-70 underline hover:text-accent-900 mt-4"
+            >
+              [Hide]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
+  >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-12">
+      <div>
+        <p
+          class="text-4xl tracking-tight font-medium text-black text-center mb-8"
+        >
+          March 17th word list
+        </p>
+        <div class="bg-accent-50 mb-4">
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Equivocate</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  To use ambiguous language in order to avoid committing oneself to a clear position.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Idiom</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  A group of words established by usage as having a meaning not deducible from those of the individual words (e.g., "kick the bucket").
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Predilection</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  A preference or a liking for something.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Sanguine</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                   Optimistic or cheerful, especially in a way that is based on hope rather than reason.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline"
+          width="20em"
+          height="20em"
+          viewBox="0 0 32 32"
+        >
+          <style>
+            .word {
+              font-size: 3px;
+              fill: #ff7a00;
+              font-family: "Segoe UI", Roboto, Helvetica, sans-serif;
+            }
+          </style>
+          <line
+            x1="1"
+            y1="2"
+            x2="8"
+            y2="2"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="7"
+            x2="8"
+            y2="7"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="12"
+            x2="5"
+            y2="12"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <path
+            d="M 3 15 v 11 h 18 m 8 -8 v -16 h -17"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"></path>
+          <text class="word" x="9" y="7">equivocate</text>
+          <text class="word" x="13" y="12">idiom</text>
+          <text class="word" x="8.5" y="17">predilection</text>
+          <text class="word" x="10" y="22">sanguine</text>
+        </svg>
+      </div>
+      <div
+        x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+        class="md:col-span-2 md:w-3/4 mx-auto"
+      >
+        <p
+          class="text-2xl tracking-tight text-center font-medium text-black mb-4"
+        >
+          Story
+        </p>
+        <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
+          <p class="mb-4">
+Mildred, a woman of unwavering sanguinity, had a peculiar predilection for collecting idioms.  Her quaint home was plastered with colorful posters, each showcasing a quirky idiom and its definition. One sunny afternoon, her nephew, Ethan, a notorious equivocator, came to visit.
+          </p>
+          <div
+            @click="setActiveAccordion(id)"
+            :class="activeAccordion==id ? 'hidden' : ''"
+            class="cursor-pointer text-opacity-70 underline hover:text-accent-900"
+          >
+            [Continue Reading]
+          </div>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <p class="mb-4">
+"Aunt Mildred!" Ethan greeted, his voice dripping with false cheer. "Lovely weather we're having, wouldn't you say?"
+            </p>
+            <p class="mb-4">
+Mildred, ever the optimist, beamed. "Indeed, Ethan! Though some might say it's a bit too hot to 'kick the bucket.'"
+            </p>
+            <p class="mb-4">
+Ethan chuckled nervously. He wasn't there for pleasantries. He needed a loan. "Well, about that..." he began, "I'm in a bit of a 'sticky situation.'"
+            </p>
+            <p class="mb-4">
+Mildred's smile faltered. Sticky situation usually meant trouble, and Ethan had a well-earned reputation for finding it.
+            </p>
+            <p class="mb-4">
+"See," Ethan continued, "a friend of mine... well, let's just say he borrowed my car, and things went a bit 'south.'"
+            </p>
+            <p class="mb-4">
+Mildred's eyes narrowed. "South, as in lost your car gambling?"
+            </p>
+            <p class="mb-4">
+Ethan squirmed. "Not exactly lost," he equivocated. "More like... misplaced."
+            </p>
+            <p class="mb-4">
+Mildred sighed. Her hope for Ethan to become a responsible adult was starting to dwindle. "Ethan," she said sternly, "you can't keep 'beating around the bush.' If you want my help, you need to come clean."
+            </p>
+            <p class="mb-4">
+Ethan, cornered, finally confessed. He'd gotten into a speeding ticket mess and needed money to fix it. Relief washed over Mildred. A speeding ticket was a far cry from the more disastrous scenarios her mind had conjured.
+            </p>
+            <p class="mb-4">
+"Alright, alright," she conceded, "this once. But remember, honesty is the best policy."
+            </p>
+            <p>
+Ethan, sheepishly grateful, promised to repay her. As he left, he glanced at the colorful idiom posters lining the walls. Maybe, just maybe, some of his aunt's wisdom would finally rub off on him.
+            </p>
+            <div
+              @click="setActiveAccordion('')"
+              :class="activeAccordion==id ? '' : 'hidden'"
+              class="cursor-pointer text-opacity-70 underline hover:text-accent-900 mt-4"
+            >
+              [Hide]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
+  >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-12">
+      <div>
+        <p
+          class="text-4xl tracking-tight font-medium text-black text-center mb-8"
+        >
+          March 10th word list
+        </p>
+        <div class="bg-accent-50 mb-4">
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Attenuate</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  To weaken, lessen, or reduce the intensity or force of something.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Credulity</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  A tendency to believe readily; gullibility.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Piquant</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Pleasingly sharp or stimulating to the taste or mind; having a pleasantly provocative quality.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Sententious</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                   Characterized by the expression of moral or pretentious opinions in a short, concise way; overly moralizing.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline"
+          width="20em"
+          height="20em"
+          viewBox="0 0 32 32"
+        >
+          <style>
+            .word {
+              font-size: 3px;
+              fill: #ff7a00;
+              font-family: "Segoe UI", Roboto, Helvetica, sans-serif;
+            }
+          </style>
+          <line
+            x1="1"
+            y1="2"
+            x2="8"
+            y2="2"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="7"
+            x2="8"
+            y2="7"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="12"
+            x2="5"
+            y2="12"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <path
+            d="M 3 15 v 11 h 18 m 8 -8 v -16 h -17"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"></path>
+          <text class="word" x="10" y="7">attenuate</text>
+          <text class="word" x="10.5" y="12">credulity</text>
+          <text class="word" x="11" y="17">piquant</text>
+          <text class="word" x="8" y="22">sententious</text>
+        </svg>
+      </div>
+      <div
+        x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+        class="md:col-span-2 md:w-3/4 mx-auto"
+      >
+        <p
+          class="text-2xl tracking-tight text-center font-medium text-black mb-4"
+        >
+          Story
+        </p>
+        <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
+          <p class="mb-4">
+            Agatha, known for her unwavering credulity, was an easy target for
+            traveling salesmen. One brisk morning, a man with a neatly trimmed
+            beard and a silver tongue arrived at her doorstep. He peddled a
+            device he claimed could "attenuate the negative ions" that were
+            causing Agatha's misfortunes.
+          </p>
+          <div
+            @click="setActiveAccordion(id)"
+            :class="activeAccordion==id ? 'hidden' : ''"
+            class="cursor-pointer text-opacity-70 underline hover:text-accent-900"
+          >
+            [Continue Reading]
+          </div>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <p class="mb-4">
+              Intrigued by the scientific-sounding jargon and her own string of
+              recent bad luck, Agatha listened intently. The salesman's spiel
+              was peppered with piquant anecdotes about people whose lives were
+              miraculously improved by the device. Agatha, desperate for a
+              change, readily bought into his claims, her skepticism attenuated
+              by his smooth talk.
+            </p>
+            <p class="mb-4">
+              Days turned into weeks, and Agatha religiously used the device,
+              convinced it was working its magic. However, her fortunes remained
+              unchanged. Finally, a neighbor, a man known for his blunt and
+              often sententious remarks, pointed out the obvious - the device
+              was nothing more than a cheap trinket.
+            </p>
+            <p>
+              Humiliated and frustrated, Agatha confronted the salesman, only to
+              find he had vanished, leaving her with a lighter wallet and a
+              valuable lesson about the dangers of credulity. From that day on,
+              Agatha vowed to approach fantastical claims with a healthy dose of
+              skepticism, never again allowing her credulity to cloud her
+              judgment.
+            </p>
+            <div
+              @click="setActiveAccordion('')"
+              :class="activeAccordion==id ? '' : 'hidden'"
+              class="cursor-pointer text-opacity-70 underline hover:text-accent-900 mt-4"
+            >
+              [Hide]
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
