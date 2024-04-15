@@ -2,6 +2,14 @@
 
 Landing page for a podcast for learning and remembering new or unfamiliar words.
 
+## Prompts
+
+Provide a definition for the following words and provide examples: _
+
+Create a short story using the words: _. Do not include quotes in the story
+
+Create another unique short story using the words: _. Do not include quotes in the story.
+
 ## Commands
 
 | Command                | Action                                           |

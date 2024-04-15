@@ -1,15 +1,15 @@
 ---
-const word1 = "Foible";
+const word1 = "Consummate";
 const definition1 =
-  "A minor weakness or character flaw.";
-const word2 = "Glib";
+  "Highly skilled or accomplished.";
+const word2 = "Efficacious";
 const definition2 =
-  "Smooth, articulate, and superficially charming, but lacking sincerity or depth.";
-const word3 = "Repartee";
-const definition3 = "A clever, witty exchange of remarks.";
-const word4 = "Talisman";
+  "Producing a desired effect; effective.";
+const word3 = "Irredentist";
+const definition3 = "Relating to a policy of reclaiming territory regarded as lost by a nation.";
+const word4 = "Salient";
 const definition4 =
-  "An object that is believed to bring good luck or protect against harm.";
+  "Particularly noticeable or important.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="12" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="13" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
           <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,8 +228,8 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-Bartholomew "Bart" Bumbleton had a reputation.  It wasn't for his impressive wit, though he certainly tried. His attempts usually landed with a thud, but his glib tongue spun tales that made him seem more important than his position as assistant baker warranted. His one true talent was his ability to charm, weaseling his way into better ingredients and longer breaks with a wink and a fabricated story about his "talisman," a chipped porcelain thimble his grandmother swore brought good luck. 
           </p>
+Ambassador Anya Petrova, a consummate diplomat with a steely gaze and an even sharper mind, paced the plush carpet of her office.  The situation was dire.  A neighboring nation, fueled by an irredentist movement, had laid claim to a sliver of Petrova's country – a region rich in natural resources.  Public outrage was at a fever pitch, but war was not the answer. Anya needed a solution, and she needed it fast.
           <div
             @click="setActiveAccordion(id)"
             :class="activeAccordion==id ? 'hidden' : ''"
@@ -239,13 +239,16 @@ Bartholomew "Bart" Bumbleton had a reputation.  It wasn't for his impressive wit
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-One blustery afternoon, a new pastry chef named Beatrice arrived.  Unlike Bart, her skills were undeniable.  Her croissants were flaky perfection, her éclairs bursting with rich cream. Bart, threatened, tried to impress her with his usual repertoire of outlandish tales. Beatrice, unimpressed by his foible for exaggeration, countered with witty retorts and insightful critiques of his baking.  For the first time, Bart was speechless.  Beatrice, however, saw a flicker of genuine passion for baking in his eyes beneath the bluster.  She saw potential.
+Days bled into nights as Anya poured over historical documents and political maps.  The key, she realized, lay in an obscure treaty signed decades ago.  A forgotten clause held the potential to expose a crucial flaw in the neighboring country's claim.  The problem?  The treaty was written in a dead language, and the sole surviving expert resided in a remote mountain village.
             </p>
             <p class="mb-4">
-Beatrice, ever the pragmatist, suggested a competition. They would each create a new pastry, and the winner would earn bragging rights and the coveted late-morning shift.  Bart, desperate to prove himself, readily agreed.  He spent the night conjuring fantastical flavor combinations, convinced his lucky thimble would guide him. Beatrice, on the other hand, focused on classic technique with a modern twist.
+Anya embarked on a treacherous journey, braving snow-capped peaks and treacherous roads.  Finally, she reached the village, a cluster of stone houses nestled amidst a breathtaking landscape.  The old scholar, frail but with eyes that still held a spark, meticulously translated the treaty.  The clause was there, clear and irrefutable.  Armed with this newfound knowledge, Anya returned to the capital, a single sheet of parchment her most potent weapon.
+            </p>
+            <p class="mb-4">
+At the international forum, Anya presented her case.  With irrefutable evidence and a display of consummate diplomatic skill, she exposed the weakness in the opposing nation's claim.  The world watched, captivated by the quiet power of her presentation.  Public opinion shifted, and under mounting pressure, the neighboring country backed down.
             </p>
             <p>
-The next day, the bakery bustled with anticipation. Bart's creation was a monstrosity of clashing colors and questionable textures. Beatrice's, a simple tart with seasonal fruit and a delicate sugar glaze, was a masterpiece of flavor and presentation. The winner was clear.  Bart, defeated but strangely invigorated, watched Beatrice work.  Maybe, he thought, there was more to baking than tall tales and trinkets.  He sheepishly approached Beatrice and, for the first time, offered a genuine compliment on her tart.  Beatrice smiled.  "Perhaps," she said, "your talent is the real talisman."  From that day on, their days were filled with flour-dusted camaraderie and a playful repartee that was far more delightful than any boastful story. 
+Anya returned home a hero.  The salient victory, achieved not through bloodshed but through the efficacious use of knowledge and diplomacy, solidified her reputation as a peacemaker.  The once-forgotten treaty became a symbol of her triumph, a testament to the power of reason over brute force.  Anya, forever changed by her perilous journey, vowed to continue using her skills to forge a path towards a more peaceful world. 
             </p>
             <div
               @click="setActiveAccordion('')"
