@@ -1,15 +1,15 @@
 ---
-const word1 = "Consummate";
+const word1 = "Deride";
 const definition1 =
-  "Highly skilled or accomplished.";
-const word2 = "Efficacious";
+  "To ridicule or mock someone or something in a scornful way.";
+const word2 = "Didactic";
 const definition2 =
-  "Producing a desired effect; effective.";
-const word3 = "Irredentist";
-const definition3 = "Relating to a policy of reclaiming territory regarded as lost by a nation.";
-const word4 = "Salient";
+  "Intended to teach, particularly in a moralizing way.";
+const word3 = "Impingement";
+const definition3 = "The act of intruding on something or someone's rights.";
+const word4 = "Verboten";
 const definition4 =
-  "Particularly noticeable or important.";
+  "Forbidden or prohibited.";
 ---
 
 <section id="current-episode">
@@ -228,8 +228,8 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
+The old woman shuffled through the bustling market, her worn canvas bag bumping against overflowing stalls. Her weathered face held a permanent scowl, a defense mechanism honed over years of fending off unwanted attention. Shopkeepers who dared to try and engage her with cheery greetings were met with a withering glare, effectively deriding their attempts at friendliness. 
           </p>
-Ambassador Anya Petrova, a consummate diplomat with a steely gaze and an even sharper mind, paced the plush carpet of her office.  The situation was dire.  A neighboring nation, fueled by an irredentist movement, had laid claim to a sliver of Petrova's country – a region rich in natural resources.  Public outrage was at a fever pitch, but war was not the answer. Anya needed a solution, and she needed it fast.
           <div
             @click="setActiveAccordion(id)"
             :class="activeAccordion==id ? 'hidden' : ''"
@@ -239,16 +239,13 @@ Ambassador Anya Petrova, a consummate diplomat with a steely gaze and an even sh
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-Days bled into nights as Anya poured over historical documents and political maps.  The key, she realized, lay in an obscure treaty signed decades ago.  A forgotten clause held the potential to expose a crucial flaw in the neighboring country's claim.  The problem?  The treaty was written in a dead language, and the sole surviving expert resided in a remote mountain village.
+She clutched a small, dog-eared book titled "Etiquette for the Modern Young Lady" – a relic from a bygone era. Its didactic pronouncements on posture and polite conversation felt increasingly irrelevant in the face of the city's relentless change. Yet, it was her only guide, a fragile thread connecting her to a past she felt slipping away.
             </p>
             <p class="mb-4">
-Anya embarked on a treacherous journey, braving snow-capped peaks and treacherous roads.  Finally, she reached the village, a cluster of stone houses nestled amidst a breathtaking landscape.  The old scholar, frail but with eyes that still held a spark, meticulously translated the treaty.  The clause was there, clear and irrefutable.  Armed with this newfound knowledge, Anya returned to the capital, a single sheet of parchment her most potent weapon.
-            </p>
-            <p class="mb-4">
-At the international forum, Anya presented her case.  With irrefutable evidence and a display of consummate diplomatic skill, she exposed the weakness in the opposing nation's claim.  The world watched, captivated by the quiet power of her presentation.  Public opinion shifted, and under mounting pressure, the neighboring country backed down.
+Reaching the corner bakery, her haven for a daily loaf of sourdough, she found a new sign posted. "Due to hygiene regulations," it declared, "cloth bags are no longer permitted." It was an infringement, a small but unwelcome change in a routine that provided her with a sliver of comfort. Defiance flickered in her eyes, a flicker quickly extinguished by the knowledge of her own vulnerability.
             </p>
             <p>
-Anya returned home a hero.  The salient victory, achieved not through bloodshed but through the efficacious use of knowledge and diplomacy, solidified her reputation as a peacemaker.  The once-forgotten treaty became a symbol of her triumph, a testament to the power of reason over brute force.  Anya, forever changed by her perilous journey, vowed to continue using her skills to forge a path towards a more peaceful world. 
+Dejected, she turned to leave, the weight of the forbidden bag suddenly a burden. A young girl, catching sight of her distress, timidly approached. "Here," she offered, a canvas tote bag emblazoned with a cartoon cat, "you can use this." The old woman hesitated, then accepted the bag with a curt nod. A small smile played on the girl's lips, a silent truce between generations in a city that seemed to have forgotten the language of courtesy.  
             </p>
             <div
               @click="setActiveAccordion('')"
