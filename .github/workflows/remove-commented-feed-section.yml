@@ -1,0 +1,28 @@
+name: Remove commented RSS feed section
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run at 07 PDT, 06 PST
+    - cron: '0 14 * * 1,2,4'
+
+jobs:
+  remove-comment-section:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+
+      - name: Modify feed
+        run: |
+          sed -i -e '0,/<!--/{//d;}' -e '0,/-->/{//d;}' ./public/feed.xml 
+
+      - name: Commit changes
+        run: |
+          git config user.name 'GitHub Action'
+          git config user.email 'github-actions[BOT]@users.noreply.github.com'
+          git add ./public/feed.xml
+          git commit -m "Podcast feed commented section removed"
+      - name: Push changes
+        run: |
+          git push origin HEAD:main
