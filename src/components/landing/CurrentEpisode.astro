@@ -1,15 +1,15 @@
 ---
-const word1 = "Deride";
+const word1 = "Desiderium";
 const definition1 =
-  "To ridicule or mock someone or something in a scornful way.";
-const word2 = "Didactic";
+  "An ardent desire or longing, especially for something lost. This captures a deeper yearning than just wanting something.";
+const word2 = "Lendemain";
 const definition2 =
-  "Intended to teach, particularly in a moralizing way.";
-const word3 = "Impingement";
-const definition3 = "The act of intruding on something or someone's rights.";
-const word4 = "Verboten";
+  "The feeling of the day after, often used after a big celebration or emotional event. It describes that hazy, introspective state.";
+const word3 = "Opia";
+const definition3 = "The bittersweet truth that places and experiences are never quite as magical the second time around.";
+const word4 = "Sonder";
 const definition4 =
-  "Forbidden or prohibited.";
+  "The realization that each random passerby is living a life as vivid and complex as your own. This evokes a sense of wonder and connection.";
 ---
 
 <section id="current-episode">
@@ -213,8 +213,8 @@ const definition4 =
             stroke-linecap="round"></path>
           <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
           <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="13" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The old woman shuffled through the bustling market, her worn canvas bag bumping against overflowing stalls. Her weathered face held a permanent scowl, a defense mechanism honed over years of fending off unwanted attention. Shopkeepers who dared to try and engage her with cheery greetings were met with a withering glare, effectively deriding their attempts at friendliness. 
+The morning after the festival, a strange quietude hung over the town square. Amelia sat on a park bench, the remnants of confetti clinging to her hair like colorful memories. It was a Lendemain – the hazy aftermath of a whirlwind of joy. The vibrant music, the shared laughter, all felt muted now, a bittersweet tinge coloring the edges of her recollection.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,13 +239,13 @@ The old woman shuffled through the bustling market, her worn canvas bag bumping 
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-She clutched a small, dog-eared book titled "Etiquette for the Modern Young Lady" – a relic from a bygone era. Its didactic pronouncements on posture and polite conversation felt increasingly irrelevant in the face of the city's relentless change. Yet, it was her only guide, a fragile thread connecting her to a past she felt slipping away.
+A pang of Desiderium struck her – a longing for the infectious energy of the previous night. The shared experience, the carefree camaraderie – it all seemed impossibly distant. Yet, amidst the melancholy, a newfound appreciation bloomed. The transience of the festival, the impermanence of its magic, had sharpened the beauty of the experience. Opia, they called it in some faraway land – the bittersweet truth that some moments could never be replicated.
             </p>
             <p class="mb-4">
-Reaching the corner bakery, her haven for a daily loaf of sourdough, she found a new sign posted. "Due to hygiene regulations," it declared, "cloth bags are no longer permitted." It was an infringement, a small but unwelcome change in a routine that provided her with a sliver of comfort. Defiance flickered in her eyes, a flicker quickly extinguished by the knowledge of her own vulnerability.
+Looking around at the deserted square, Amelia noticed an elderly couple sitting on a nearby bench. Their hands, wrinkled and age-spotted, were intertwined, their gazes fixed on some unseen horizon. A wave of Sonder washed over her – the realization that these seemingly ordinary people, like everyone else around her, had their own intricate stories, their own desires and regrets.
             </p>
             <p>
-Dejected, she turned to leave, the weight of the forbidden bag suddenly a burden. A young girl, catching sight of her distress, timidly approached. "Here," she offered, a canvas tote bag emblazoned with a cartoon cat, "you can use this." The old woman hesitated, then accepted the bag with a curt nod. A small smile played on the girl's lips, a silent truce between generations in a city that seemed to have forgotten the language of courtesy.  
+Suddenly, the quietude of the square didn't feel empty. It pulsed with a hidden energy, a symphony of unspoken lives. Amelia rose, a newfound determination in her step. The festival might be over, but the world was still brimming with stories waiting to be experienced. With a smile, she turned away from the square, ready to write her own chapter. 
             </p>
             <div
               @click="setActiveAccordion('')"
