@@ -1,15 +1,15 @@
 ---
-const word1 = "Desiderium";
+const word1 = "Euphonious";
 const definition1 =
-  "An ardent desire or longing, especially for something lost. This captures a deeper yearning than just wanting something.";
-const word2 = "Lendemain";
+  "Having a pleasant and agreeable sound.";
+const word2 = "Insidious";
 const definition2 =
-  "The feeling of the day after, often used after a big celebration or emotional event. It describes that hazy, introspective state.";
-const word3 = "Opia";
-const definition3 = "The bittersweet truth that places and experiences are never quite as magical the second time around.";
-const word4 = "Sonder";
+  "Developing gradually in a bad or harmful way, especially so as to be difficult to detect or resist.";
+const word3 = "Insouciant";
+const definition3 = "Unconcerned and carefree, especially in a way that might seem inappropriate.";
+const word4 = "Languid";
 const definition4 =
-  "The realization that each random passerby is living a life as vivid and complex as your own. This evokes a sense of wonder and connection.";
+  "Lacking in energy or enthusiasm; listless.";
 ---
 
 <section id="current-episode">
@@ -212,8 +212,8 @@ const definition4 =
             fill="none"
             stroke-linecap="round"></path>
           <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="13" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="17">{word3.toLocaleLowerCase()}</text>
           <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The morning after the festival, a strange quietude hung over the town square. Amelia sat on a park bench, the remnants of confetti clinging to her hair like colorful memories. It was a Lendemain – the hazy aftermath of a whirlwind of joy. The vibrant music, the shared laughter, all felt muted now, a bittersweet tinge coloring the edges of her recollection.
+The midday sun beat down mercilessly, turning the bustling marketplace into a hazy labyrinth of sights and smells. Amara, usually brimming with energy, moved with a languid languor, fanning herself with a wilted palm leaf. The cacophony of haggling vendors and blaring music usually held a certain charm, but today it felt like a relentless assault on her senses.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,13 +239,13 @@ The morning after the festival, a strange quietude hung over the town square. Am
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-A pang of Desiderium struck her – a longing for the infectious energy of the previous night. The shared experience, the carefree camaraderie – it all seemed impossibly distant. Yet, amidst the melancholy, a newfound appreciation bloomed. The transience of the festival, the impermanence of its magic, had sharpened the beauty of the experience. Opia, they called it in some faraway land – the bittersweet truth that some moments could never be replicated.
+An insidious unease had settled in her gut a few days ago, a formless worry that gnawed at the edges of her normally insouciant spirit. It had started subtly, a missed sunrise here, a forgotten task there. Now, even the rhythmic chanting of the street performers seemed to mock her sluggishness.
             </p>
             <p class="mb-4">
-Looking around at the deserted square, Amelia noticed an elderly couple sitting on a nearby bench. Their hands, wrinkled and age-spotted, were intertwined, their gazes fixed on some unseen horizon. A wave of Sonder washed over her – the realization that these seemingly ordinary people, like everyone else around her, had their own intricate stories, their own desires and regrets.
+Seeking refuge from the heat and the disquiet, Amara ducked into a cool, dimly lit teashop. The air hung heavy with the euphonious chime of wind chimes and the comforting aroma of brewing spices. As she sipped the fragrant tea, a sliver of clarity pierced through the haze. This wasn't just the heat – it was fear. Fear of an upcoming competition, fear of failing to meet her own expectations.
             </p>
             <p>
-Suddenly, the quietude of the square didn't feel empty. It pulsed with a hidden energy, a symphony of unspoken lives. Amelia rose, a newfound determination in her step. The festival might be over, but the world was still brimming with stories waiting to be experienced. With a smile, she turned away from the square, ready to write her own chapter. 
+With a newfound resolve, Amara pushed herself upright. The languor began to recede, replaced by a spark of determination. She might not be able to control the scorching sun, but she could control her own actions. With a grateful smile at the shopkeeper, she stepped back into the fray, the cacophony no longer a torment but a vibrant melody accompanying her newfound purpose. The path ahead might be challenging, but she would face it, one determined step at a time. 
             </p>
             <div
               @click="setActiveAccordion('')"
