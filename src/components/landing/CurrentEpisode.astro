@@ -1,15 +1,15 @@
 ---
-const word1 = "Euphonious";
+const word1 = "Effervescent";
 const definition1 =
-  "Having a pleasant and agreeable sound.";
-const word2 = "Insidious";
+  "Lively, animated, and full of enthusiasm. ";
+const word2 = "Numinous";
 const definition2 =
-  "Developing gradually in a bad or harmful way, especially so as to be difficult to detect or resist.";
-const word3 = "Insouciant";
-const definition3 = "Unconcerned and carefree, especially in a way that might seem inappropriate.";
-const word4 = "Languid";
+  "Relating to or affecting the spirit or soul; mysterious or awe-inspiring.";
+const word3 = "Rancor";
+const definition3 = "Deep-seated bitterness and resentment.";
+const word4 = "Sullen";
 const definition4 =
-  "Lacking in energy or enthusiasm; listless.";
+  "Grumpy and bad-tempered, especially in a silent and withdrawn way.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The midday sun beat down mercilessly, turning the bustling marketplace into a hazy labyrinth of sights and smells. Amara, usually brimming with energy, moved with a languid languor, fanning herself with a wilted palm leaf. The cacophony of haggling vendors and blaring music usually held a certain charm, but today it felt like a relentless assault on her senses.
+The once vibrant community garden was choked by weeds, a testament to the rancor that had festered between Amelia and Beatrice, its founders. Years of shared laughter and fruitful harvests had dissolved into a bitter dispute, leaving the plot a battlefield of neglect.  
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,13 +239,16 @@ The midday sun beat down mercilessly, turning the bustling marketplace into a ha
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-An insidious unease had settled in her gut a few days ago, a formless worry that gnawed at the edges of her normally insouciant spirit. It had started subtly, a missed sunrise here, a forgotten task there. Now, even the rhythmic chanting of the street performers seemed to mock her sluggishness.
+Amelia, her normally effervescent spirit dimmed, knelt amidst the overgrown vegetables, a sullen resentment clinging to her like the clinging vines. The memory of their last argument, fueled by accusations and hurt, played on a loop in her mind. 
             </p>
             <p class="mb-4">
-Seeking refuge from the heat and the disquiet, Amara ducked into a cool, dimly lit teashop. The air hung heavy with the euphonious chime of wind chimes and the comforting aroma of brewing spices. As she sipped the fragrant tea, a sliver of clarity pierced through the haze. This wasn't just the heat – it was fear. Fear of an upcoming competition, fear of failing to meet her own expectations.
+Suddenly, a flicker of movement caught her eye. A firefly, a tiny beacon of bioluminescent light, danced amidst the encroaching darkness. It was a fleeting glimpse of the numinous, a reminder of the beauty that still existed, even in this neglected space.
+            </p>
+            <p class="mb-4">
+A choked sob escaped Amelia's lips. Shame washed over her, bitter and acrid. How could she have let their disagreement fester into such a destructive force?  Looking across the plot, she saw Beatrice, her silhouette hunched over a neglected rose bush.  
             </p>
             <p>
-With a newfound resolve, Amara pushed herself upright. The languor began to recede, replaced by a spark of determination. She might not be able to control the scorching sun, but she could control her own actions. With a grateful smile at the shopkeeper, she stepped back into the fray, the cacophony no longer a torment but a vibrant melody accompanying her newfound purpose. The path ahead might be challenging, but she would face it, one determined step at a time. 
+Taking a deep breath, Amelia rose.  The rancor still lingered, a dull ache in her chest, but a fragile hope flickered alongside it.  With a tentative smile, she walked towards Beatrice, the firefly's ephemeral glow a silent guide in the gathering dusk. 
             </p>
             <div
               @click="setActiveAccordion('')"
