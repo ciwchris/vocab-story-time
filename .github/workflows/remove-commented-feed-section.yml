@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # Run at 07 PDT, 06 PST
-    - cron: '0 14 * * 1,2,4'
+    - cron: '0 14 * * 1,2,3,4,5'
 
 jobs:
   remove-comment-section:

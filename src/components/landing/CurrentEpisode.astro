@@ -1,15 +1,15 @@
 ---
-const word1 = "Effervescent";
+const word1 = "Autodidact";
 const definition1 =
-  "Lively, animated, and full of enthusiasm. ";
-const word2 = "Numinous";
+  "A person who is self-taught.";
+const word2 = "Din";
 const definition2 =
-  "Relating to or affecting the spirit or soul; mysterious or awe-inspiring.";
-const word3 = "Rancor";
-const definition3 = "Deep-seated bitterness and resentment.";
-const word4 = "Sullen";
+  "A loud, continuous, and often confusing noise. ";
+const word3 = "Satire";
+const definition3 = "The use of humor, irony, exaggeration, or ridicule to expose and criticize people's vices or foolishness. ";
+const word4 = "Vertiginous";
 const definition4 =
-  "Grumpy and bad-tempered, especially in a silent and withdrawn way.";
+  "Causing dizziness or a feeling of insecurity due to height. ";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="8" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="13" y="12">{word2.toLocaleLowerCase()}</text>
           <text class="word" x="12" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The once vibrant community garden was choked by weeds, a testament to the rancor that had festered between Amelia and Beatrice, its founders. Years of shared laughter and fruitful harvests had dissolved into a bitter dispute, leaving the plot a battlefield of neglect.  
+Rain lashed against the windows, a relentless din that seemed to mock the peace Amelia sought. Inside, her tiny apartment was a haven of books and scattered notes. An autodidact by necessity, Amelia devoured knowledge, her latest obsession being the lost art of clockwork automata.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,16 +239,16 @@ The once vibrant community garden was choked by weeds, a testament to the rancor
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-Amelia, her normally effervescent spirit dimmed, knelt amidst the overgrown vegetables, a sullen resentment clinging to her like the clinging vines. The memory of their last argument, fueled by accusations and hurt, played on a loop in her mind. 
+By day, she navigated the city's steel canyons, a sea of faces oblivious to the world around them. Their mindless pursuit of the next shiny thing fueled Amelia's desire to create something meaningful. At night, she poured over dusty tomes and salvaged gears, her tiny worktable a battlefield of springs and sprockets.
             </p>
             <p class="mb-4">
-Suddenly, a flicker of movement caught her eye. A firefly, a tiny beacon of bioluminescent light, danced amidst the encroaching darkness. It was a fleeting glimpse of the numinous, a reminder of the beauty that still existed, even in this neglected space.
+One rainy evening, inspiration struck. She envisioned a clockwork automaton, a mechanical jester that would poke fun at the city's absurdity. Its gears would turn with the rhythm of the din, its windup key a metaphor for the mindless routines of the city dwellers.
             </p>
             <p class="mb-4">
-A choked sob escaped Amelia's lips. Shame washed over her, bitter and acrid. How could she have let their disagreement fester into such a destructive force?  Looking across the plot, she saw Beatrice, her silhouette hunched over a neglected rose bush.  
+Weeks bled into months, the cacophony of the city a constant companion. Amelia battled self-doubt and the vertiginous feeling of venturing into uncharted territory. Yet, she persisted, fueled by the fire of creation.
             </p>
             <p>
-Taking a deep breath, Amelia rose.  The rancor still lingered, a dull ache in her chest, but a fragile hope flickered alongside it.  With a tentative smile, she walked towards Beatrice, the firefly's ephemeral glow a silent guide in the gathering dusk. 
+Finally, the night arrived. Amelia wound the key, and the automaton whirred to life. Its clockwork limbs gesticulated wildly, a silent satire on the city's frenetic pace. A triumphant smile spread across Amelia's face. The din outside no longer mocked her, it was the applause of a thousand gears, a testament to the power of an autodidact's will. The city, oblivious, continued its dance. But within Amelia's tiny apartment, a revolution had begun, one gear at a time. 
             </p>
             <div
               @click="setActiveAccordion('')"
