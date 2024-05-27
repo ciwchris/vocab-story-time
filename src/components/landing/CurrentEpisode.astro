@@ -1,15 +1,15 @@
 ---
-const word1 = "Autodidact";
+const word1 = "Acrid";
 const definition1 =
-  "A person who is self-taught.";
-const word2 = "Din";
+  "Having a harsh, unpleasant taste or smell. ";
+const word2 = "Anodyne";
 const definition2 =
-  "A loud, continuous, and often confusing noise. ";
-const word3 = "Satire";
-const definition3 = "The use of humor, irony, exaggeration, or ridicule to expose and criticize people's vices or foolishness. ";
-const word4 = "Vertiginous";
+  "So lacking in interest or excitement as to be dull, soothing, or calming. ";
+const word3 = "Insipid";
+const definition3 = "Lacking in flavor, interest, or liveliness. ";
+const word4 = "Morass";
 const definition4 =
-  "Causing dizziness or a feeling of insecurity due to height. ";
+  "A soft wet area of land that is difficult to pass through; a swamp. (Figurative) A difficult, confusing, or unpleasant situation.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="13" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-Rain lashed against the windows, a relentless din that seemed to mock the peace Amelia sought. Inside, her tiny apartment was a haven of books and scattered notes. An autodidact by necessity, Amelia devoured knowledge, her latest obsession being the lost art of clockwork automata.
+The air hung heavy with the acrid tang of disappointment. Detective Ramirez surveyed the crime scene, a cramped apartment swallowed by shadows. The victim, a young artist named Lily, lay sprawled on the threadbare carpet, a single brush clutched in her hand. The silence was deafening, broken only by the rhythmic dripping of a leaky faucet, an insipid counterpoint to the scene's violence.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,16 +239,19 @@ Rain lashed against the windows, a relentless din that seemed to mock the peace 
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-By day, she navigated the city's steel canyons, a sea of faces oblivious to the world around them. Their mindless pursuit of the next shiny thing fueled Amelia's desire to create something meaningful. At night, she poured over dusty tomes and salvaged gears, her tiny worktable a battlefield of springs and sprockets.
+Ramirez hated these cases. The anodyne police reports couldn't capture the desperation he saw etched on Lily's face, the way her dreams seemed to have curdled and died alongside her.  The apartment itself was a morass of crumpled canvases and empty paint tubes, a testament to a talent trapped and ultimately extinguished.
             </p>
             <p class="mb-4">
-One rainy evening, inspiration struck. She envisioned a clockwork automaton, a mechanical jester that would poke fun at the city's absurdity. Its gears would turn with the rhythm of the din, its windup key a metaphor for the mindless routines of the city dwellers.
+He started with the usual routine - dusting for prints, interviewing neighbors who mumbled about a strange man lurking in the hallway. But something felt off. The neighbors' stories were vague, their memories dulled by the monotony of their own lives. Lily's artwork, however, pulsed with a raw energy, a stark contrast to the anodyne reality of her surroundings.
             </p>
             <p class="mb-4">
-Weeks bled into months, the cacophony of the city a constant companion. Amelia battled self-doubt and the vertiginous feeling of venturing into uncharted territory. Yet, she persisted, fueled by the fire of creation.
+Days bled into nights. Ramirez pored over Lily's paintings, searching for clues in the swirling colors and distorted figures. He started to see a story emerge, a commentary on the crushing weight of poverty and the stifling conformity of the city. The final canvas, unfinished, depicted a figure clawing its way out of a dark, swirling morass.
+            </p>
+            <p class="mb-4">
+A breakthrough came from an unexpected source - the leaky faucet. It wasn't broken, it was dripping in a specific rhythm, a code Ramirez recognized from a bygone era, a language of the city's forgotten underbelly. Deciphering the message led him to a hidden club, a haven for struggling artists. There, he found his suspect, a washed-up art critic whose scathing review had been the final blow to Lily's already fragile spirit.
             </p>
             <p>
-Finally, the night arrived. Amelia wound the key, and the automaton whirred to life. Its clockwork limbs gesticulated wildly, a silent satire on the city's frenetic pace. A triumphant smile spread across Amelia's face. The din outside no longer mocked her, it was the applause of a thousand gears, a testament to the power of an autodidact's will. The city, oblivious, continued its dance. But within Amelia's tiny apartment, a revolution had begun, one gear at a time. 
+The case may have been closed, but the acrid taste of injustice lingered. Ramirez walked away from the station, the city lights blurring into an insipid haze. Lily's paintings remained etched in his mind, a stark reminder of the fragile beauty that could be hidden even in the most anodyne corners of the city, and the darkness that lurked beneath the surface of a seemingly ordinary life. 
             </p>
             <div
               @click="setActiveAccordion('')"
