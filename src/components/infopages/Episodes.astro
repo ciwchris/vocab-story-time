@@ -7,6 +7,257 @@
         <p
           class="text-4xl tracking-tight font-medium text-black text-center mb-8"
         >
+          June 2nd word list
+        </p>
+        <div class="bg-accent-50 mb-4">
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Inexorably</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  In a way that cannot be stopped or prevented.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Nascent</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Just coming into existence; beginning to develop.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Odious</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Very unpleasant; disgusting.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Predilection</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  A strong or habitual preference for something.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline"
+          width="20em"
+          height="20em"
+          viewBox="0 0 32 32"
+        >
+          <style>
+            .word {
+              font-size: 3px;
+              fill: #ff7a00;
+              font-family: "Segoe UI", Roboto, Helvetica, sans-serif;
+            }
+          </style>
+          <line
+            x1="1"
+            y1="2"
+            x2="8"
+            y2="2"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="7"
+            x2="8"
+            y2="7"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="12"
+            x2="5"
+            y2="12"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <path
+            d="M 3 15 v 11 h 18 m 8 -8 v -16 h -17"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"></path>
+          <text class="word" x="9" y="7">inexorably</text>
+          <text class="word" x="10" y="12">nascent</text>
+          <text class="word" x="12" y="17">odious</text>
+          <text class="word" x="9" y="22">predilection</text>
+        </svg>
+      </div>
+      <div
+        x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+        class="md:col-span-2 md:w-3/4 mx-auto"
+      >
+        <p
+          class="text-2xl tracking-tight text-center font-medium text-black mb-4"
+        >
+          Story
+        </p>
+        <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
+          <p class="mb-4">
+Rain lashed against the windowpanes, the rhythm a relentless counterpoint to the gnawing hunger in Leo's stomach. Outside, the nascent spring struggled to emerge, its tentative flowers choked by the season's final throes. Hunger was a constant companion these days, an odious reminder of his dwindling supplies.
+          </p>
+
+          <div
+            @click="setActiveAccordion(id)"
+            :class="activeAccordion==id ? 'hidden' : ''"
+            class="cursor-pointer text-opacity-70 underline hover:text-accent-900"
+          >
+            [Continue Reading]
+          </div>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <p class="mb-4">
+Leo had always been a man of the city, his life a whirlwind of neon lights and convenience stores. Now, isolated in a deserted cabin at the foot of a forgotten mountain range, his world had shrunk to the confines of these damp logs and the meager scraps he could forage.
+            </p>
+            <p class="mb-4">
+He wasn't suited for this solitary existence. His predilection for takeout and crowded streets felt like a lifetime ago. Here, every rustle in the undergrowth sent shivers down his spine, every groan of the aging cabin a potential threat.
+            </p>
+            <p class="mb-4">
+But amidst the fear and hunger, a strange resolve bloomed. This harsh environment, once his enemy, was slowly becoming his teacher. He learned to coax reluctant flames from damp firewood, to identify edible plants, to find solace in the quiet companionship of the wilderness.
+            </p>
+            <p>
+The days bled into weeks, the weeks into months. The world outside continued its inexorable march towards spring, and a similar change bloomed within Leo. The city slicker was fading, replaced by a man calloused and capable. The fear remained, a primal edge that kept him alert, but it was laced with a newfound respect for the unforgiving yet strangely beautiful world around him. As the rain finally subsided and a tentative ray of sunlight pierced the clouds, illuminating a carpet of wildflowers pushing through the damp earth, Leo knew he was no longer just surviving. He was beginning to belong. 
+            </p>
+            <div
+              @click="setActiveAccordion('')"
+              :class="activeAccordion==id ? '' : 'hidden'"
+              class="cursor-pointer text-opacity-70 underline hover:text-accent-900 mt-4"
+            >
+              [Hide]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section>
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
+  >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-12">
+      <div>
+        <p
+          class="text-4xl tracking-tight font-medium text-black text-center mb-8"
+        >
           May 26th word list
         </p>
         <div class="bg-accent-50 mb-4">
