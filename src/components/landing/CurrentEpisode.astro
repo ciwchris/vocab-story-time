@@ -1,15 +1,15 @@
 ---
-const word1 = "Impetuously";
+const word1 = "Egret";
 const definition1 =
-  "In a sudden way, without considering the results of your actions.";
-const word2 = "Indignant";
+  "A type of heron, typically with white or buff feathers and long legs. During breeding season, they grow long, delicate plumes.";
+const word2 = "Indelible";
 const definition2 =
-  "Angry because you think something is unfair or unjust.";
-const word3 = "Recidivism";
-const definition3 = "The tendency of a criminal to re-offend after being punished.";
-const word4 = "Sine qua non";
+  "Impossible to erase, remove, or forget. It leaves a lasting impression.";
+const word3 = "Maelstrom";
+const definition3 = "A powerful whirlpool or violent sea current. It can also be used metaphorically for a chaotic or turbulent situation.";
+const word4 = "Subterfuge";
 const definition4 =
-  "An essential or indispensable condition; something that is absolutely necessary.";
+  "Deception by trickery or concealment. It's a way of hiding your true intentions.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="8" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="12">{word2.toLocaleLowerCase()}</text>
           <text class="word" x="9" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="7" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-Sarah tapped her pen impatiently, the silence in the parole hearing room thick. Once a promising architect, her career had crumbled after an impetuous decision to accept a bribe. The guilt gnawed at her, but indignation flared every time she thought about the corrupt system that had tempted her. Now, after two years in prison, she was determined to rebuild her life.
+The salty spray stung Amelia's eyes as she clung to the mast, the storm's fury a maelstrom threatening to swallow their ship whole. Lightning split the sky, momentarily illuminating the white egrets circling overhead, their beauty an unsettling contrast to the chaos below. Just moments ago, the sky had been a tranquil canvas of orange and pink, the egrets graceful dancers on the cusp of the horizon. Now, they were caught in the same desperate struggle, their wings buffeting against the relentless wind.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,22 +239,10 @@ Sarah tapped her pen impatiently, the silence in the parole hearing room thick. 
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-The parole board chairman, a stern woman with a gaze that seemed to pierce souls, reviewed Sarah's file. Statistics on recidivism flickered on a screen behind them, a constant reminder of the uphill battle Sarah faced. She had aced the prison rehabilitation programs, a sine qua non for early release, but the chairman's expression remained unreadable.
-            </p>
-            <p class="mb-4">
-Finally, the chairman spoke. "Ms. Jones, your remorse is evident. However, the nature of your crime..."
-            </p>
-            <p class="mb-4">
-Sarah's heart pounded. She knew the chairman was referencing the potential for her to fall back into old patterns. But she was different now. The past two years had been a crucible, forging a new determination within her.
-            </p>
-            <p class="mb-4">
-"I understand your concern," Sarah said, her voice steady. "But I'm not the same person who made that mistake. Architecture is my passion, and my skills are more vital than ever. I won't let you down."
-            </p>
-            <p class="mb-4">
-The silence stretched again. Then, a slow nod from the chairman. "We're taking a chance on you, Ms. Jones. Don't make us regret it."
+Amelia, a seasoned sailor, had witnessed many storms, but none with such an air of malice. It felt personal, a punishment for a yet-unknown transgression. A memory surfaced, sharp and indelible. Her captain, a man whose weathered face held the secrets of a thousand voyages, his eyes glinting with a perpetual mistrust. He had entrusted her with a secret mission, one shrouded in subterfuge. Now, with the wrath of the sea upon them, Amelia wondered if the captain's paranoia had been a premonition, a premonition she had foolishly dismissed.
             </p>
             <p>
-Relief washed over Sarah. It wouldn't be easy. The stain of her conviction would linger, but she was ready to prove that her talent and newfound resilience were the sine qua non of her redemption. As she stepped out of the parole office, the world seemed brighter, filled with the promise of a second chance. 
+The storm raged for what felt like an eternity. When the skies finally cleared, revealing a bruised but unbroken horizon, the egrets were gone. An unsettling calm had settled over the ocean, a quiet that echoed the hollowness in Amelia's heart. The captain was nowhere to be found. The storm, it seemed, had taken more than just the fair weather. It had taken a secret, leaving behind a mystery as vast and indelible as the ocean itself.  
             </p>
             <div
               @click="setActiveAccordion('')"
