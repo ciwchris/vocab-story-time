@@ -1,15 +1,15 @@
 ---
-const word1 = "Impunity";
+const word1 = "Despot";
 const definition1 =
-  "Freedom from punishment or harm. It implies acting without consequences.";
-const word2 = "Indubitable";
+  "An absolute ruler with complete control; a tyrant.";
+const word2 = "Gadfly";
 const definition2 =
-  "Leaving no room for doubt; certain or unquestionable.";
-const word3 = "Raison d'être";
-const definition3 = "The reason for something's existence; its fundamental purpose.";
-const word4 = "Quotidian";
+  "A person who persistently criticizes something or someone, often in an attempt to bring about reform.";
+const word3 = "Nepotism";
+const definition3 = "The practice of favoring family or friends when giving out jobs, contracts, or other benefits.";
+const word4 = "Parsimonious";
 const definition4 =
-  "Everyday; commonplace; ordinary.";
+  "Frugal to an extreme or fault; stingy.";
 ---
 
 <section id="current-episode">
@@ -212,9 +212,9 @@ const definition4 =
             fill="none"
             stroke-linecap="round"></path>
           <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="8" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="7" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-Detective Inspector Riley slammed his fist on the table, the sound echoing through the interrogation room. Opposite him sat Alistair Thorne, CEO of Thorne Industries, a man whose face was a mask of practiced indifference. Riley had him dead to rights. The evidence, a trail of meticulously documented financial discrepancies, was indubitable. Yet, Thorne exuded an unsettling air of impunity, as if the law was a mere inconvenience, easily brushed aside.
+King Roderick was a despot, ruling the iron-fisted kingdom of Aethel with an unchallenged grip. His advisors, a gaggle of yes-men sycophants chosen through nepotism, did little to temper his increasingly bizarre edicts. One such decree outlawed laughter, deeming it frivolous and unproductive.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,13 +239,13 @@ Detective Inspector Riley slammed his fist on the table, the sound echoing throu
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-Riley wasn't new to this dance. The wealthy and powerful often played by a different set of rules, a galling truth that fueled his relentless pursuit of justice. Thorne, with his designer suit and arrogant smirk, was the embodiment of everything Riley despised. This wasn't just about embezzlement; it was about dismantling the system that allowed such blatant corruption to become a quotidian reality.
+But within the stifling silence, a gadfly emerged. Eleanor, a young bard with a voice like wind chimes, began composing melancholic ballads that poked holes in the king's logic. Her songs, whispered from ear to ear, spoke of the joy stolen from the people and the king's parsimonious grip on happiness.
             </p>
             <p class="mb-4">
-As Riley laid out the charges, a flicker of something crossed Thorne's face, a flicker of fear perhaps, or maybe just a flicker of annoyance at the inconvenience. But it was gone as quickly as it came. Thorne's response was a chilling smile. "You can't touch me, Riley. You know the game is rigged." His words hung heavy in the air, a challenge, a reminder of the seemingly unbreachable wall that separated the powerful from the law.
+Eleanor's defiance spread like wildfire. Soon, the kingdom echoed with mournful humming, a silent rebellion against the joyless edicts. The king, enraged, dispatched his guards to capture the songstress. But Eleanor, a wisp of a girl, was always a step ahead, flitting from town to town, leaving behind a trail of sorrowful melodies that ignited a flicker of hope in the people's hearts.
             </p>
             <p>
-Riley straightened, his jaw set. Thorne might be right about the current game, but Riley wasn't playing by those rules anymore. He would expose Thorne, not just for the financial crimes, but for the insidious rot that allowed such a man to operate with such impunity. He would make Thorne's arrogance his undoing. This wasn't just about putting away a criminal; it was about dismantling the very system that allowed such men to thrive. It was about making the law serve its true raison d'etre – to protect the innocent and punish the guilty, regardless of their wealth or status. The fight for justice, Riley knew, was a long game, but he wouldn't back down. He would take Thorne down, one meticulous step at a time. The game might be rigged, but Riley would rewrite the rules. 
+Faced with a populace singing defiance and his own advisors stammering about the "ghost bard," King Roderick's grip on power began to loosen. He realized that a kingdom devoid of laughter could not be controlled. In a desperate attempt to regain control, he rescinded the laughter ban. The kingdom erupted in joyous cheers, the sound sweeter than any melody. Eleanor, the gadfly, had shown the despot that even the strictest controls could not extinguish the human spirit's yearning for joy.  
             </p>
             <div
               @click="setActiveAccordion('')"
