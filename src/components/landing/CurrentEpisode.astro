@@ -1,15 +1,15 @@
 ---
-const word1 = "Despot";
+const word1 = "Denigrate";
 const definition1 =
-  "An absolute ruler with complete control; a tyrant.";
-const word2 = "Gadfly";
+  "To criticize someone or something in a way that is unkind or unfair; to belittle.";
+const word2 = "Dystopia";
 const definition2 =
-  "A person who persistently criticizes something or someone, often in an attempt to bring about reform.";
-const word3 = "Nepotism";
-const definition3 = "The practice of favoring family or friends when giving out jobs, contracts, or other benefits.";
-const word4 = "Parsimonious";
+  "An imagined place or state in which everything is unpleasant or bad, typically a totalitarian or environmentally degraded one.";
+const word3 = "Logarithm";
+const definition3 = "The logarithm of a number is the exponent to which a specified base must be raised to produce that number.";
+const word4 = "Primordial";
 const definition4 =
-  "Frugal to an extreme or fault; stingy.";
+  "Existing at or from the beginning of time; primitive.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="12">{word2.toLocaleLowerCase()}</text>
           <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="7" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-King Roderick was a despot, ruling the iron-fisted kingdom of Aethel with an unchallenged grip. His advisors, a gaggle of yes-men sycophants chosen through nepotism, did little to temper his increasingly bizarre edicts. One such decree outlawed laughter, deeming it frivolous and unproductive.
+The world was a dystopia, a concrete jungle where the sky was a perpetual gray. People existed in a numbed state, their spirits eroded by the constant drone of the city. Anya was different. Her mind was a vibrant universe, a stark contrast to the drab reality. She found solace in numbers, in the elegant simplicity of logarithms. They were her primordial language, a connection to something pure and untouched by the world's decay.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -238,14 +238,8 @@ King Roderick was a despot, ruling the iron-fisted kingdom of Aethel with an unc
             [Continue Reading]
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
-            <p class="mb-4">
-But within the stifling silence, a gadfly emerged. Eleanor, a young bard with a voice like wind chimes, began composing melancholic ballads that poked holes in the king's logic. Her songs, whispered from ear to ear, spoke of the joy stolen from the people and the king's parsimonious grip on happiness.
-            </p>
-            <p class="mb-4">
-Eleanor's defiance spread like wildfire. Soon, the kingdom echoed with mournful humming, a silent rebellion against the joyless edicts. The king, enraged, dispatched his guards to capture the songstress. But Eleanor, a wisp of a girl, was always a step ahead, flitting from town to town, leaving behind a trail of sorrowful melodies that ignited a flicker of hope in the people's hearts.
-            </p>
             <p>
-Faced with a populace singing defiance and his own advisors stammering about the "ghost bard," King Roderick's grip on power began to loosen. He realized that a kingdom devoid of laughter could not be controlled. In a desperate attempt to regain control, he rescinded the laughter ban. The kingdom erupted in joyous cheers, the sound sweeter than any melody. Eleanor, the gadfly, had shown the despot that even the strictest controls could not extinguish the human spirit's yearning for joy.  
+Her brilliance, however, was a liability. In a society that valued conformity over intellect, Anya was an anomaly. Her peers denigrated her, dismissing her as an impractical dreamer. But she persisted, her mind a fortress against their scorn. In the quiet hours of the night, she would calculate, her fingers flying across the worn keypad. With each equation solved, a small victory was won, a defiance against the oppressive world. 
             </p>
             <div
               @click="setActiveAccordion('')"

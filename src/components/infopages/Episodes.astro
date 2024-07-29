@@ -7,6 +7,257 @@
         <p
           class="text-4xl tracking-tight font-medium text-black text-center mb-8"
         >
+          July 21st word list
+        </p>
+        <div class="bg-accent-50 mb-4">
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Despot</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  An absolute ruler with complete control; a tyrant.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Gadfly</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  A person who persistently criticizes something or someone, often in an attempt to bring about reform.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Nepotism</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  The practice of favoring family or friends when giving out jobs, contracts, or other benefits.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Parsimonious</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Frugal to an extreme or fault; stingy.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline"
+          width="20em"
+          height="20em"
+          viewBox="0 0 32 32"
+        >
+          <style>
+            .word {
+              font-size: 3px;
+              fill: #ff7a00;
+              font-family: "Segoe UI", Roboto, Helvetica, sans-serif;
+            }
+          </style>
+          <line
+            x1="1"
+            y1="2"
+            x2="8"
+            y2="2"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="7"
+            x2="8"
+            y2="7"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="12"
+            x2="5"
+            y2="12"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <path
+            d="M 3 15 v 11 h 18 m 8 -8 v -16 h -17"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"></path>
+          <text class="word" x="11" y="7">despot</text>
+          <text class="word" x="12" y="12">gadfly</text>
+          <text class="word" x="10" y="17">nepotism</text>
+          <text class="word" x="7" y="22">parsimonious</text>
+        </svg>
+      </div>
+      <div
+        x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+        class="md:col-span-2 md:w-3/4 mx-auto"
+      >
+        <p
+          class="text-2xl tracking-tight text-center font-medium text-black mb-4"
+        >
+          Story
+        </p>
+        <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
+          <p class="mb-4">
+King Roderick was a despot, ruling the iron-fisted kingdom of Aethel with an unchallenged grip. His advisors, a gaggle of yes-men sycophants chosen through nepotism, did little to temper his increasingly bizarre edicts. One such decree outlawed laughter, deeming it frivolous and unproductive.
+          </p>
+
+          <div
+            @click="setActiveAccordion(id)"
+            :class="activeAccordion==id ? 'hidden' : ''"
+            class="cursor-pointer text-opacity-70 underline hover:text-accent-900"
+          >
+            [Continue Reading]
+          </div>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <p class="mb-4">
+But within the stifling silence, a gadfly emerged. Eleanor, a young bard with a voice like wind chimes, began composing melancholic ballads that poked holes in the king's logic. Her songs, whispered from ear to ear, spoke of the joy stolen from the people and the king's parsimonious grip on happiness.
+            </p>
+            <p class="mb-4">
+Eleanor's defiance spread like wildfire. Soon, the kingdom echoed with mournful humming, a silent rebellion against the joyless edicts. The king, enraged, dispatched his guards to capture the songstress. But Eleanor, a wisp of a girl, was always a step ahead, flitting from town to town, leaving behind a trail of sorrowful melodies that ignited a flicker of hope in the people's hearts.
+            </p>
+            <p>
+Faced with a populace singing defiance and his own advisors stammering about the "ghost bard," King Roderick's grip on power began to loosen. He realized that a kingdom devoid of laughter could not be controlled. In a desperate attempt to regain control, he rescinded the laughter ban. The kingdom erupted in joyous cheers, the sound sweeter than any melody. Eleanor, the gadfly, had shown the despot that even the strictest controls could not extinguish the human spirit's yearning for joy.  
+            </p>
+            <div
+              @click="setActiveAccordion('')"
+              :class="activeAccordion==id ? '' : 'hidden'"
+              class="cursor-pointer text-opacity-70 underline hover:text-accent-900 mt-4"
+            >
+              [Hide]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
+  >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-12">
+      <div>
+        <p
+          class="text-4xl tracking-tight font-medium text-black text-center mb-8"
+        >
           July 14th word list
         </p>
         <div class="bg-accent-50 mb-4">
