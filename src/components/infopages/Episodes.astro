@@ -7,6 +7,497 @@
         <p
           class="text-4xl tracking-tight font-medium text-black text-center mb-8"
         >
+          Aug 4th word list
+        </p>
+        <div class="bg-accent-50 mb-4">
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Denude</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  To strip bare, uncover, or deprive of covering.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Irascible</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  An imagined place or state in which everything is unpleasant or bad, typically a totalitarian or environmentally degraded one.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Pathology</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  The study of the nature and cause of disease, including the structural and functional changes produced by disease.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Soliloquy</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  A speech given by a character alone on stage, expressing their inner thoughts and feelings.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline"
+          width="20em"
+          height="20em"
+          viewBox="0 0 32 32"
+        >
+          <style>
+            .word {
+              font-size: 3px;
+              fill: #ff7a00;
+              font-family: "Segoe UI", Roboto, Helvetica, sans-serif;
+            }
+          </style>
+          <line
+            x1="1"
+            y1="2"
+            x2="8"
+            y2="2"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="7"
+            x2="8"
+            y2="7"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="12"
+            x2="5"
+            y2="12"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <path
+            d="M 3 15 v 11 h 18 m 8 -8 v -16 h -17"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"></path>
+          <text class="word" x="11" y="7">denude</text>
+          <text class="word" x="11" y="12">irascible</text>
+          <text class="word" x="10" y="17">pathology</text>
+          <text class="word" x="11" y="22">soliloquy</text>
+        </svg>
+      </div>
+      <div
+        x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+        class="md:col-span-2 md:w-3/4 mx-auto"
+      >
+        <p
+          class="text-2xl tracking-tight text-center font-medium text-black mb-4"
+        >
+          Story
+        </p>
+        <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
+          <p class="mb-4">
+The old man was a ghost in his own home. His once vibrant life, rich with the colors of discovery and the intricacies of pathology, had withered like the garden he neglected. Now, the house was a mausoleum of memories, each room a sterile chamber echoing the quietude of a morgue.
+          </p>
+
+          <div
+            @click="setActiveAccordion(id)"
+            :class="activeAccordion==id ? 'hidden' : ''"
+            class="cursor-pointer text-opacity-70 underline hover:text-accent-900"
+          >
+            [Continue Reading]
+          </div>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <p class="mb-4">
+He was irascible, his temper a storm that could be summoned with the slightest provocation. The children had long ago ceased to visit, their laughter replaced by the eerie silence that clung to the house like a shroud. The garden, once a masterpiece of horticultural artistry, was now a denuded expanse of brown earth. It was a mirror to his soul, barren and devoid of life.
+            </p>
+            <p class="mb-4">
+Hours were spent staring at the desolate patch. In those moments, he engaged in a silent soliloquy, a conversation with the ghosts of his past. He saw the garden in its prime, a riot of colors and fragrances. He felt the satisfaction of a groundbreaking discovery, the exhilaration of unraveling life’s mysteries. And then, as inevitably as the seasons changed, he saw the decline, the withering, the decay.
+            </p>
+            <p>
+He was a pathologist, a student of death. Irony, he mused, was a cruel mistress. For years, he had examined the remnants of life, searching for clues to its demise. Yet, he had been blind to the slow decay of his own world. Now, as he stood amidst the ruins of his life, he wondered if even he, with all his knowledge, could find a cure for this terminal emptiness. 
+            </p>
+            <div
+              @click="setActiveAccordion('')"
+              :class="activeAccordion==id ? '' : 'hidden'"
+              class="cursor-pointer text-opacity-70 underline hover:text-accent-900 mt-4"
+            >
+              [Hide]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><section>
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
+  >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-12">
+      <div>
+        <p
+          class="text-4xl tracking-tight font-medium text-black text-center mb-8"
+        >
+          July 28th word list
+        </p>
+        <div class="bg-accent-50 mb-4">
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Denigrate</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  To criticize someone or something in a way that is unkind or unfair; to belittle.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Dystopia</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  An imagined place or state in which everything is unpleasant or bad, typically a totalitarian or environmentally degraded one.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Logarithm</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  The logarithm of a number is the exponent to which a specified base must be raised to produce that number.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Primordial</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Existing at or from the beginning of time; primitive.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline"
+          width="20em"
+          height="20em"
+          viewBox="0 0 32 32"
+        >
+          <style>
+            .word {
+              font-size: 3px;
+              fill: #ff7a00;
+              font-family: "Segoe UI", Roboto, Helvetica, sans-serif;
+            }
+          </style>
+          <line
+            x1="1"
+            y1="2"
+            x2="8"
+            y2="2"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="7"
+            x2="8"
+            y2="7"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="12"
+            x2="5"
+            y2="12"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <path
+            d="M 3 15 v 11 h 18 m 8 -8 v -16 h -17"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"></path>
+          <text class="word" x="10" y="7">denigrate</text>
+          <text class="word" x="11" y="12">dystopia</text>
+          <text class="word" x="10" y="17">logarithm</text>
+          <text class="word" x="10" y="22">primordia</text>
+        </svg>
+      </div>
+      <div
+        x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+        class="md:col-span-2 md:w-3/4 mx-auto"
+      >
+        <p
+          class="text-2xl tracking-tight text-center font-medium text-black mb-4"
+        >
+          Story
+        </p>
+        <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
+          <p class="mb-4">
+The world was a dystopia, a concrete jungle where the sky was a perpetual gray. People existed in a numbed state, their spirits eroded by the constant drone of the city. Anya was different. Her mind was a vibrant universe, a stark contrast to the drab reality. She found solace in numbers, in the elegant simplicity of logarithms. They were her primordial language, a connection to something pure and untouched by the world's decay.
+          </p>
+
+          <div
+            @click="setActiveAccordion(id)"
+            :class="activeAccordion==id ? 'hidden' : ''"
+            class="cursor-pointer text-opacity-70 underline hover:text-accent-900"
+          >
+            [Continue Reading]
+          </div>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <p>
+Her brilliance, however, was a liability. In a society that valued conformity over intellect, Anya was an anomaly. Her peers denigrated her, dismissing her as an impractical dreamer. But she persisted, her mind a fortress against their scorn. In the quiet hours of the night, she would calculate, her fingers flying across the worn keypad. With each equation solved, a small victory was won, a defiance against the oppressive world. 
+            </p>
+            <div
+              @click="setActiveAccordion('')"
+              :class="activeAccordion==id ? '' : 'hidden'"
+              class="cursor-pointer text-opacity-70 underline hover:text-accent-900 mt-4"
+            >
+              [Hide]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
+  >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-12">
+      <div>
+        <p
+          class="text-4xl tracking-tight font-medium text-black text-center mb-8"
+        >
           July 21st word list
         </p>
         <div class="bg-accent-50 mb-4">

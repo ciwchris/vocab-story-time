@@ -1,15 +1,15 @@
 ---
-const word1 = "Denigrate";
+const word1 = "Ignoble";
 const definition1 =
-  "To criticize someone or something in a way that is unkind or unfair; to belittle.";
-const word2 = "Dystopia";
+  "Mean, base, or dishonorable.";
+const word2 = "Missive";
 const definition2 =
-  "An imagined place or state in which everything is unpleasant or bad, typically a totalitarian or environmentally degraded one.";
-const word3 = "Logarithm";
-const definition3 = "The logarithm of a number is the exponent to which a specified base must be raised to produce that number.";
-const word4 = "Primordial";
+  "A long letter, especially an official one.";
+const word3 = "Patronize";
+const definition3 = "To treat someone in a condescending manner, as if they were inferior.";
+const word4 = "Polemic";
 const definition4 =
-  "Existing at or from the beginning of time; primitive.";
+  "A strong verbal or written attack on someone or something.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="10" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
           <text class="word" x="11" y="12">{word2.toLocaleLowerCase()}</text>
           <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The world was a dystopia, a concrete jungle where the sky was a perpetual gray. People existed in a numbed state, their spirits eroded by the constant drone of the city. Anya was different. Her mind was a vibrant universe, a stark contrast to the drab reality. She found solace in numbers, in the elegant simplicity of logarithms. They were her primordial language, a connection to something pure and untouched by the world's decay.
+Professor Evermore, a relic of a bygone era, regarded his students with a patronizing disdain. His lectures were less instruction and more polemic, a tirade against the vulgarity of contemporary culture. To him, the youthful minds before him were mere vessels, ill-equipped to contain the depth and complexity of the intellectual world he inhabited. 
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -238,8 +238,11 @@ The world was a dystopia, a concrete jungle where the sky was a perpetual gray. 
             [Continue Reading]
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
+            <p class="mb-4">
+Among his flock was a particularly ignoble student, young Jasper, whose confidence was as vast as his knowledge was shallow. A product of the digital age, Jasper believed information was acquired through the mere click of a button. Evermore's archaic methods were an affront to his sensibilities. Driven by an ego as inflated as his ignorance, Jasper penned a missive, a desperate attempt to challenge the professor's authority. The note, filled with the pompous jargon of internet culture, was a stark contrast to the professor's elegant prose.
+            </p>
             <p>
-Her brilliance, however, was a liability. In a society that valued conformity over intellect, Anya was an anomaly. Her peers denigrated her, dismissing her as an impractical dreamer. But she persisted, her mind a fortress against their scorn. In the quiet hours of the night, she would calculate, her fingers flying across the worn keypad. With each equation solved, a small victory was won, a defiance against the oppressive world. 
+Evermore, with a wry smile, accepted the missive. Scanning the page, his eyes glinted with amusement. This was a lamb challenging a lion, a tempest in a teapot. With a flourish, he tossed the paper aside, its content as meaningless to him as the scribbles of a child. As he resumed his lecture, his voice carried a subtle undercurrent of contempt, a silent rebuke to the insolence of youth. 
             </p>
             <div
               @click="setActiveAccordion('')"
