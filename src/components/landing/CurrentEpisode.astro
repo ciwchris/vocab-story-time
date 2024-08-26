@@ -1,15 +1,15 @@
 ---
-const word1 = "Ignoble";
+const word1 = "Comptroller";
 const definition1 =
-  "Mean, base, or dishonorable.";
-const word2 = "Missive";
+  "A person responsible for financial control and auditing.";
+const word2 = "Coquette";
 const definition2 =
-  "A long letter, especially an official one.";
-const word3 = "Patronize";
-const definition3 = "To treat someone in a condescending manner, as if they were inferior.";
-const word4 = "Polemic";
+  "A woman who flirts or behaves in a way to attract attention from men.";
+const word3 = "Interminable";
+const definition3 = "Lasting for a very long time; seemingly endless.";
+const word4 = "Inveigle";
 const definition4 =
-  "A strong verbal or written attack on someone or something.";
+  "To persuade someone to do something by flattery or deception.";
 ---
 
 <section id="current-episode">
@@ -211,9 +211,9 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="17">{word3.toLocaleLowerCase()}</text>
           <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-Professor Evermore, a relic of a bygone era, regarded his students with a patronizing disdain. His lectures were less instruction and more polemic, a tirade against the vulgarity of contemporary culture. To him, the youthful minds before him were mere vessels, ill-equipped to contain the depth and complexity of the intellectual world he inhabited. 
+The comptroller, a man of meticulous precision, found himself in an unusual predicament. His normally quiet office had been invaded by a coquette named Anya. She had managed to inveigle her way into his world by feigning admiration for his financial expertise. Her endless chatter, as interminable as the rows of ledgers on his desk, was a distraction he couldn't ignore. 
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,10 +239,13 @@ Professor Evermore, a relic of a bygone era, regarded his students with a patron
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-Among his flock was a particularly ignoble student, young Jasper, whose confidence was as vast as his knowledge was shallow. A product of the digital age, Jasper believed information was acquired through the mere click of a button. Evermore's archaic methods were an affront to his sensibilities. Driven by an ego as inflated as his ignorance, Jasper penned a missive, a desperate attempt to challenge the professor's authority. The note, filled with the pompous jargon of internet culture, was a stark contrast to the professor's elegant prose.
+Anya had a knack for making even the most mundane tasks seem exciting. She'd compare balancing a ledger to navigating a treacherous labyrinth, and reconciling accounts to solving a complex mystery. The comptroller, initially annoyed, found himself drawn into her imaginative world. Soon, he was laughing at her silly jokes and listening to her endless stories. 
+            </p>
+            <p class="mb-4">
+One day, as Anya was particularly animated, she stumbled upon a secret compartment in the comptroller's desk. Inside was a hidden stash of gold coins, a relic from a bygone era. Instead of alerting the authorities, Anya decided to keep the secret to herself. She used her coquettish charm to convince the comptroller that they should use the gold to start their own business. 
             </p>
             <p>
-Evermore, with a wry smile, accepted the missive. Scanning the page, his eyes glinted with amusement. This was a lamb challenging a lion, a tempest in a teapot. With a flourish, he tossed the paper aside, its content as meaningless to him as the scribbles of a child. As he resumed his lecture, his voice carried a subtle undercurrent of contempt, a silent rebuke to the insolence of youth. 
+Together, they embarked on a new adventure, leaving behind the world of ledgers and spreadsheets. The comptroller, once a man of numbers, found himself captivated by the thrill of entrepreneurship. And Anya, the coquette, discovered a hidden talent for business. Their journey, though filled with its own challenges, was far more exciting than anything the comptroller had ever imagined.
             </p>
             <div
               @click="setActiveAccordion('')"

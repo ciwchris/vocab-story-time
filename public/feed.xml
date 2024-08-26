@@ -3,7 +3,7 @@
 <channel>
   <title>Vocab Story Time</title>
   <link>https://vocabstorytime.com</link>
-  <description>Your Podcast Description</description>
+  <description>Expand your vocabulary with engaging weekly podcasts </description>
   <language>en-us</language>
   <copyright>© 2024 Christopher Lopes</copyright>
   <image>
@@ -1105,5 +1105,64 @@ A young, idealistic reporter, determined to prove herself, dared to challenge th
 With a sneer, he dismissed the young reporter's ideas. To him, her words were the ignoble ramblings of a generation obsessed with likes and shares. He crumpled the missive, tossing it into the wastebasket with a contemptuous flick of his wrist. The battle lines were drawn. The old guard versus the new. But in the ever-evolving world of media, the future belonged to those who dared to challenge the status quo. 
     </description>
   </item>
+
+
+<!--
+  <item>
+    <title>Definitions - Comptroller, Coquette, Interminable and Inveigle</title>
+    <pubDate>Mon, 26 Aug 2024</pubDate>
+    <link>https://vocabstorytime.com/#current-episode</link>
+    <enclosure url="https://vocabstorytime.z5.web.core.windows.net/Comptroller, Coquette, Interminable and Inveigle - Definitions.mp3" type="audio/mpeg" length="1358880" />
+    <description>
+Comptroller: A person responsible for financial control and auditing.
+Example: The company's comptroller ensured that all expenses were properly documented and accounted for.
+
+Coquette: A woman who flirts or behaves in a way to attract attention from men.
+Example: Her coquettish behavior made it clear that she was interested in him.
+
+Interminable: Lasting for a very long time; seemingly endless.
+Example: The lecture felt interminable, and many students were struggling to stay awake.
+
+Inveigle: To persuade someone to do something by flattery or deception.
+Example: The salesperson used flattery to inveigle the customer into buying a more expensive model.
+    </description>
+  </item>
+-->
+<!--
+  <item>
+    <title>First Story - Comptroller, Coquette, Interminable and Inveigle</title>
+    <pubDate>Tues, 27 Aug 2024</pubDate>
+    <link>https://vocabstorytime.com/#current-episode</link>
+    <enclosure url="https://vocabstorytime.z5.web.core.windows.net/Comptroller, Coquette, Interminable and Inveigle - First Story.mp3" type="audio/mpeg" length="1909440" />
+    <description>
+The comptroller, a man of meticulous precision, found himself in an unusual predicament. His normally quiet office had been invaded by a coquette named Anya. She had managed to inveigle her way into his world by feigning admiration for his financial expertise. Her endless chatter, as interminable as the rows of ledgers on his desk, was a distraction he couldn't ignore. 
+
+Anya had a knack for making even the most mundane tasks seem exciting. She'd compare balancing a ledger to navigating a treacherous labyrinth, and reconciling accounts to solving a complex mystery. The comptroller, initially annoyed, found himself drawn into her imaginative world. Soon, he was laughing at her silly jokes and listening to her endless stories. 
+
+One day, as Anya was particularly animated, she stumbled upon a secret compartment in the comptroller's desk. Inside was a hidden stash of gold coins, a relic from a bygone era. Instead of alerting the authorities, Anya decided to keep the secret to herself. She used her coquettish charm to convince the comptroller that they should use the gold to start their own business. 
+
+Together, they embarked on a new adventure, leaving behind the world of ledgers and spreadsheets. The comptroller, once a man of numbers, found himself captivated by the thrill of entrepreneurship. And Anya, the coquette, discovered a hidden talent for business. Their journey, though filled with its own challenges, was far more exciting than anything the comptroller had ever imagined.
+    </description>
+  </item>
+-->
+<!--
+  <item>
+  <title>Second Story - Comptroller, Coquette, Interminable and Inveigle</title>
+    <pubDate>Thurs, 15 Aug 2024</pubDate>
+    <link>https://vocabstorytime.com/#current-episode</link>
+    <enclosure url="https://vocabstorytime.z5.web.core.windows.net/Comptroller, Coquette, Interminable and Inveigle - Second Story.mp3" type="audio/mpeg" length="2332320" />
+    <description>
+The comptroller, a man of routine and precision, found his world turned upside down when a coquette named Anya arrived at the office. Her endless chatter and flirtatious demeanor were a stark contrast to the quiet, methodical atmosphere he was accustomed to. Yet, there was something about her infectious energy that drew him in.
+
+Anya had a talent for making even the most mundane tasks seem exciting. She'd describe balancing a ledger as a high-stakes game of chess, and reconciling accounts as solving a complex puzzle. The comptroller, initially skeptical, found himself drawn into her imaginative world. Soon, he was laughing at her silly jokes and listening to her endless stories.
+
+One day, Anya suggested that they take a break from work and go on a picnic. The comptroller, hesitant at first, agreed. As they sat on a blanket in the park, Anya began to talk about her dreams of starting her own business. She was passionate about fashion and wanted to design her own clothing line. The comptroller, impressed by her enthusiasm, offered to help her with the financial aspects of her venture.
+
+Over the next few months, the comptroller and Anya worked tirelessly to bring Anya's dream to life. They spent countless hours poring over financial statements, developing business plans, and securing funding. The comptroller, who had always been so focused on numbers, found himself inspired by Anya's creativity and passion.
+
+Finally, the day arrived when Anya's first fashion show was held. The comptroller was there to support her, his heart filled with pride. As the models walked down the runway, showcasing Anya's designs, he realized that his life had been forever changed. The coquette had not only brightened his days with her endless chatter, but she had also inspired him to step outside of his comfort zone and take a risk on something new.
+    </description>
+  </item>
+-->
 </channel>
 </rss>
