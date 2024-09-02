@@ -1,15 +1,15 @@
 ---
-const word1 = "Comptroller";
+const word1 = "Consummate";
 const definition1 =
-  "A person responsible for financial control and auditing.";
-const word2 = "Coquette";
+  "To bring to completion or perfection.";
+const word2 = "Dour";
 const definition2 =
-  "A woman who flirts or behaves in a way to attract attention from men.";
-const word3 = "Interminable";
-const definition3 = "Lasting for a very long time; seemingly endless.";
-const word4 = "Inveigle";
+  "Stern, gloomy, or sullen.";
+const word3 = "Suffuse";
+const definition3 = "To spread throughout or over.";
+const word4 = "Tacit";
 const definition4 =
-  "To persuade someone to do something by flattery or deception.";
+  "Implied or understood without being openly stated.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="8" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="13" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="14" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The comptroller, a man of meticulous precision, found himself in an unusual predicament. His normally quiet office had been invaded by a coquette named Anya. She had managed to inveigle her way into his world by feigning admiration for his financial expertise. Her endless chatter, as interminable as the rows of ledgers on his desk, was a distraction he couldn't ignore. 
+The old man sat alone in the dimly lit room, his face suffused with a dour expression. The air was heavy with the tacit understanding that he was nearing the end of his long journey. He had consummated his life, a tapestry woven with threads of joy, sorrow, and sacrifice. Yet, a sense of loneliness lingered, a quiet companion in the twilight of his existence.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,13 +239,10 @@ The comptroller, a man of meticulous precision, found himself in an unusual pred
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-Anya had a knack for making even the most mundane tasks seem exciting. She'd compare balancing a ledger to navigating a treacherous labyrinth, and reconciling accounts to solving a complex mystery. The comptroller, initially annoyed, found himself drawn into her imaginative world. Soon, he was laughing at her silly jokes and listening to her endless stories. 
-            </p>
-            <p class="mb-4">
-One day, as Anya was particularly animated, she stumbled upon a secret compartment in the comptroller's desk. Inside was a hidden stash of gold coins, a relic from a bygone era. Instead of alerting the authorities, Anya decided to keep the secret to herself. She used her coquettish charm to convince the comptroller that they should use the gold to start their own business. 
+He recalled the vibrant days of his youth, filled with laughter and dreams. But time, like an inexorable tide, had eroded the youthful exuberance, leaving behind a weathered shell. He had watched his loved ones depart, one by one, leaving him adrift in a sea of solitude. The world, once so full of promise, now seemed barren and devoid of meaning.
             </p>
             <p>
-Together, they embarked on a new adventure, leaving behind the world of ledgers and spreadsheets. The comptroller, once a man of numbers, found himself captivated by the thrill of entrepreneurship. And Anya, the coquette, discovered a hidden talent for business. Their journey, though filled with its own challenges, was far more exciting than anything the comptroller had ever imagined.
+As the day wore on, a strange peace settled over him. It was not the kind of peace that comes from contentment, but rather a resignation to the inevitable. He had lived a long life, filled with both triumphs and tragedies. He had loved and been loved, had experienced the heights of joy and the depths of despair. And now, as the final curtain fell, he was ready to face whatever lay beyond.
             </p>
             <div
               @click="setActiveAccordion('')"
