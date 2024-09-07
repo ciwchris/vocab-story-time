@@ -1,15 +1,15 @@
 ---
-const word1 = "Consummate";
+const word1 = "Avers";
 const definition1 =
-  "To bring to completion or perfection.";
-const word2 = "Dour";
+  "To assert or affirm confidently.";
+const word2 = "Saccharine";
 const definition2 =
-  "Stern, gloomy, or sullen.";
-const word3 = "Suffuse";
-const definition3 = "To spread throughout or over.";
-const word4 = "Tacit";
+  "Excessively sweet or sentimental.";
+const word3 = "Schadenfreude";
+const definition3 = "Pleasure derived from the misfortunes of others.";
+const word4 = "Strident";
 const definition4 =
-  "Implied or understood without being openly stated.";
+  "Harsh or grating in sound.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="8" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="13" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="14" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="7" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The old man sat alone in the dimly lit room, his face suffused with a dour expression. The air was heavy with the tacit understanding that he was nearing the end of his long journey. He had consummated his life, a tapestry woven with threads of joy, sorrow, and sacrifice. Yet, a sense of loneliness lingered, a quiet companion in the twilight of his existence.
+The young woman watched the city lights from her apartment window, a bittersweet smile playing on her lips. She had come to this bustling metropolis with dreams of fame and fortune, but reality had turned out to be far more complicated. 
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,10 +239,10 @@ The old man sat alone in the dimly lit room, his face suffused with a dour expre
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-He recalled the vibrant days of his youth, filled with laughter and dreams. But time, like an inexorable tide, had eroded the youthful exuberance, leaving behind a weathered shell. He had watched his loved ones depart, one by one, leaving him adrift in a sea of solitude. The world, once so full of promise, now seemed barren and devoid of meaning.
+She remembered the saccharine promises of the city, the strident voices of the aspiring artists, and the schadenfreude she felt when a rival's show was canceled. But through it all, she had found a community of like-minded individuals who had become her family. 
             </p>
             <p>
-As the day wore on, a strange peace settled over him. It was not the kind of peace that comes from contentment, but rather a resignation to the inevitable. He had lived a long life, filled with both triumphs and tragedies. He had loved and been loved, had experienced the heights of joy and the depths of despair. And now, as the final curtain fell, he was ready to face whatever lay beyond.
+As she closed her eyes, she felt a sense of gratitude for the journey she had taken. She had faced challenges and setbacks, but she had also experienced moments of pure joy and fulfillment. And as she looked forward to the future, she knew that she was ready for whatever it might bring.
             </p>
             <div
               @click="setActiveAccordion('')"
