@@ -1,15 +1,15 @@
 ---
-const word1 = "Conciliation";
+const word1 = "Acrimonious";
 const definition1 =
-  "The act of bringing people or groups into agreement or harmony, especially by compromise.";
-const word2 = "Halcyon";
+  "Bitter, harsh, or angry.";
+const word2 = "Belie";
 const definition2 =
-  "Calm, peaceful, and prosperous; idyllic.";
-const word3 = "Foil";
-const definition3 = "A person or thing that contrasts with and emphasizes the qualities of another.";
-const word4 = "Ostensible";
+  "To give a false impression or contradict.";
+const word3 = "Effaced";
+const definition3 = "To rub out or erase.";
+const word4 = "Enervate";
 const definition4 =
-  "Apparent or stated to be true, but not necessarily so; seeming.";
+  "To weaken or deprive of strength or vigor.";
 ---
 
 <section id="current-episode">
@@ -211,9 +211,9 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="14" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="17">{word3.toLocaleLowerCase()}</text>
           <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The small town of Willow Creek had always been a halcyon place. Its residents lived in harmony, their lives a peaceful rhythm of work and play. But this tranquility was shattered when a bitter dispute arose between the old-timers and the newcomers over the town's future.
+The sun beat down mercilessly on the dusty, windswept road. The old man, his face etched with lines of age and hardship, trudged along, his body enervated by the heat. His mind was a whirlwind of acrimonious memories, each one a thorn in his side.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,16 +239,10 @@ The small town of Willow Creek had always been a halcyon place. Its residents li
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-The old-timers, clinging to the town's traditions, wanted to preserve its quaint, small-town charm. The newcomers, on the other hand, envisioned Willow Creek as a thriving tourist destination, with modern amenities and bustling businesses. The tension between the two groups grew palpable, threatening to tear the community apart.
-            </p>
-            <p class="mb-4">
-In an attempt to conciliate the opposing sides, the town's mayor, a wise and respected man, called a meeting. He explained the importance of unity and urged both groups to find common ground. The newcomers, their ostensible goal being the betterment of the town, agreed to compromise. They proposed a plan that would allow for development while preserving Willow Creek's historic character.
-            </p>
-            <p class="mb-4">
-The old-timers, initially skeptical, were impressed by the newcomers' willingness to negotiate. They saw that their concerns were being addressed, and they realized that the town's future could be a balance of tradition and progress. With a newfound sense of cooperation, the two groups worked together to implement the plan.
+He remembered a time when his life had been filled with joy and laughter. A time when he had a loving wife and playful children. But all that had been effaced by the cruel hand of fate. His wife had fallen ill and died, leaving him alone to raise his children. The burden had been too much, and his children had drifted away, their hearts hardened by the pain and resentment that had belied their once innocent souls.
             </p>
             <p>
-Willow Creek soon became a model of harmony, a place where the old and the new coexisted peacefully. The town's reputation as a halcyon retreat spread far and wide, attracting visitors from all over the world. The dispute that had once threatened to divide the community had ultimately served as a catalyst for unity, proving that even in the face of adversity, conciliation could triumph.
+Now, as he walked, he felt a deep sense of loneliness and despair. The world seemed a cold and indifferent place, and he wondered if there was any point in continuing. But a flicker of hope ignited within him. Perhaps, he thought, it was not too late to find peace. Maybe, if he could forgive those who had hurt him, he could finally heal.
             </p>
             <div
               @click="setActiveAccordion('')"
