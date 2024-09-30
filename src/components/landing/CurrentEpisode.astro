@@ -1,15 +1,15 @@
 ---
-const word1 = "Acrimonious";
+const word1 = "Ardent";
 const definition1 =
-  "Bitter, harsh, or angry.";
-const word2 = "Belie";
+  "Having or showing great intensity of feeling; passionate.";
+const word2 = "Dais";
 const definition2 =
-  "To give a false impression or contradict.";
-const word3 = "Effaced";
-const definition3 = "To rub out or erase.";
-const word4 = "Enervate";
+  "A platform or raised area, especially one used for public speaking.";
+const word3 = "Endogenous";
+const definition3 = "Produced, generated, or growing within an organism.";
+const word4 = "Largesse";
 const definition4 =
-  "To weaken or deprive of strength or vigor.";
+  "Generous giving; gifts or donations.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="8" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="13" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The sun beat down mercilessly on the dusty, windswept road. The old man, his face etched with lines of age and hardship, trudged along, his body enervated by the heat. His mind was a whirlwind of acrimonious memories, each one a thorn in his side.
+The young scientist, with an ardent passion for botany, stood on the dais, her heart pounding with excitement. She had spent countless hours in the greenhouse, nurturing the delicate plant she had discovered in the Amazon rainforest. It was a rare species, unlike any other known to science. 
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,10 +239,13 @@ The sun beat down mercilessly on the dusty, windswept road. The old man, his fac
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-He remembered a time when his life had been filled with joy and laughter. A time when he had a loving wife and playful children. But all that had been effaced by the cruel hand of fate. His wife had fallen ill and died, leaving him alone to raise his children. The burden had been too much, and his children had drifted away, their hearts hardened by the pain and resentment that had belied their once innocent souls.
+With a trembling hand, she presented her findings to the esteemed panel of experts. She explained how the plant's endogenous properties, a unique combination of chemicals, had the potential to revolutionize medicine. The audience was captivated, their faces reflecting a mixture of awe and disbelief. 
+            </p>
+            <p class="mb-4">
+When she finished, the room erupted in applause. The panel of experts praised her groundbreaking research, acknowledging the significance of her discovery. The head of the foundation, a renowned philanthropist known for his largesse, announced that they would fully fund her continued studies. 
             </p>
             <p>
-Now, as he walked, he felt a deep sense of loneliness and despair. The world seemed a cold and indifferent place, and he wondered if there was any point in continuing. But a flicker of hope ignited within him. Perhaps, he thought, it was not too late to find peace. Maybe, if he could forgive those who had hurt him, he could finally heal.
+As she stepped down from the dais, a sense of overwhelming gratitude washed over her. Her ardent dedication had paid off, and she knew that her work would have a profound impact on the world.
             </p>
             <div
               @click="setActiveAccordion('')"
