@@ -1,15 +1,15 @@
 ---
-const word1 = "Fatuous";
+const word1 = "Demagogue";
 const definition1 =
-  "Silly, foolish, or absurd, especially in a smug or complacent way.";
-const word2 = "Feckless";
+  "A person who uses popular prejudices and emotions to manipulate and control people.";
+const word2 = "Evince";
 const definition2 =
-  "Lacking initiative, spirit, or purpose; irresponsible.";
-const word3 = "Incisive";
-const definition3 = "Penetrating; sharp-witted; having or showing keen insight and judgment.";
-const word4 = "Inveigh";
+  "To show clearly or make evident; to reveal.";
+const word3 = "Prevaricating";
+const definition3 = "To speak falsely or misleadingly; to lie.";
+const word4 = "Retinue";
 const definition4 =
-  "To speak or write against forcefully; to attack or denounce verbally.";
+  "A group of people accompanying a person of importance.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The young scientist, with an ardent passion for botany, stood on the dais, her heart pounding with excitement. She had spent countless hours in the greenhouse, nurturing the delicate plant she had discovered in the Amazon rainforest. It was a rare species, unlike any other known to science. 
+The demagogue, a master of manipulation, stood atop the makeshift stage, his voice booming over the crowd. He promised prosperity and freedom, painting a utopian vision that seemed too good to be true. The crowd, hungry for change, cheered wildly.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,13 +239,16 @@ The young scientist, with an ardent passion for botany, stood on the dais, her h
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-With a trembling hand, she presented her findings to the esteemed panel of experts. She explained how the plant's endogenous properties, a unique combination of chemicals, had the potential to revolutionize medicine. The audience was captivated, their faces reflecting a mixture of awe and disbelief. 
+His retinue, a motley crew of sycophants and opportunists, stood behind him, their faces plastered with fake smiles. They knew that as long as the demagogue remained popular, they would reap the rewards.
             </p>
             <p class="mb-4">
-When she finished, the room erupted in applause. The panel of experts praised her groundbreaking research, acknowledging the significance of her discovery. The head of the foundation, a renowned philanthropist known for his largesse, announced that they would fully fund her continued studies. 
+But beneath the façade of charisma and confidence, the demagogue was a prevaricator. He had no intention of fulfilling his promises. His true goal was to seize power for himself and his cronies. 
+            </p>
+            <p class="mb-4">
+One day, a brave journalist exposed the demagogue's lies. The crowd, initially shocked and disappointed, quickly turned on him. The demagogue, realizing his power was slipping, fled with his retinue, leaving behind a nation in turmoil. 
             </p>
             <p>
-As she stepped down from the dais, a sense of overwhelming gratitude washed over her. Her ardent dedication had paid off, and she knew that her work would have a profound impact on the world.
+The demagogue's downfall evinced the dangers of trusting a leader who prevaricates and manipulates.
             </p>
             <div
               @click="setActiveAccordion('')"
