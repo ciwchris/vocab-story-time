@@ -1,15 +1,15 @@
 ---
-const word1 = "Demagogue";
+const word1 = "Iconoclast";
 const definition1 =
-  "A person who uses popular prejudices and emotions to manipulate and control people.";
-const word2 = "Evince";
+  "A person who attacks cherished beliefs or institutions.";
+const word2 = "Opprobrium";
 const definition2 =
-  "To show clearly or make evident; to reveal.";
-const word3 = "Prevaricating";
-const definition3 = "To speak falsely or misleadingly; to lie.";
-const word4 = "Retinue";
+  "Public disgrace or contempt.";
+const word3 = "Otiose";
+const definition3 = "Useless; serving no useful purpose.";
+const word4 = "Torpor";
 const definition4 =
-  "A group of people accompanying a person of importance.";
+  "A state of lethargy or sluggishness.";
 ---
 
 <section id="current-episode">
@@ -212,8 +212,8 @@ const definition4 =
             fill="none"
             stroke-linecap="round"></path>
           <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="8" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="17">{word3.toLocaleLowerCase()}</text>
           <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The demagogue, a master of manipulation, stood atop the makeshift stage, his voice booming over the crowd. He promised prosperity and freedom, painting a utopian vision that seemed too good to be true. The crowd, hungry for change, cheered wildly.
+The young scientist, an iconoclast in the field of astrophysics, was known for her unconventional theories. Her colleagues often met her with opprobrium, dismissing her ideas as otiose speculations. Yet, she persisted, her mind buzzing with possibilities.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -238,17 +238,8 @@ The demagogue, a master of manipulation, stood atop the makeshift stage, his voi
             [Continue Reading]
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
-            <p class="mb-4">
-His retinue, a motley crew of sycophants and opportunists, stood behind him, their faces plastered with fake smiles. They knew that as long as the demagogue remained popular, they would reap the rewards.
-            </p>
-            <p class="mb-4">
-But beneath the façade of charisma and confidence, the demagogue was a prevaricator. He had no intention of fulfilling his promises. His true goal was to seize power for himself and his cronies. 
-            </p>
-            <p class="mb-4">
-One day, a brave journalist exposed the demagogue's lies. The crowd, initially shocked and disappointed, quickly turned on him. The demagogue, realizing his power was slipping, fled with his retinue, leaving behind a nation in turmoil. 
-            </p>
             <p>
-The demagogue's downfall evinced the dangers of trusting a leader who prevaricates and manipulates.
+One day, a breakthrough came. Her years of tireless research culminated in a theory that challenged the established understanding of black holes. The scientific community was initially skeptical, but as evidence mounted, the tide turned. The once-dismissed scientist was now hailed as a visionary. Her critics fell into a torpor of disbelief, unable to reconcile their initial judgment with the undeniable truth of her discovery.
             </p>
             <div
               @click="setActiveAccordion('')"
