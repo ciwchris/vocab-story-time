@@ -7,6 +7,260 @@
         <p
           class="text-4xl tracking-tight font-medium text-black text-center mb-8"
         >
+          Oct 20th word list
+        </p>
+        <div class="bg-accent-50 mb-4">
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Iconoclast</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  A person who attacks cherished beliefs or institutions.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Opprobrium</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Public disgrace or contempt.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Otiose</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Useless; serving no useful purpose.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Torpor</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  A state of lethargy or sluggishness.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline"
+          width="20em"
+          height="20em"
+          viewBox="0 0 32 32"
+        >
+          <style>
+            .word {
+              font-size: 3px;
+              fill: #ff7a00;
+              font-family: "Segoe UI", Roboto, Helvetica, sans-serif;
+            }
+          </style>
+          <line
+            x1="1"
+            y1="2"
+            x2="8"
+            y2="2"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="7"
+            x2="8"
+            y2="7"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="12"
+            x2="5"
+            y2="12"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <path
+            d="M 3 15 v 11 h 18 m 8 -8 v -16 h -17"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"></path>
+          <text class="word" x="9" y="7">demagogue</text>
+          <text class="word" x="12" y="12">evince</text>
+          <text class="word" x="8" y="17">prevaricating</text>
+          <text class="word" x="12" y="22">retinue</text>
+        </svg>
+      </div>
+      <div
+        x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+        class="md:col-span-2 md:w-3/4 mx-auto"
+      >
+        <p
+          class="text-2xl tracking-tight text-center font-medium text-black mb-4"
+        >
+          Story
+        </p>
+        <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
+          <p class="mb-4">
+The demagogue, a master of manipulation, stood atop the makeshift stage, his voice booming over the crowd. He promised prosperity and freedom, painting a utopian vision that seemed too good to be true. The crowd, hungry for change, cheered wildly.
+          </p>
+
+          <div
+            @click="setActiveAccordion(id)"
+            :class="activeAccordion==id ? 'hidden' : ''"
+            class="cursor-pointer text-opacity-70 underline hover:text-accent-900"
+          >
+            [Continue Reading]
+          </div>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <p class="mb-4">
+His retinue, a motley crew of sycophants and opportunists, stood behind him, their faces plastered with fake smiles. They knew that as long as the demagogue remained popular, they would reap the rewards.
+            </p>
+            <p class="mb-4">
+But beneath the façade of charisma and confidence, the demagogue was a prevaricator. He had no intention of fulfilling his promises. His true goal was to seize power for himself and his cronies. 
+            </p>
+            <p class="mb-4">
+One day, a brave journalist exposed the demagogue's lies. The crowd, initially shocked and disappointed, quickly turned on him. The demagogue, realizing his power was slipping, fled with his retinue, leaving behind a nation in turmoil. 
+            </p>
+            <p>
+The demagogue's downfall evinced the dangers of trusting a leader who prevaricates and manipulates.
+            </p>
+            <div
+              @click="setActiveAccordion('')"
+              :class="activeAccordion==id ? '' : 'hidden'"
+              class="cursor-pointer text-opacity-70 underline hover:text-accent-900 mt-4"
+            >
+              [Hide]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
+  >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-12">
+      <div>
+        <p
+          class="text-4xl tracking-tight font-medium text-black text-center mb-8"
+        >
           Oct 13th word list
         </p>
         <div class="bg-accent-50 mb-4">
@@ -7238,10 +7492,10 @@ Ethan, sheepishly grateful, promised to repay her. As he left, he glanced at the
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="10" y="7">attenuate</text>
-          <text class="word" x="10.5" y="12">credulity</text>
-          <text class="word" x="11" y="17">piquant</text>
-          <text class="word" x="8" y="22">sententious</text>
+          <text class="word" x="9" y="7">iconoclast</text>
+          <text class="word" x="8" y="12">opprobrium</text>
+          <text class="word" x="12" y="17">otiose</text>
+          <text class="word" x="12" y="22">torpor</text>
         </svg>
       </div>
       <div
@@ -7255,11 +7509,7 @@ Ethan, sheepishly grateful, promised to repay her. As he left, he glanced at the
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-            Agatha, known for her unwavering credulity, was an easy target for
-            traveling salesmen. One brisk morning, a man with a neatly trimmed
-            beard and a silver tongue arrived at her doorstep. He peddled a
-            device he claimed could "attenuate the negative ions" that were
-            causing Agatha's misfortunes.
+The young scientist, an iconoclast in the field of astrophysics, was known for her unconventional theories. Her colleagues often met her with opprobrium, dismissing her ideas as otiose speculations. Yet, she persisted, her mind buzzing with possibilities.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -7269,28 +7519,8 @@ Ethan, sheepishly grateful, promised to repay her. As he left, he glanced at the
             [Continue Reading]
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
-            <p class="mb-4">
-              Intrigued by the scientific-sounding jargon and her own string of
-              recent bad luck, Agatha listened intently. The salesman's spiel
-              was peppered with piquant anecdotes about people whose lives were
-              miraculously improved by the device. Agatha, desperate for a
-              change, readily bought into his claims, her skepticism attenuated
-              by his smooth talk.
-            </p>
-            <p class="mb-4">
-              Days turned into weeks, and Agatha religiously used the device,
-              convinced it was working its magic. However, her fortunes remained
-              unchanged. Finally, a neighbor, a man known for his blunt and
-              often sententious remarks, pointed out the obvious - the device
-              was nothing more than a cheap trinket.
-            </p>
             <p>
-              Humiliated and frustrated, Agatha confronted the salesman, only to
-              find he had vanished, leaving her with a lighter wallet and a
-              valuable lesson about the dangers of credulity. From that day on,
-              Agatha vowed to approach fantastical claims with a healthy dose of
-              skepticism, never again allowing her credulity to cloud her
-              judgment.
+One day, a breakthrough came. Her years of tireless research culminated in a theory that challenged the established understanding of black holes. The scientific community was initially skeptical, but as evidence mounted, the tide turned. The once-dismissed scientist was now hailed as a visionary. Her critics fell into a torpor of disbelief, unable to reconcile their initial judgment with the undeniable truth of her discovery.
             </p>
             <div
               @click="setActiveAccordion('')"

@@ -1,15 +1,15 @@
 ---
-const word1 = "Iconoclast";
+const word1 = "Bully Pulpit";
 const definition1 =
-  "A person who attacks cherished beliefs or institutions.";
-const word2 = "Opprobrium";
+  "A prominent public position (such as a political office) that provides an opportunity for expounding one's views.";
+const word2 = "Fascism";
 const definition2 =
-  "Public disgrace or contempt.";
-const word3 = "Otiose";
-const definition3 = "Useless; serving no useful purpose.";
-const word4 = "Torpor";
+  "A far-right, authoritarian ultranationalist political ideology characterized by dictatorial leadership, forcible suppression of opposition, and strong regimentation of society and the economy.";
+const word3 = "Sufferance";
+const definition3 = "Tolerance or patient endurance, especially of something difficult or unpleasant.";
+const word4 = "Usurp";
 const definition4 =
-  "A state of lethargy or sluggishness.";
+  "To seize and hold (a position of power or authority) by force or without right.";
 ---
 
 <section id="current-episode">
@@ -212,8 +212,8 @@ const definition4 =
             fill="none"
             stroke-linecap="round"></path>
           <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="8" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="17">{word3.toLocaleLowerCase()}</text>
           <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The young scientist, an iconoclast in the field of astrophysics, was known for her unconventional theories. Her colleagues often met her with opprobrium, dismissing her ideas as otiose speculations. Yet, she persisted, her mind buzzing with possibilities.
+The senator, a master of the bully pulpit, held the nation captive with his fiery rhetoric. His words, carefully crafted and delivered with a fervor bordering on fanaticism, painted a bleak picture of a country on the brink of collapse. He blamed immigrants, minorities, and the liberal elite for the nation's woes, promising a return to a glorious past through a new era of national renewal.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -238,8 +238,20 @@ The young scientist, an iconoclast in the field of astrophysics, was known for h
             [Continue Reading]
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
+i          <p class="mb-4">
+His supporters, a growing and increasingly radicalized movement, saw him as a savior. They were drawn to his strongman persona, his promises of order and security. They were willing to overlook the authoritarian tendencies, the suppression of dissent, the erosion of civil liberties. 
+i          </p>
+i          <p class="mb-4">
+The senator, emboldened by his popularity, began to consolidate power. He challenged the authority of the courts, packed the legislature with loyalists, and undermined the free press. The once-vibrant democracy was slowly suffocating under the weight of his fascism.
+i          </p>
+i          <p class="mb-4">
+The people, weary of the constant fear and uncertainty, endured. They bore the sufferance of the restrictions on their freedoms, the surveillance of their movements, the silencing of their voices. But a flicker of resistance remained, a spark of hope in the hearts of those who refused to be cowed. 
+i          </p>
+i          <p class="mb-4">
+A small group of brave individuals, united by their love of liberty and justice, began to organize. They met in secret, sharing their fears and their dreams. They knew the risks, the dangers of defying the regime. But they also knew that the time had come to act.
+i          </p>
             <p>
-One day, a breakthrough came. Her years of tireless research culminated in a theory that challenged the established understanding of black holes. The scientific community was initially skeptical, but as evidence mounted, the tide turned. The once-dismissed scientist was now hailed as a visionary. Her critics fell into a torpor of disbelief, unable to reconcile their initial judgment with the undeniable truth of her discovery.
+They would not stand idly by as their democracy was usurped. They would not allow their country to be transformed into a totalitarian state. They would fight for their rights, for their future, for the soul of their nation. 
             </p>
             <div
               @click="setActiveAccordion('')"
