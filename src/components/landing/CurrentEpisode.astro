@@ -1,15 +1,15 @@
 ---
-const word1 = "Bully Pulpit";
+const word1 = "Artifice";
 const definition1 =
-  "A prominent public position (such as a political office) that provides an opportunity for expounding one's views.";
-const word2 = "Fascism";
+  "Skill in deceiving others; clever trickery.";
+const word2 = "Ensconced";
 const definition2 =
-  "A far-right, authoritarian ultranationalist political ideology characterized by dictatorial leadership, forcible suppression of opposition, and strong regimentation of society and the economy.";
-const word3 = "Sufferance";
-const definition3 = "Tolerance or patient endurance, especially of something difficult or unpleasant.";
-const word4 = "Usurp";
+  "Established securely in a position.";
+const word3 = "Grist";
+const definition3 = "Material suitable for a particular purpose, especially as food for a mill.";
+const word4 = "Intransigent";
 const definition4 =
-  "To seize and hold (a position of power or authority) by force or without right.";
+  "Refusing to compromise or agree; inflexible.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="13" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The senator, a master of the bully pulpit, held the nation captive with his fiery rhetoric. His words, carefully crafted and delivered with a fervor bordering on fanaticism, painted a bleak picture of a country on the brink of collapse. He blamed immigrants, minorities, and the liberal elite for the nation's woes, promising a return to a glorious past through a new era of national renewal.
+The old detective, ensconced in his worn armchair, studied the case file. The suspect, a master of artifice, had woven a complex web of deceit. Every clue, every witness statement, seemed to lead to a dead end. The intransigent detective, however, refused to be deterred. He knew the truth was buried somewhere within the tangled mess. Each piece of information, no matter how insignificant, was grist for his analytical mind.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -238,20 +238,8 @@ The senator, a master of the bully pulpit, held the nation captive with his fier
             [Continue Reading]
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
-i          <p class="mb-4">
-His supporters, a growing and increasingly radicalized movement, saw him as a savior. They were drawn to his strongman persona, his promises of order and security. They were willing to overlook the authoritarian tendencies, the suppression of dissent, the erosion of civil liberties. 
-i          </p>
-i          <p class="mb-4">
-The senator, emboldened by his popularity, began to consolidate power. He challenged the authority of the courts, packed the legislature with loyalists, and undermined the free press. The once-vibrant democracy was slowly suffocating under the weight of his fascism.
-i          </p>
-i          <p class="mb-4">
-The people, weary of the constant fear and uncertainty, endured. They bore the sufferance of the restrictions on their freedoms, the surveillance of their movements, the silencing of their voices. But a flicker of resistance remained, a spark of hope in the hearts of those who refused to be cowed. 
-i          </p>
-i          <p class="mb-4">
-A small group of brave individuals, united by their love of liberty and justice, began to organize. They met in secret, sharing their fears and their dreams. They knew the risks, the dangers of defying the regime. But they also knew that the time had come to act.
-i          </p>
             <p>
-They would not stand idly by as their democracy was usurped. They would not allow their country to be transformed into a totalitarian state. They would fight for their rights, for their future, for the soul of their nation. 
+Days turned into nights as he delved deeper into the case. He cross-examined witnesses, re-interviewed suspects, and meticulously analyzed every piece of evidence. The more he dug, the more intricate the puzzle became. Yet, the detective remained undeterred. His mind, a sharp instrument honed by years of experience, was relentless in its pursuit of the truth. He knew that beneath the layers of deception, the truth was waiting to be revealed. And he was determined to uncover it, no matter the cost.
             </p>
             <div
               @click="setActiveAccordion('')"
