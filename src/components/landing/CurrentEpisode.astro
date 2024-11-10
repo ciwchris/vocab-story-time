@@ -1,15 +1,15 @@
 ---
-const word1 = "Artifice";
+const word1 = "Aspersion";
 const definition1 =
-  "Skill in deceiving others; clever trickery.";
-const word2 = "Ensconced";
+  "A false accusation or derogatory remark that damages someone's reputation.";
+const word2 = "Elide";
 const definition2 =
-  "Established securely in a position.";
-const word3 = "Grist";
-const definition3 = "Material suitable for a particular purpose, especially as food for a mill.";
-const word4 = "Intransigent";
+  "To omit or suppress a sound or syllable, especially in poetry or casual speech.";
+const word3 = "Placated";
+const definition3 = "Soothed or calmed, especially by concessions.";
+const word4 = "Zenith";
 const definition4 =
-  "Refusing to compromise or agree; inflexible.";
+  "The highest point reached by something, especially a celestial body. It can also refer to the culmination or peak of something.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="8" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="13" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="8" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The old detective, ensconced in his worn armchair, studied the case file. The suspect, a master of artifice, had woven a complex web of deceit. Every clue, every witness statement, seemed to lead to a dead end. The intransigent detective, however, refused to be deterred. He knew the truth was buried somewhere within the tangled mess. Each piece of information, no matter how insignificant, was grist for his analytical mind.
+The young scientist, brilliant but brash, had reached the zenith of his career. His groundbreaking research had earned him global acclaim, but his sharp tongue and arrogant demeanor often cast aspersions on his character. His colleagues, though impressed by his intellect, were frequently irritated by his dismissive attitude.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -238,8 +238,11 @@ The old detective, ensconced in his worn armchair, studied the case file. The su
             [Continue Reading]
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
+            <p class="mb-4">
+One day, a senior scientist, respected for her wisdom and patience, confronted him. She gently pointed out how his words often elide the feelings of others, leaving them wounded and resentful. The young scientist, initially defensive, was gradually placated by her calm demeanor and honest feedback. 
+            </p>
             <p>
-Days turned into nights as he delved deeper into the case. He cross-examined witnesses, re-interviewed suspects, and meticulously analyzed every piece of evidence. The more he dug, the more intricate the puzzle became. Yet, the detective remained undeterred. His mind, a sharp instrument honed by years of experience, was relentless in its pursuit of the truth. He knew that beneath the layers of deception, the truth was waiting to be revealed. And he was determined to uncover it, no matter the cost.
+He realized that true success wasn’t just about intellectual prowess, but also about human connection. From that day forward, he made a conscious effort to be more mindful of his words and actions. His journey to the top had been marked by brilliance, but his ascent to greatness would be defined by humility and empathy.
             </p>
             <div
               @click="setActiveAccordion('')"
