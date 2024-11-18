@@ -1,15 +1,15 @@
 ---
-const word1 = "Aspersion";
+const word1 = "Assiduously";
 const definition1 =
-  "A false accusation or derogatory remark that damages someone's reputation.";
-const word2 = "Elide";
+  "Great care and persistence. It implies diligent and focused effort.";
+const word2 = "Dictum";
 const definition2 =
-  "To omit or suppress a sound or syllable, especially in poetry or casual speech.";
-const word3 = "Placated";
-const definition3 = "Soothed or calmed, especially by concessions.";
-const word4 = "Zenith";
+  "A short statement that expresses a general truth or rule. It's often a formal pronouncement or authoritative statement.";
+const word3 = "Liminal";
+const definition3 = "Describes something that is in a transitional state or occupying a position between two different states. It often refers to a threshold or boundary.";
+const word4 = "Vacuity";
 const definition4 =
-  "The highest point reached by something, especially a celestial body. It can also refer to the culmination or peak of something.";
+  "Emptiness or lack of substance. It can also denote a state of mind characterized by a lack of thought or intelligence. ";
 ---
 
 <section id="current-episode">
@@ -212,9 +212,9 @@ const definition4 =
             fill="none"
             stroke-linecap="round"></path>
           <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The young scientist, brilliant but brash, had reached the zenith of his career. His groundbreaking research had earned him global acclaim, but his sharp tongue and arrogant demeanor often cast aspersions on his character. His colleagues, though impressed by his intellect, were frequently irritated by his dismissive attitude.
+The old man sat by the window, his gaze fixed on the fading light. Assiduously, he traced the intricate patterns on the glass, a relic of a bygone era. A soft sigh escaped his lips as his mind wandered, lost in the liminal space between memory and dream.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -238,11 +238,8 @@ The young scientist, brilliant but brash, had reached the zenith of his career. 
             [Continue Reading]
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
-            <p class="mb-4">
-One day, a senior scientist, respected for her wisdom and patience, confronted him. She gently pointed out how his words often elide the feelings of others, leaving them wounded and resentful. The young scientist, initially defensive, was gradually placated by her calm demeanor and honest feedback. 
-            </p>
             <p>
-He realized that true success wasn’t just about intellectual prowess, but also about human connection. From that day forward, he made a conscious effort to be more mindful of his words and actions. His journey to the top had been marked by brilliance, but his ascent to greatness would be defined by humility and empathy.
+A dictum echoed in his thoughts, a phrase whispered by a long-lost friend: "Embrace the void, for in the vacuity, true wisdom resides." He closed his eyes, surrendering to the silence. The world outside faded, replaced by the serene emptiness within.
             </p>
             <div
               @click="setActiveAccordion('')"
