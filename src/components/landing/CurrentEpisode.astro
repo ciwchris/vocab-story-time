@@ -1,15 +1,15 @@
 ---
-const word1 = "Elucidate";
+const word1 = "Adjure";
 const definition1 =
-  "To explain or make clear.";
-const word2 = "Indolent";
+  "To earnestly request or command someone to do something.";
+const word2 = "Capacious";
 const definition2 =
-  "Lazy or slow-moving.";
-const word3 = "Proscribe";
-const definition3 = "To forbid or ban. ";
-const word4 = "Substrate";
+  "Able to hold or contain much; spacious.";
+const word3 = "Dubious";
+const definition3 = "Doubtful; uncertain.";
+const word4 = "Perseverate";
 const definition4 =
-  "A substance or layer that underlies something.";
+  "To persist in a course of action, especially one that is difficult or tedious.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="12">{word2.toLocaleLowerCase()}</text>
           <text class="word" x="11" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The old man sat by the window, his gaze fixed on the fading light. Assiduously, he traced the intricate patterns on the glass, a relic of a bygone era. A soft sigh escaped his lips as his mind wandered, lost in the liminal space between memory and dream.
+The detective, a man of dubious reputation but undeniable skill, sat in the capacious interrogation room. Across from him, a suspect, a known liar and manipulator. The detective, with a heavy sigh, adjured the suspect to tell the truth, to finally break the silence. 
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,7 +239,7 @@ The old man sat by the window, his gaze fixed on the fading light. Assiduously, 
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p>
-A dictum echoed in his thoughts, a phrase whispered by a long-lost friend: "Embrace the void, for in the vacuity, true wisdom resides." He closed his eyes, surrendering to the silence. The world outside faded, replaced by the serene emptiness within.
+The suspect, however, merely smirked, his eyes darting around the room. The detective, unfazed, perseverated, his voice low and steady, painting a picture of the inevitable consequences of deceit. Slowly, the suspect's confidence began to waver, his gaze dropping to the floor. In that moment, the detective knew he had won.
             </p>
             <div
               @click="setActiveAccordion('')"
