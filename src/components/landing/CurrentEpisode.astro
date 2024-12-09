@@ -1,15 +1,15 @@
 ---
-const word1 = "Adjure";
+const word1 = "Embouchure";
 const definition1 =
-  "To earnestly request or command someone to do something.";
-const word2 = "Capacious";
+  "The way in which a player uses their lips, facial muscles, tongue, and teeth to produce sound from a wind instrument.";
+const word2 = "Euphonious";
 const definition2 =
-  "Able to hold or contain much; spacious.";
-const word3 = "Dubious";
-const definition3 = "Doubtful; uncertain.";
-const word4 = "Perseverate";
+  "Pleasing to the ear; agreeable to listen to.";
+const word3 = "Legerdemain";
+const definition3 = "Skillful use of the hands in conjuring tricks; sleight of hand.";
+const word4 = "Synesthesia";
 const definition4 =
-  "To persist in a course of action, especially one that is difficult or tedious.";
+  "A neurological condition in which one sense (e.g., sight) is experienced as if it were another (e.g., sound).";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="12" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The detective, a man of dubious reputation but undeniable skill, sat in the capacious interrogation room. Across from him, a suspect, a known liar and manipulator. The detective, with a heavy sigh, adjured the suspect to tell the truth, to finally break the silence. 
+The flickering gaslight cast long, dancing shadows across the stage. Elara, the young musician, adjusted her embouchure, the delicate pressure of her lips against the mouthpiece of her flute. A hush fell over the audience as she began to play. The music, a haunting melody, was euphonious, weaving a spell of enchantment. 
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -238,8 +238,20 @@ The detective, a man of dubious reputation but undeniable skill, sat in the capa
             [Continue Reading]
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
+          <p class="mb-4">
+In the front row, a young boy named Finn, sat mesmerized. For him, Elara's music wasn't just sound. It was a symphony of colors. Each note, each phrase, erupted in his mind as a vibrant explosion of hues. Synesthesia, his unique gift, transformed the concert into a breathtaking visual spectacle. 
+          </p>
+          <p class="mb-4">
+The stage, illuminated by the gaslight, pulsed with a kaleidoscope of colors. Elara, her eyes closed, seemed to conduct the symphony of hues with her fingers. The music soared, then dipped, mirroring the ebb and flow of colors across the stage. 
+          </p>
+          <p class="mb-4">
+Suddenly, a distraction. A commotion erupted in the balcony. A magician, renowned for his legerdemain, had appeared, his movements swift and mesmerizing. He pulled rabbits from hats, made coins vanish, and even levitated a small table. The audience, captivated by the spectacle, was momentarily drawn away from Elara's music.
+          </p>
+          <p class="mb-4">
+But Finn, his senses still immersed in the world of color, remained transfixed. He saw the magician's every move as a burst of vibrant energy, a fleeting dance of colors that intertwined with the music. The legerdemain, far from detracting from the music, seemed to enhance it, adding another layer of complexity to the sensory experience. 
+          </p>
             <p>
-The suspect, however, merely smirked, his eyes darting around the room. The detective, unfazed, perseverated, his voice low and steady, painting a picture of the inevitable consequences of deceit. Slowly, the suspect's confidence began to waver, his gaze dropping to the floor. In that moment, the detective knew he had won.
+As the concert drew to a close, the audience erupted in applause. Elara, bowing gracefully, felt a sense of satisfaction. She had shared her music with the world, and for Finn, that music had become an unforgettable symphony of sound and sight. 
             </p>
             <div
               @click="setActiveAccordion('')"
