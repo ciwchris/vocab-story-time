@@ -1,15 +1,15 @@
 ---
-const word1 = "Deign";
+const word1 = "Banal";
 const definition1 =
-  "To condescend to do something that one considers to be below one's dignity.";
-const word2 = "Inured";
+  "Lacking in originality, freshness, or novelty; trite; commonplace. Something that is banal is boring and unoriginal.";
+const word2 = "Blithe";
 const definition2 =
-  "Accustomed to something, especially something unpleasant.";
-const word3 = "Jingoistic";
-const definition3 = "Characterized by extreme patriotism, especially manifested in aggressive or warlike foreign policy.";
-const word4 = "Spiel";
+  "Showing a lack of thought or care; carefree; cheerful. Can also mean happy or joyous.";
+const word3 = "Inanities";
+const definition3 = "Plural of inanity. Something that is silly, empty, or meaningless. Foolish remarks or actions.";
+const word4 = "Parapet";
 const definition4 =
-  "A long or tedious speech or recital.";
+  "A low protective wall along the edge of a roof, balcony, or bridge.";
 ---
 
 <section id="current-episode">
@@ -213,8 +213,8 @@ const definition4 =
             stroke-linecap="round"></path>
           <text class="word" x="12" y="7">{word1.toLocaleLowerCase()}</text>
           <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The general, a man inured to the horrors of war, sat at his desk, the jingoistic cries of the crowd outside filtering through the thick windows. He deigned to glance at the map spread before him, his finger tracing the line of the enemy's advance. His aide stood stiffly beside him, eager to deliver the latest intelligence, but the general waved him away. He had heard enough of the intelligence reports, the endless spiel of analysts predicting doom. He knew the enemy, knew their tactics, their weaknesses. This war, like all wars, was a brutal dance of attrition. And he, the general, was a master of the waltz. 
+The seaside town, usually a vibrant hub, felt suffocatingly banal in the off-season. The same seagulls squawked from the same rusty lamp posts, the waves crashed against the same grey breakwater, and the wind carried the same salty tang. Arthur, however, seemed immune to the pervasive monotony. He strolled along the promenade with a blithe air, a half-eaten ice cream cone dripping onto his hand. He hummed tunelessly, oblivious to the damp chill that seeped into everyone else's bones.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -238,8 +238,11 @@ The general, a man inured to the horrors of war, sat at his desk, the jingoistic
             [Continue Reading]
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
+          <p class="mb-4">
+He reached the end of the promenade where a low parapet overlooked the churning sea. Below, the waves crashed against the rocks, sending up plumes of white spray. Arthur leaned against the cold stone, his gaze fixed on the horizon. He thought of nothing in particular, his mind a blank slate. He paid no mind to the elderly couple nearby, engaged in a tedious conversation filled with the inanities of daily life – complaints about the price of fish, the unreliable bus service, the persistent dampness that plagued their joints.
+          </p>
             <p>
-He closed his eyes, the weight of the nation resting on his shoulders. The jingoistic fervor of the populace, while invigorating, also carried a dangerous undercurrent. It demanded decisive action, a swift and decisive victory. But the general knew that wars were rarely won quickly. They were fought in the mud and the blood, in the trenches and the shadows. Patience, he reminded himself, was a virtue, especially for a commander. He would not be swayed by the clamor of the crowd, nor would he be rushed into a rash decision. He would bide his time, gather his strength, and then, when the moment was right, he would strike. 
+Arthur found their chatter oddly soothing, a background hum to his own blissful emptiness. The banal surroundings, the blithe disregard for the cold, the mindless inanities of the old couple's talk – it all coalesced into a strange sort of peace. He finished his ice cream, tossed the wrapper into a nearby bin, and with a final glance at the grey expanse of the sea from the parapet, turned and headed back into the town, his blithe spirit untouched by the pervasive dreariness.
             </p>
             <div
               @click="setActiveAccordion('')"
