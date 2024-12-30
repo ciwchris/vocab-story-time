@@ -7,6 +7,251 @@
         <p
           class="text-4xl tracking-tight font-medium text-black text-center mb-8"
         >
+          Dec 22nd word list
+        </p>
+        <div class="bg-accent-50 mb-4">
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Banal</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Lacking in originality, freshness, or novelty; trite; commonplace. Something that is banal is boring and unoriginal.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Blithe</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Showing a lack of thought or care; carefree; cheerful. Can also mean happy or joyous.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Inanities</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Plural of inanity. Something that is silly, empty, or meaningless. Foolish remarks or actions.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Parapet</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  A low protective wall along the edge of a roof, balcony, or bridge.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline"
+          width="20em"
+          height="20em"
+          viewBox="0 0 32 32"
+        >
+          <style>
+            .word {
+              font-size: 3px;
+              fill: #ff7a00;
+              font-family: "Segoe UI", Roboto, Helvetica, sans-serif;
+            }
+          </style>
+          <line
+            x1="1"
+            y1="2"
+            x2="8"
+            y2="2"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="7"
+            x2="8"
+            y2="7"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="12"
+            x2="5"
+            y2="12"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <path
+            d="M 3 15 v 11 h 18 m 8 -8 v -16 h -17"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"></path>
+          <text class="word" x="12" y="7">banal</text>
+          <text class="word" x="12" y="12">blithe</text>
+          <text class="word" x="11" y="17">inanities</text>
+          <text class="word" x="11" y="22">parapet</text>
+        </svg>
+      </div>
+      <div
+        x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+        class="md:col-span-2 md:w-3/4 mx-auto"
+      >
+        <p
+          class="text-2xl tracking-tight text-center font-medium text-black mb-4"
+        >
+          Story
+        </p>
+        <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
+          <p class="mb-4">
+The general, a man inured to the horrors of war, sat at his desk, the jingoistic cries of the crowd outside filtering through the thick windows. He deigned to glance at the map spread before him, his finger tracing the line of the enemy's advance. His aide stood stiffly beside him, eager to deliver the latest intelligence, but the general waved him away. He had heard enough of the intelligence reports, the endless spiel of analysts predicting doom. He knew the enemy, knew their tactics, their weaknesses. This war, like all wars, was a brutal dance of attrition. And he, the general, was a master of the waltz. 
+          </p>
+
+          <div
+            @click="setActiveAccordion(id)"
+            :class="activeAccordion==id ? 'hidden' : ''"
+            class="cursor-pointer text-opacity-70 underline hover:text-accent-900"
+          >
+            [Continue Reading]
+          </div>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <p>
+He closed his eyes, the weight of the nation resting on his shoulders. The jingoistic fervor of the populace, while invigorating, also carried a dangerous undercurrent. It demanded decisive action, a swift and decisive victory. But the general knew that wars were rarely won quickly. They were fought in the mud and the blood, in the trenches and the shadows. Patience, he reminded himself, was a virtue, especially for a commander. He would not be swayed by the clamor of the crowd, nor would he be rushed into a rash decision. He would bide his time, gather his strength, and then, when the moment was right, he would strike. 
+            </p>
+            <div
+              @click="setActiveAccordion('')"
+              :class="activeAccordion==id ? '' : 'hidden'"
+              class="cursor-pointer text-opacity-70 underline hover:text-accent-900 mt-4"
+            >
+              [Hide]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
+  >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-12">
+      <div>
+        <p
+          class="text-4xl tracking-tight font-medium text-black text-center mb-8"
+        >
           Dec 15th word list
         </p>
         <div class="bg-accent-50 mb-4">
@@ -2709,7 +2954,7 @@ The demagogue's downfall evinced the dangers of trusting a leader who prevaricat
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The young man was as fatuous as he was feckless. His mind, a swirling vortex of shallow thoughts and fleeting desires, was incapable of grasping the complexities of the world. He would often make absurdly confident pronouncements, oblivious to the laughter and ridicule they provoked. His feckless nature allowed him to drift through life without a care, content to let others take the initiative while he indulged in frivolous pursuits.
+The seaside town, usually a vibrant hub, felt suffocatingly banal in the off-season. The same seagulls squawked from the same rusty lamp posts, the waves crashed against the same grey breakwater, and the wind carried the same salty tang. Arthur, however, seemed immune to the pervasive monotony. He strolled along the promenade with a blithe air, a half-eaten ice cream cone dripping onto his hand. He hummed tunelessly, oblivious to the damp chill that seeped into everyone else's bones.
           </p>
 
           <div
@@ -2721,10 +2966,10 @@ The young man was as fatuous as he was feckless. His mind, a swirling vortex of 
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-One day, a wise old woman, known for her incisive intellect, encountered the young man. She saw through his façade of arrogance and perceived the emptiness beneath. With a gentle but firm tone, she began to inveigh against his shallowness, urging him to strive for greater depth and purpose. At first, the young man was offended by her criticism. But as she continued to speak, her words began to penetrate his complacency. He realized that she was right and that he needed to change.
+He reached the end of the promenade where a low parapet overlooked the churning sea. Below, the waves crashed against the rocks, sending up plumes of white spray. Arthur leaned against the cold stone, his gaze fixed on the horizon. He thought of nothing in particular, his mind a blank slate. He paid no mind to the elderly couple nearby, engaged in a tedious conversation filled with the inanities of daily life – complaints about the price of fish, the unreliable bus service, the persistent dampness that plagued their joints.
             </p>
             <p class="mb-4">
-From that day forward, the young man embarked on a journey of self-discovery. He began to read widely, to engage in thoughtful conversations, and to explore the world around him. His fatuousness gradually gave way to a newfound curiosity, and his fecklessness was replaced by a sense of determination. The wise old woman's incisive words had ignited a spark within him, and he was no longer content to live a life of superficiality.
+Arthur found their chatter oddly soothing, a background hum to his own blissful emptiness. The banal surroundings, the blithe disregard for the cold, the mindless inanities of the old couple's talk – it all coalesced into a strange sort of peace. He finished his ice cream, tossed the wrapper into a nearby bin, and with a final glance at the grey expanse of the sea from the parapet, turned and headed back into the town, his blithe spirit untouched by the pervasive dreariness.
             </p>
             <div
               @click="setActiveAccordion('')"

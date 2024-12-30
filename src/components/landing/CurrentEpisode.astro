@@ -1,15 +1,15 @@
 ---
-const word1 = "Banal";
+const word1 = "Antebellum";
 const definition1 =
-  "Lacking in originality, freshness, or novelty; trite; commonplace. Something that is banal is boring and unoriginal.";
-const word2 = "Blithe";
+  "Occurring or existing before a particular war, especially the American Civil War.";
+const word2 = "Intimations";
 const definition2 =
-  "Showing a lack of thought or care; carefree; cheerful. Can also mean happy or joyous.";
-const word3 = "Inanities";
-const definition3 = "Plural of inanity. Something that is silly, empty, or meaningless. Foolish remarks or actions.";
-const word4 = "Parapet";
+  "A subtle or indirect hint or suggestion.";
+const word3 = "Intrepid";
+const definition3 = "Fearless; adventurous (often used for heroic deeds).";
+const word4 = "Mea Culpa";
 const definition4 =
-  "A low protective wall along the edge of a roof, balcony, or bridge.";
+  "An acknowledgment of one's fault or sin. (Latin for 'my fault')";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="12" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
           <text class="word" x="11" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The seaside town, usually a vibrant hub, felt suffocatingly banal in the off-season. The same seagulls squawked from the same rusty lamp posts, the waves crashed against the same grey breakwater, and the wind carried the same salty tang. Arthur, however, seemed immune to the pervasive monotony. He strolled along the promenade with a blithe air, a half-eaten ice cream cone dripping onto his hand. He hummed tunelessly, oblivious to the damp chill that seeped into everyone else's bones.
+The flickering lantern cast long, dancing shadows across the worn floorboards of the antebellum plantation. Eliza, her brow furrowed, traced the intricate patterns with a trembling finger. Intimations of trouble had been swirling around the estate for weeks - whispers on the wind, furtive glances, a growing unease that clung to the humid air like a shroud. 
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,10 +239,19 @@ The seaside town, usually a vibrant hub, felt suffocatingly banal in the off-sea
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
           <p class="mb-4">
-He reached the end of the promenade where a low parapet overlooked the churning sea. Below, the waves crashed against the rocks, sending up plumes of white spray. Arthur leaned against the cold stone, his gaze fixed on the horizon. He thought of nothing in particular, his mind a blank slate. He paid no mind to the elderly couple nearby, engaged in a tedious conversation filled with the inanities of daily life – complaints about the price of fish, the unreliable bus service, the persistent dampness that plagued their joints.
+Her husband, a man of privilege and entitlement, remained oblivious, consumed by his cotton fields and the impending arrival of their first child. Eliza, however, was a woman of quiet strength, born with an intrepid spirit that belied her delicate frame. She sensed the storm brewing, the whispers of discontent that echoed through the slave quarters, the simmering resentment that threatened to boil over.
+          </p>
+          <p class="mb-4">
+One evening, while tending to her husband, a chilling realization dawned upon her. The gentle murmurings she'd dismissed as idle gossip were not mere whispers; they were a warning. Fear, cold and sharp, pierced her heart. She knew she had to act, to find a way to quell the rising tide of unrest before it engulfed them all. 
+          </p>
+          <p class="mb-4">
+The following day, she sought out the oldest and wisest of the slaves, a woman named Mammy. With a heavy heart, Eliza confessed her fears and sought her counsel. Mammy, her eyes filled with a wisdom born of suffering, listened patiently. Then, with a knowing nod, she spoke of the injustices, the broken promises, the simmering anger that had festered for generations. 
+          </p>
+          <p class="mb-4">
+Eliza felt a wave of shame wash over her. How could she, a woman of privilege, have been so blind? She had benefited from a system built on the backs of others, a system that had crushed their spirits and stolen their freedom. A sincere mea culpa trembled on her lips, but the words caught in her throat. 
           </p>
             <p>
-Arthur found their chatter oddly soothing, a background hum to his own blissful emptiness. The banal surroundings, the blithe disregard for the cold, the mindless inanities of the old couple's talk – it all coalesced into a strange sort of peace. He finished his ice cream, tossed the wrapper into a nearby bin, and with a final glance at the grey expanse of the sea from the parapet, turned and headed back into the town, his blithe spirit untouched by the pervasive dreariness.
+Mammy, however, did not need words. She saw the genuine remorse in Eliza's eyes, the flicker of resolve in her gaze. And so, an unlikely alliance was formed, a fragile bond forged between the mistress and the enslaved, a desperate gamble against the encroaching darkness. 
             </p>
             <div
               @click="setActiveAccordion('')"
