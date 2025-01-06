@@ -1,15 +1,15 @@
 ---
-const word1 = "Antebellum";
+const word1 = "Effaced";
 const definition1 =
-  "Occurring or existing before a particular war, especially the American Civil War.";
-const word2 = "Intimations";
+  "To wipe out; erase; obliterate.";
+const word2 = "Incipient";
 const definition2 =
-  "A subtle or indirect hint or suggestion.";
-const word3 = "Intrepid";
-const definition3 = "Fearless; adventurous (often used for heroic deeds).";
-const word4 = "Mea Culpa";
+  "Beginning to exist or develop.";
+const word3 = "Invective";
+const definition3 = "Abusive or insulting language.";
+const word4 = "Quiescent";
 const definition4 =
-  "An acknowledgment of one's fault or sin. (Latin for 'my fault')";
+  "In a state of rest; inactive or motionless.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="12">{word2.toLocaleLowerCase()}</text>
           <text class="word" x="11" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The flickering lantern cast long, dancing shadows across the worn floorboards of the antebellum plantation. Eliza, her brow furrowed, traced the intricate patterns with a trembling finger. Intimations of trouble had been swirling around the estate for weeks - whispers on the wind, furtive glances, a growing unease that clung to the humid air like a shroud. 
+The old photograph lay forgotten in the attic, dust motes dancing in the single shaft of light that pierced the gloom. Time had effaced the faces, leaving behind only ghostly imprints of features, like faded ink blots on worn paper. It was a snapshot of a family picnic, a moment frozen in time, now a silent testament to the passage of years. 
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -238,20 +238,14 @@ The flickering lantern cast long, dancing shadows across the worn floorboards of
             [Continue Reading]
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
-          <p class="mb-4">
-Her husband, a man of privilege and entitlement, remained oblivious, consumed by his cotton fields and the impending arrival of their first child. Eliza, however, was a woman of quiet strength, born with an intrepid spirit that belied her delicate frame. She sensed the storm brewing, the whispers of discontent that echoed through the slave quarters, the simmering resentment that threatened to boil over.
-          </p>
-          <p class="mb-4">
-One evening, while tending to her husband, a chilling realization dawned upon her. The gentle murmurings she'd dismissed as idle gossip were not mere whispers; they were a warning. Fear, cold and sharp, pierced her heart. She knew she had to act, to find a way to quell the rising tide of unrest before it engulfed them all. 
-          </p>
-          <p class="mb-4">
-The following day, she sought out the oldest and wisest of the slaves, a woman named Mammy. With a heavy heart, Eliza confessed her fears and sought her counsel. Mammy, her eyes filled with a wisdom born of suffering, listened patiently. Then, with a knowing nod, she spoke of the injustices, the broken promises, the simmering anger that had festered for generations. 
-          </p>
-          <p class="mb-4">
-Eliza felt a wave of shame wash over her. How could she, a woman of privilege, have been so blind? She had benefited from a system built on the backs of others, a system that had crushed their spirits and stolen their freedom. A sincere mea culpa trembled on her lips, but the words caught in her throat. 
-          </p>
+            <p class="mb-4">
+Incipient memories flickered, fleeting and uncertain, like the first hesitant blooms of spring. A child's laughter, the scent of freshly cut grass, the warmth of the sun on skin. These were the fragments that remained, the echoes of a joy long gone. 
+            </p>
+            <p class="mb-4">
+But the photograph also held a hint of discord, a shadow lurking beneath the surface of the idyllic scene. The strained smiles, the forced proximity, hinted at unspoken tensions, a simmering resentment that threatened to erupt. The invective, though unspoken, hung heavy in the air, a poisonous undercurrent to the forced merriment. 
+            </p>
             <p>
-Mammy, however, did not need words. She saw the genuine remorse in Eliza's eyes, the flicker of resolve in her gaze. And so, an unlikely alliance was formed, a fragile bond forged between the mistress and the enslaved, a desperate gamble against the encroaching darkness. 
+Now, years later, the photograph lay undisturbed, a relic of a bygone era. The emotions that had once raged within it were now quiescent, buried beneath layers of dust and forgotten memories. Only the faintest whisper of their existence remained, a ghostly echo of a life lived and lost.
             </p>
             <div
               @click="setActiveAccordion('')"
