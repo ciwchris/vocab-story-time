@@ -1,15 +1,15 @@
 ---
-const word1 = "Effaced";
+const word1 = "Agog";
 const definition1 =
-  "To wipe out; erase; obliterate.";
-const word2 = "Incipient";
+  "In a state of eager excitement or anticipation.";
+const word2 = "Dauntless";
 const definition2 =
-  "Beginning to exist or develop.";
-const word3 = "Invective";
-const definition3 = "Abusive or insulting language.";
-const word4 = "Quiescent";
+  "Showing no fear or intimidation; brave and resolute.";
+const word3 = "Excoriate";
+const definition3 = "1. To criticize severely. 2. To strip the skin from.";
+const word4 = "Priggish";
 const definition4 =
-  "In a state of rest; inactive or motionless.";
+  "Excessively proper, self-righteous, and irritatingly moralistic.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The old photograph lay forgotten in the attic, dust motes dancing in the single shaft of light that pierced the gloom. Time had effaced the faces, leaving behind only ghostly imprints of features, like faded ink blots on worn paper. It was a snapshot of a family picnic, a moment frozen in time, now a silent testament to the passage of years. 
+The villagers gathered around the flickering torches, faces agog with anticipation. News had reached them of a monstrous beast terrorizing the nearby farms. Fear, however, did not paralyze them. Young Elara, though just a girl, stood dauntless amongst the men, her eyes blazing with determination. 
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,13 +239,16 @@ The old photograph lay forgotten in the attic, dust motes dancing in the single 
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-Incipient memories flickered, fleeting and uncertain, like the first hesitant blooms of spring. A child's laughter, the scent of freshly cut grass, the warmth of the sun on skin. These were the fragments that remained, the echoes of a joy long gone. 
+Old Man Hemmings, a priggish figure who always found fault, scoffed, "A girl? Against a beast? Ridiculous!" Elara, unfazed, simply tightened her grip on the sharpened stake. 
             </p>
             <p class="mb-4">
-But the photograph also held a hint of discord, a shadow lurking beneath the surface of the idyllic scene. The strained smiles, the forced proximity, hinted at unspoken tensions, a simmering resentment that threatened to erupt. The invective, though unspoken, hung heavy in the air, a poisonous undercurrent to the forced merriment. 
+The hunt began. Days turned into nights, and the villagers, weary and hungry, began to lose hope. Then, Elara, guided by an uncanny instinct, led them to a hidden cave. Inside, the beast, a grotesque creature of claws and fangs, awaited them. 
+            </p>
+            <p class="mb-4">
+The men hesitated, but Elara, a whirlwind of motion, charged. The beast roared, but Elara, with a cry that echoed through the cave, plunged the stake into its heart. 
             </p>
             <p>
-Now, years later, the photograph lay undisturbed, a relic of a bygone era. The emotions that had once raged within it were now quiescent, buried beneath layers of dust and forgotten memories. Only the faintest whisper of their existence remained, a ghostly echo of a life lived and lost.
+The villagers erupted in cheers. Old Man Hemmings, initially excoriating Elara for her recklessness, now stammered praise, his pride bruised more than his body. Elara, however, paid him no heed. She had faced the fear, and emerged victorious. 
             </p>
             <div
               @click="setActiveAccordion('')"
