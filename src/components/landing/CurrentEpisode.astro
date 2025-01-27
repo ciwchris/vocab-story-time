@@ -1,15 +1,15 @@
 ---
-const word1 = "Absconds";
+const word1 = "Conciliation";
 const definition1 =
-  "To depart secretly and suddenly, typically to escape from custody or avoid arrest.";
-const word2 = "Bereft";
+  "The process of resolving a dispute or disagreement, especially between countries or groups, by discussion and negotiation.";
+const word2 = "Diffidence";
 const definition2 =
-  "Deprived of or lacking (something).";
-const word3 = "Fecundity";
-const definition3 = "The ability to produce an abundance of offspring or new growth; fertility.";
-const word4 = "Latent";
+  "Modesty or shyness resulting from a lack of self-confidence.";
+const word3 = "Intractable";
+const definition3 = "Difficult to control or subdue.";
+const word4 = "Peregrine";
 const definition4 =
-  "(of an existing but undeveloped feeling, quality, or condition) present but not yet active, developed, or manifest; dormant.";
+  "(of a bird, especially a falcon) wandering; migratory.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="10" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The old woman sat on the porch swing, her gaze fixed on the overgrown garden. Weeds choked the once vibrant blooms, a stark contrast to the fecundity she remembered.  Her hands, gnarled with age, trembled as they traced the faded patterns on the worn wood.  A lifetime of memories, now bereft of color, flickered through her mind. 
+The negotiations had reached an impasse. The two factions, locked in a bitter dispute over land rights, remained intractable. Tempers flared, accusations flew, and the air crackled with animosity.  A sense of despair settled over the room. 
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,13 +239,10 @@ The old woman sat on the porch swing, her gaze fixed on the overgrown garden. We
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-She remembered the laughter of children, the scent of freshly baked bread, the warmth of her husband's embrace. Now, an eerie silence hung heavy in the air, broken only by the chirping of crickets. He had absconded, leaving her alone with the ghosts of their past. 
-            </p>
-            <p class="mb-4">
-A flicker of anger, long dormant, stirred within her. Where was the man who promised eternal love? The man who swore to cherish her forever? He had vanished, leaving her with a heart bereft of joy and a garden bereft of life. 
+A young woman, new to the conciliation team, spoke. Her diffidence was evident, her voice barely a whisper. But her words, though hesitant, cut through the noise. She spoke of shared history, of the interconnectedness of their fates, of the folly of clinging to grievances. 
             </p>
             <p>
-But amidst the weeds, a single rosebud stubbornly pushed its way through the soil. A fragile reminder of the latent beauty that still existed, a testament to the enduring power of life. The old woman smiled, a single tear tracing a path down her weathered cheek. Hope, like the rosebud, was a tenacious thing. It might be hidden, dormant, but it was always there, waiting for the right moment to bloom. 
+Her words, like the swift and powerful flight of a peregrine falcon, pierced the entrenched positions. A hush fell over the room. The intractable positions began to soften, the anger to subside. A glimmer of hope, fragile but real, appeared. The young woman's diffidence had given way to a quiet strength, her words a catalyst for conciliation. 
             </p>
             <div
               @click="setActiveAccordion('')"
