@@ -1,15 +1,15 @@
 ---
-const word1 = "Conciliation";
+const word1 = "Arbitrage";
 const definition1 =
-  "The process of resolving a dispute or disagreement, especially between countries or groups, by discussion and negotiation.";
-const word2 = "Diffidence";
+  "Arbitrage is the simultaneous buying and selling of an asset in different markets to profit from tiny differences in the asset's listed price. It exploits short-lived variations in the price of identical or similar financial instruments in different markets or in different forms.";
+const word2 = "Assonance";
 const definition2 =
-  "Modesty or shyness resulting from a lack of self-confidence.";
-const word3 = "Intractable";
-const definition3 = "Difficult to control or subdue.";
-const word4 = "Peregrine";
+  "Assonance is the repetition of vowel sounds within words or phrases to create a musical or rhythmic effect.";
+const word3 = "Cline";
+const definition3 = "A cline is a gradual change in a characteristic or trait of a species or population over a geographical area.";
+const word4 = "Peripatetic";
 const definition4 =
-  "(of a bird, especially a falcon) wandering; migratory.";
+  "Peripatetic means traveling from place to place; nomadic. It can also refer to a follower or disciple of Aristotle, who taught while walking about.";
 ---
 
 <section id="current-episode">
@@ -211,9 +211,9 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="13" y="17">{word3.toLocaleLowerCase()}</text>
           <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The negotiations had reached an impasse. The two factions, locked in a bitter dispute over land rights, remained intractable. Tempers flared, accusations flew, and the air crackled with animosity.  A sense of despair settled over the room. 
+Elara, a peripatetic arbitrageur, thrived on the subtle shifts in global markets.  Her life was a constant journey, a dance across continents chasing fleeting discrepancies. Today, she was focused on a particular commodity: rare Himalayan blue poppies.  A small village nestled high in the mountains of Nepal cultivated them, their vibrant color highly prized by perfumers.  Elara had discovered a peculiar situation. Due to a local festival and subsequent miscommunication, the poppies were selling for significantly less in the village than they were in the bustling markets of Mumbai.  This was her opportunity.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,10 +239,13 @@ The negotiations had reached an impasse. The two factions, locked in a bitter di
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-A young woman, new to the conciliation team, spoke. Her diffidence was evident, her voice barely a whisper. But her words, though hesitant, cut through the noise. She spoke of shared history, of the interconnectedness of their fates, of the folly of clinging to grievances. 
+She chartered a small plane, the drone of its engine a constant companion on her journey.  The assonance of the wind whistling through the struts and the rhythmic thrum of the propeller lulled her into a state of focused calm.  She visualized the transaction, the swift exchange of currency for the precious blooms.  She knew the window for this arbitrage was small.  News of the festival's impact on poppy prices would spread quickly.
+            </p>
+            <p class="mb-4">
+As she descended into the remote village, she observed the cline of the landscape.  The lush green of the lower altitudes gave way to the stark, rocky terrain of the high Himalayas.  The air grew thin, and the sun beat down with an intensity that belied the cool mountain breeze.  She met with the village elder, the transaction proceeding smoothly.  Elara's heart pounded with the thrill of the deal.  She had secured a substantial quantity of the poppies at the lower price.
             </p>
             <p>
-Her words, like the swift and powerful flight of a peregrine falcon, pierced the entrenched positions. A hush fell over the room. The intractable positions began to soften, the anger to subside. A glimmer of hope, fragile but real, appeared. The young woman's diffidence had given way to a quiet strength, her words a catalyst for conciliation. 
+Her return to Mumbai was swift.  She contacted her network of buyers, the demand for the blue poppies already high.  Within hours, the poppies were sold, the profit margin substantial.  Elara, the peripatetic arbitrageur, moved on to her next opportunity, the whisper of profit guiding her across the globe.
             </p>
             <div
               @click="setActiveAccordion('')"
