@@ -1,15 +1,15 @@
 ---
-const word1 = "Arbitrage";
+const word1 = "Chiasmus";
 const definition1 =
-  "Arbitrage is the simultaneous buying and selling of an asset in different markets to profit from tiny differences in the asset's listed price. It exploits short-lived variations in the price of identical or similar financial instruments in different markets or in different forms.";
-const word2 = "Assonance";
+  "A rhetorical device in which two or more clauses are balanced against each other by the reversal of their structures. It's often described as an 'ABBA' pattern. This creates a striking effect and emphasizes the contrast or relationship between the ideas.";
+const word2 = "Encephalization";
 const definition2 =
-  "Assonance is the repetition of vowel sounds within words or phrases to create a musical or rhythmic effect.";
-const word3 = "Cline";
-const definition3 = "A cline is a gradual change in a characteristic or trait of a species or population over a geographical area.";
-const word4 = "Peripatetic";
+  "The evolutionary increase in brain size, especially in relation to body size. It also refers to the process by which the brain becomes more complex and sophisticated over time.";
+const word3 = "Forswear";
+const definition3 = "To formally reject or renounce a belief, cause, or allegiance. It often implies a solemn or public declaration. It can also mean to swear falsely (though this usage is less common).";
+const word4 = "Redolent";
 const definition4 =
-  "Peripatetic means traveling from place to place; nomadic. It can also refer to a follower or disciple of Aristotle, who taught while walking about.";
+  "Having a strong scent; fragrant or aromatic. It can also mean suggestive or evocative of something, often in the past.";
 ---
 
 <section id="current-episode">
@@ -211,9 +211,9 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="10" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="13" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="6" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
           <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-Elara, a peripatetic arbitrageur, thrived on the subtle shifts in global markets.  Her life was a constant journey, a dance across continents chasing fleeting discrepancies. Today, she was focused on a particular commodity: rare Himalayan blue poppies.  A small village nestled high in the mountains of Nepal cultivated them, their vibrant color highly prized by perfumers.  Elara had discovered a peculiar situation. Due to a local festival and subsequent miscommunication, the poppies were selling for significantly less in the village than they were in the bustling markets of Mumbai.  This was her opportunity.
+The old lighthouse keeper, Silas, inhaled deeply. The salt-laced air, redolent of seaweed and distant storms, filled his lungs. He’d spent his entire life on this craggy point, his world defined by the rhythmic pulse of the beam and the ceaseless crashing of waves. He’d even developed a sort of chiasmus in his daily routine: he worked to maintain the light, the light maintained him.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,13 +239,16 @@ Elara, a peripatetic arbitrageur, thrived on the subtle shifts in global markets
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p class="mb-4">
-She chartered a small plane, the drone of its engine a constant companion on her journey.  The assonance of the wind whistling through the struts and the rhythmic thrum of the propeller lulled her into a state of focused calm.  She visualized the transaction, the swift exchange of currency for the precious blooms.  She knew the window for this arbitrage was small.  News of the festival's impact on poppy prices would spread quickly.
+Today, however, the familiar comfort felt like a cage. News had arrived from the mainland. Scientists had discovered a link between the isolated island population and an unusual rate of encephalization. Their brains, it seemed, were growing, evolving at an accelerated pace. Silas felt a strange pressure in his skull, a burgeoning awareness that both thrilled and terrified him.
             </p>
             <p class="mb-4">
-As she descended into the remote village, she observed the cline of the landscape.  The lush green of the lower altitudes gave way to the stark, rocky terrain of the high Himalayas.  The air grew thin, and the sun beat down with an intensity that belied the cool mountain breeze.  She met with the village elder, the transaction proceeding smoothly.  Elara's heart pounded with the thrill of the deal.  She had secured a substantial quantity of the poppies at the lower price.
+The scientists wanted to study them, to poke and prod and analyze. Silas felt a surge of protectiveness for his community, for the simple, unhurried lives they led. He remembered his grandfather, a man of quiet wisdom, who had warned him about the outside world's insatiable curiosity. "They will measure your skull, not your soul," he'd rasped.
+            </p>
+            <p class="mb-4">
+Silas climbed the winding stairs to the lamp room. He looked out at the churning sea, a mirror of the turmoil within him. He had to make a choice. He thought of the children, their bright, inquisitive eyes. Could he deny them the chance to understand their own evolution? But at what cost?
             </p>
             <p>
-Her return to Mumbai was swift.  She contacted her network of buyers, the demand for the blue poppies already high.  Within hours, the poppies were sold, the profit margin substantial.  Elara, the peripatetic arbitrageur, moved on to her next opportunity, the whisper of profit guiding her across the globe.
+He had sworn an oath, years ago, to protect the lighthouse, to keep its light burning. Now, he realized, he had to forswear that oath, or at least redefine it. His duty wasn’t just to the physical structure, but to the people it represented. He would find a way to shield them, to safeguard their unique evolution, even if it meant facing the world’s intrusive gaze. He would be their protector, not just the keeper of the light.
             </p>
             <div
               @click="setActiveAccordion('')"
