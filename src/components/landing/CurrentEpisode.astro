@@ -1,15 +1,15 @@
 ---
-const word1 = "Chiasmus";
+const word1 = "A priori";
 const definition1 =
-  "A rhetorical device in which two or more clauses are balanced against each other by the reversal of their structures. It's often described as an 'ABBA' pattern. This creates a striking effect and emphasizes the contrast or relationship between the ideas.";
-const word2 = "Encephalization";
+  "Knowledge or reasoning that is derived from self-evident propositions or deduced by reason alone, without reliance on observation or experience. In other words, it's something you can know to be true without having to go out and test it in the real world.";
+const word2 = "Indefatigable";
 const definition2 =
-  "The evolutionary increase in brain size, especially in relation to body size. It also refers to the process by which the brain becomes more complex and sophisticated over time.";
-const word3 = "Forswear";
-const definition3 = "To formally reject or renounce a belief, cause, or allegiance. It often implies a solemn or public declaration. It can also mean to swear falsely (though this usage is less common).";
-const word4 = "Redolent";
+  "Persisting tirelessly; incapable of being fatigued.";
+const word3 = "Retrograde";
+const definition3 = "Moving backward; declining or deteriorating; reverting to a less developed or worse state.";
+const word4 = "Warble";
 const definition4 =
-  "Having a strong scent; fragrant or aromatic. It can also mean suggestive or evocative of something, often in the past.";
+  "To sing in a melodious manner with a series of rapid, wavering notes. Often used to describe the sound of birdsong.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="9" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="6" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="12">{word2.toLocaleLowerCase()}</text>
           <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The old lighthouse keeper, Silas, inhaled deeply. The salt-laced air, redolent of seaweed and distant storms, filled his lungs. He’d spent his entire life on this craggy point, his world defined by the rhythmic pulse of the beam and the ceaseless crashing of waves. He’d even developed a sort of chiasmus in his daily routine: he worked to maintain the light, the light maintained him.
+Elara, a scholar of some renown, possessed an a priori understanding of avian behavior. She knew, without ever observing it, that a bird's song was an expression of joy.  This conviction fueled her current project: a comprehensive study of the common sparrow.  Her colleagues scoffed, calling her methods retrograde. They insisted on field observation, data collection, the scientific method. Elara, however, believed intuition was a powerful tool, and her indefatigable spirit wouldn't allow her to be deterred by their criticisms. She argued that true understanding came from within, a deep resonance with the subject matter, not from cold, sterile measurements. She felt a connection to the sparrows, a sense of shared existence, that no amount of data could replicate.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -238,17 +238,8 @@ The old lighthouse keeper, Silas, inhaled deeply. The salt-laced air, redolent o
             [Continue Reading]
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
-            <p class="mb-4">
-Today, however, the familiar comfort felt like a cage. News had arrived from the mainland. Scientists had discovered a link between the isolated island population and an unusual rate of encephalization. Their brains, it seemed, were growing, evolving at an accelerated pace. Silas felt a strange pressure in his skull, a burgeoning awareness that both thrilled and terrified him.
-            </p>
-            <p class="mb-4">
-The scientists wanted to study them, to poke and prod and analyze. Silas felt a surge of protectiveness for his community, for the simple, unhurried lives they led. He remembered his grandfather, a man of quiet wisdom, who had warned him about the outside world's insatiable curiosity. "They will measure your skull, not your soul," he'd rasped.
-            </p>
-            <p class="mb-4">
-Silas climbed the winding stairs to the lamp room. He looked out at the churning sea, a mirror of the turmoil within him. He had to make a choice. He thought of the children, their bright, inquisitive eyes. Could he deny them the chance to understand their own evolution? But at what cost?
-            </p>
             <p>
-He had sworn an oath, years ago, to protect the lighthouse, to keep its light burning. Now, he realized, he had to forswear that oath, or at least redefine it. His duty wasn’t just to the physical structure, but to the people it represented. He would find a way to shield them, to safeguard their unique evolution, even if it meant facing the world’s intrusive gaze. He would be their protector, not just the keeper of the light.
+She spent countless hours in her small, cluttered office, listening to recordings of sparrow songs. Stacks of books on ornithology surrounded her, mostly unopened. She preferred to close her eyes and simply listen, letting the melodies wash over her. One morning, a particularly vibrant warble filled the air from the speaker. It wasn't just a sound; it was a feeling, a pure, unadulterated expression of happiness. Elara smiled. Her theory was correct. She just knew it. The scoffing of her colleagues faded into the background noise of her life. She had heard the truth, not with her ears, but with her soul. And that, she believed, was far more valuable.
             </p>
             <div
               @click="setActiveAccordion('')"
