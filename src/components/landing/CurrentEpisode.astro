@@ -1,15 +1,15 @@
 ---
-const word1 = "A priori";
+const word1 = "Boorish";
 const definition1 =
-  "Knowledge or reasoning that is derived from self-evident propositions or deduced by reason alone, without reliance on observation or experience. In other words, it's something you can know to be true without having to go out and test it in the real world.";
-const word2 = "Indefatigable";
+  "Rude, ill-mannered, and insensitive; lacking refinement or good manners.";
+const word2 = "Inextricably";
 const definition2 =
-  "Persisting tirelessly; incapable of being fatigued.";
-const word3 = "Retrograde";
-const definition3 = "Moving backward; declining or deteriorating; reverting to a less developed or worse state.";
-const word4 = "Warble";
+  "In a way that is impossible to separate or disentangle.";
+const word3 = "Pallid";
+const definition3 = "Pale, especially because of poor health; lacking color or vitality.";
+const word4 = "Recalcitrant";
 const definition4 =
-  "To sing in a melodious manner with a series of rapid, wavering notes. Often used to describe the sound of birdsong.";
+  "Stubbornly resistant to authority or control; disobedient.";
 ---
 
 <section id="current-episode">
@@ -212,9 +212,9 @@ const definition4 =
             fill="none"
             stroke-linecap="round"></path>
           <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="8" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-Elara, a scholar of some renown, possessed an a priori understanding of avian behavior. She knew, without ever observing it, that a bird's song was an expression of joy.  This conviction fueled her current project: a comprehensive study of the common sparrow.  Her colleagues scoffed, calling her methods retrograde. They insisted on field observation, data collection, the scientific method. Elara, however, believed intuition was a powerful tool, and her indefatigable spirit wouldn't allow her to be deterred by their criticisms. She argued that true understanding came from within, a deep resonance with the subject matter, not from cold, sterile measurements. She felt a connection to the sparrows, a sense of shared existence, that no amount of data could replicate.
+The annual harvest festival at Beaumont Manor was, as always, a scene of forced merriment. Lord Beaumont, his pallid face flushed with cheap wine, held court amidst his boorish companions. Their laughter, loud and insensitive, echoed through the grand hall, a cacophony that grated on the nerves of those with even a modicum of refinement. The very stones of the manor seemed to groan under the weight of their crude revelry. The son, however, remained a recalcitrant figure, a dark shadow in the brightly lit room. He watched his father, a man inextricably bound to the past, and felt a growing sense of despair. He knew that the fate of the manor, and indeed their family, was tied to this man’s whims.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,7 +239,7 @@ Elara, a scholar of some renown, possessed an a priori understanding of avian be
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p>
-She spent countless hours in her small, cluttered office, listening to recordings of sparrow songs. Stacks of books on ornithology surrounded her, mostly unopened. She preferred to close her eyes and simply listen, letting the melodies wash over her. One morning, a particularly vibrant warble filled the air from the speaker. It wasn't just a sound; it was a feeling, a pure, unadulterated expression of happiness. Elara smiled. Her theory was correct. She just knew it. The scoffing of her colleagues faded into the background noise of her life. She had heard the truth, not with her ears, but with her soul. And that, she believed, was far more valuable.
+The son’s defiance wasn’t merely a youthful rebellion; it was a desperate attempt to break free from the suffocating atmosphere of the estate. He saw the manor as a gilded cage, its grandeur masking a deep-seated decay. The boorish behavior of his father and his guests was a symptom of this decay, a reflection of their stagnant lives. He longed for a world beyond the manor's walls, a world where he could forge his own path. He knew that his father’s grip on the past was tightening, and that the future of their family, inextricably linked to the estate, hung precariously in the balance. He watched his father, and the pallid, unyielding guests, and knew that the recalcitrant nature within himself would only grow.
             </p>
             <div
               @click="setActiveAccordion('')"
