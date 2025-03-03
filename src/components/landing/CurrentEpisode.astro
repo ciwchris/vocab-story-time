@@ -1,15 +1,15 @@
 ---
-const word1 = "Boorish";
+const word1 = "August";
 const definition1 =
-  "Rude, ill-mannered, and insensitive; lacking refinement or good manners.";
-const word2 = "Inextricably";
+  "Respected and impressive.";
+const word2 = "Requital";
 const definition2 =
-  "In a way that is impossible to separate or disentangle.";
-const word3 = "Pallid";
-const definition3 = "Pale, especially because of poor health; lacking color or vitality.";
-const word4 = "Recalcitrant";
+  "A repayment or retaliation.";
+const word3 = "Substantive";
+const definition3 = "Having a firm basis in reality and therefore important, meaningful, or considerable.";
+const word4 = "Supine";
 const definition4 =
-  "Stubbornly resistant to authority or control; disobedient.";
+  "Failing to act or protest as a result of moral weakness or indolence.";
 ---
 
 <section id="current-episode">
@@ -212,9 +212,9 @@ const definition4 =
             fill="none"
             stroke-linecap="round"></path>
           <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The annual harvest festival at Beaumont Manor was, as always, a scene of forced merriment. Lord Beaumont, his pallid face flushed with cheap wine, held court amidst his boorish companions. Their laughter, loud and insensitive, echoed through the grand hall, a cacophony that grated on the nerves of those with even a modicum of refinement. The very stones of the manor seemed to groan under the weight of their crude revelry. The son, however, remained a recalcitrant figure, a dark shadow in the brightly lit room. He watched his father, a man inextricably bound to the past, and felt a growing sense of despair. He knew that the fate of the manor, and indeed their family, was tied to this man’s whims.
+The sweltering August air hung heavy, a tangible weight mirroring the burden Elias carried. He stared at the thick folder on his desk, its contents a substantive record of the betrayal that had shaped his life. Years ago, a competitor, Marcus Thorne, had pirated his revolutionary engine design, claiming it as his own. The stolen innovation had propelled Thorne to wealth and acclaim, while Elias, stripped of his creation, had been left to watch, a supine figure in the face of overwhelming injustice. He had endured whispers, the pitying glances, and the slow erosion of his professional standing, all while Thorne basked in the stolen glory.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,7 +239,7 @@ The annual harvest festival at Beaumont Manor was, as always, a scene of forced 
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p>
-The son’s defiance wasn’t merely a youthful rebellion; it was a desperate attempt to break free from the suffocating atmosphere of the estate. He saw the manor as a gilded cage, its grandeur masking a deep-seated decay. The boorish behavior of his father and his guests was a symptom of this decay, a reflection of their stagnant lives. He longed for a world beyond the manor's walls, a world where he could forge his own path. He knew that his father’s grip on the past was tightening, and that the future of their family, inextricably linked to the estate, hung precariously in the balance. He watched his father, and the pallid, unyielding guests, and knew that the recalcitrant nature within himself would only grow.
+Now, Elias was ready for requital. He had spent countless hours meticulously documenting every detail of Thorne's deceit, gathering irrefutable evidence. The dossier was a testament to his resilience, a tangible representation of his refusal to remain defeated. He would not be supine any longer. The coming legal battle would be arduous, but Elias was determined to reclaim his legacy. He envisioned the courtroom, the look on Thorne's face as the truth was revealed, and the eventual restoration of his own name. This August, the scales of justice would finally begin to balance.
             </p>
             <div
               @click="setActiveAccordion('')"
