@@ -7,6 +7,251 @@
         <p
           class="text-4xl tracking-tight font-medium text-black text-center mb-8"
         >
+          Mar 2nd word list
+        </p>
+        <div class="bg-accent-50 mb-4">
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>August</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Respected and impressive.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Requital</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  A repayment or retaliation.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Substantive</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                   Having a firm basis in reality and therefore important, meaningful, or considerable.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+            class="relative w-full mx-auto font-normal"
+          >
+            <div
+              x-data="{ id: $id('accordion') }"
+              :class="{ 'text-black': activeAccordion==id, 'text-accent-900 hover:text-accent-600': activeAccordion!=id }"
+              class="cursor-pointer group text-black"
+            >
+              <button
+                @click="setActiveAccordion(id)"
+                class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none"
+              >
+                <span>Supine</span>
+                <svg
+                  class="w-5 h-5 duration-300 ease-out text-accent-600 -rotate-[45deg]"
+                  :class="{ '-rotate-[45deg]': activeAccordion==id }"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"></path></svg
+                >
+              </button>
+              <div x-show="activeAccordion==id" x-collapse="">
+                <div class="p-4 pt-2 text-accent-600">
+                  Failing to act or protest as a result of moral weakness or indolence.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline"
+          width="20em"
+          height="20em"
+          viewBox="0 0 32 32"
+        >
+          <style>
+            .word {
+              font-size: 3px;
+              fill: #ff7a00;
+              font-family: "Segoe UI", Roboto, Helvetica, sans-serif;
+            }
+          </style>
+          <line
+            x1="1"
+            y1="2"
+            x2="8"
+            y2="2"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="7"
+            x2="8"
+            y2="7"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <line
+            x1="1"
+            y1="12"
+            x2="5"
+            y2="12"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            stroke-linecap="round"></line>
+          <path
+            d="M 3 15 v 11 h 18 m 8 -8 v -16 h -17"
+            stroke="#ff7a00"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"></path>
+          <text class="word" x="11" y="7">august</text>
+          <text class="word" x="11" y="12">requital</text>
+          <text class="word" x="9" y="17">substantive</text>
+          <text class="word" x="12" y="22">supine</text>
+        </svg>
+      </div>
+      <div
+        x-data="{ activeAccordion: '', setActiveAccordion(id) { this.activeAccordion = (this.activeAccordion == id) ? '' : id } }"
+        class="md:col-span-2 md:w-3/4 mx-auto"
+      >
+        <p
+          class="text-2xl tracking-tight text-center font-medium text-black mb-4"
+        >
+          Story
+        </p>
+        <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
+          <p class="mb-4">
+The sweltering August air hung heavy, a tangible weight mirroring the burden Elias carried. He stared at the thick folder on his desk, its contents a substantive record of the betrayal that had shaped his life. Years ago, a competitor, Marcus Thorne, had pirated his revolutionary engine design, claiming it as his own. The stolen innovation had propelled Thorne to wealth and acclaim, while Elias, stripped of his creation, had been left to watch, a supine figure in the face of overwhelming injustice. He had endured whispers, the pitying glances, and the slow erosion of his professional standing, all while Thorne basked in the stolen glory.
+          </p>
+
+          <div
+            @click="setActiveAccordion(id)"
+            :class="activeAccordion==id ? 'hidden' : ''"
+            class="cursor-pointer text-opacity-70 underline hover:text-accent-900"
+          >
+            [Continue Reading]
+          </div>
+          <div x-show="activeAccordion==id" x-collapse="">
+            <p>
+Now, Elias was ready for requital. He had spent countless hours meticulously documenting every detail of Thorne's deceit, gathering irrefutable evidence. The dossier was a testament to his resilience, a tangible representation of his refusal to remain defeated. He would not be supine any longer. The coming legal battle would be arduous, but Elias was determined to reclaim his legacy. He envisioned the courtroom, the look on Thorne's face as the truth was revealed, and the eventual restoration of his own name. This August, the scales of justice would finally begin to balance.
+            </p>
+            <div
+              @click="setActiveAccordion('')"
+              :class="activeAccordion==id ? '' : 'hidden'"
+              class="cursor-pointer text-opacity-70 underline hover:text-accent-900 mt-4"
+            >
+              [Hide]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24 scroll-mt-12"
+  >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-12">
+      <div>
+        <p
+          class="text-4xl tracking-tight font-medium text-black text-center mb-8"
+        >
           Feb 23rd word list
         </p>
         <div class="bg-accent-50 mb-4">
