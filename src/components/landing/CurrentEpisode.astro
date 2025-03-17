@@ -1,15 +1,15 @@
 ---
-const word1 = "Carceral";
+const word1 = "Coterie";
 const definition1 =
-  "Increasingly, the term is used to describe systems of social control that resemble or extend the reach of traditional prisons.";
-const word2 = "Indolence";
+  "A small group of people with shared interests or tastes, especially one that is exclusive.";
+const word2 = "Panopticon";
 const definition2 =
-  "Avoidance of activity or exertion; laziness.";
-const word3 = "Polymath";
-const definition3 = "A person with wide-ranging knowledge or learning.";
-const word4 = "Prosody";
+  "A circular prison with cells arranged around a central well, from which prisoners could at all times be observed. More generally, it describes a system of pervasive surveillance.";
+const word3 = "Promulgate";
+const definition3 = "To promote or make widely known (an idea or cause); to put (a law or decree) into effect by official proclamation.";
+const word4 = "Rapturous";
 const definition4 =
-  "In linguistics, it refers to the patterns of stress and intonation in a language.";
+  "Characterized by or expressing great pleasure or enthusiasm.";
 ---
 
 <section id="current-episode">
@@ -212,9 +212,9 @@ const definition4 =
             fill="none"
             stroke-linecap="round"></path>
           <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="12">{word2.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="17">{word3.toLocaleLowerCase()}</text>
+          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-Elias, once hailed as a polymath of remarkable breadth, now found himself trapped in a peculiar carceral state of his own making. The walls were not of stone and steel, but of an overwhelming indolence that seeped into his very bones. The city, with its towering structures and relentless hum, seemed a distant, muted symphony. He’d spent his life dissecting the intricate prosody of language, unraveling the mysteries of mathematics, and even dabbling in the chaotic beauty of theoretical physics. Now, the only rhythm he perceived was the slow, deliberate ticking of the antique clock on his mantle, each tick a tiny hammer blow against the silence he’d cultivated. He’d envisioned retirement as a time of continued exploration, of delving into the uncharted territories of thought. Instead, he was adrift in a sea of ennui, his intellectual sails slack, his compass spinning uselessly.
+Within the high-walled compound, the small coterie of elite scientists worked tirelessly. Their laboratory, a modern panopticon, allowed for constant observation by the governing council, ensuring unwavering adherence to the directives. The council, ever vigilant, sought to promulgate their latest discovery: a revolutionary energy source. This breakthrough, they believed, would usher in an era of unprecedented prosperity. The scientists, under the unblinking gaze of the surveillance system, meticulously recorded data, their excitement growing with each successful experiment. They envisioned a future where their work would be celebrated, where the world would embrace their innovation.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,7 +239,7 @@ Elias, once hailed as a polymath of remarkable breadth, now found himself trappe
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p>
-The old clock tower, a relic of the city’s carceral past, loomed in the distance, a constant reminder of the structures that confined both body and mind. He’d once studied its architecture, marveling at the intricate balance of its design, the way it imposed order upon the chaotic cityscape. Now, it simply served as a stark contrast to his own internal disarray. His garden, a small patch of green rebellion against the concrete jungle, had become his sole sanctuary. The rustling leaves, the chirping crickets, the gentle hum of bees – these were the only prosody he could tolerate, a natural rhythm that soothed his weary soul. He’d traded the complex harmonies of academia for the simple melodies of nature, finding a strange solace in the quiet contemplation of a life lived, and a mind finally at rest.
+The day of the public demonstration arrived. As the energy source activated, a wave of pure, radiant light filled the auditorium. The crowd erupted in rapturous applause, their faces illuminated by the newly harnessed power. The council, beaming with pride, watched as their vision materialized. They had successfully promulgated their discovery, and the world responded with overwhelming enthusiasm. The scientists, hidden behind the control panels, shared a quiet moment of triumph. The panopticon, for once, felt less like a prison and more like a stage, where their dedication had finally earned its reward.
             </p>
             <div
               @click="setActiveAccordion('')"
