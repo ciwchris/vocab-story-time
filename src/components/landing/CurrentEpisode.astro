@@ -1,15 +1,15 @@
 ---
-const word1 = "Coterie";
+const word1 = "Denouement";
 const definition1 =
-  "A small group of people with shared interests or tastes, especially one that is exclusive.";
-const word2 = "Panopticon";
+  "The final part of a play, movie, or narrative in which the strands of the plot are drawn together and matters are explained or resolved. It's essentially the resolution after the climax.";
+const word2 = "Febrile";
 const definition2 =
-  "A circular prison with cells arranged around a central well, from which prisoners could at all times be observed. More generally, it describes a system of pervasive surveillance.";
-const word3 = "Promulgate";
-const definition3 = "To promote or make widely known (an idea or cause); to put (a law or decree) into effect by official proclamation.";
-const word4 = "Rapturous";
+  "Having or showing symptoms of a fever. Or, characterized by a great deal of nervous excitement or energy.";
+const word3 = "Prevaricate";
+const definition3 = "To speak or act in an evasive way. To deviate from the truth. To speak misleadingly.";
+const word4 = "Unfurl";
 const definition4 =
-  "Characterized by or expressing great pleasure or enthusiasm.";
+  "To spread out from a rolled or folded state. To open out.";
 ---
 
 <section id="current-episode">
@@ -211,10 +211,10 @@ const definition4 =
             stroke-width="1.5"
             fill="none"
             stroke-linecap="round"></path>
-          <text class="word" x="11" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="8" y="7">{word1.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
           <text class="word" x="9" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="10" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-Within the high-walled compound, the small coterie of elite scientists worked tirelessly. Their laboratory, a modern panopticon, allowed for constant observation by the governing council, ensuring unwavering adherence to the directives. The council, ever vigilant, sought to promulgate their latest discovery: a revolutionary energy source. This breakthrough, they believed, would usher in an era of unprecedented prosperity. The scientists, under the unblinking gaze of the surveillance system, meticulously recorded data, their excitement growing with each successful experiment. They envisioned a future where their work would be celebrated, where the world would embrace their innovation.
+The small town of Oakhaven had been gripped by a febrile tension for weeks. The missing antique, the legendary Sunstone, had turned neighbor against neighbor, each whispering accusations and refusing to offer straight answers. Mayor Thompson, usually a pillar of the community, began to prevaricate, his explanations about his whereabouts growing increasingly convoluted. The local historian, Mrs. Gable, with her usually calm demeanor, now paced her library, a restless energy radiating from her. The townspeople, caught in the midst of this chaotic mystery, watched as their once peaceful community began to unravel.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,7 +239,7 @@ Within the high-walled compound, the small coterie of elite scientists worked ti
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p>
-The day of the public demonstration arrived. As the energy source activated, a wave of pure, radiant light filled the auditorium. The crowd erupted in rapturous applause, their faces illuminated by the newly harnessed power. The council, beaming with pride, watched as their vision materialized. They had successfully promulgated their discovery, and the world responded with overwhelming enthusiasm. The scientists, hidden behind the control panels, shared a quiet moment of triumph. The panopticon, for once, felt less like a prison and more like a stage, where their dedication had finally earned its reward.
+Finally, after a dramatic confrontation in the old town hall, the truth was revealed. The Sunstone, it turned out, hadn't been stolen at all. It had been carefully hidden by Mrs. Gable herself, who, in a strange, feverish obsession, wanted to protect it from what she perceived as the town’s unworthy hands. The denouement was swift and unexpected. The stolen artifact was recovered, and the town began to unfurl its collective breath, the tight knot of suspicion loosening. The mayor's evasiveness was explained as a desperate, if misguided, attempt to protect Mrs. Gable, a long-time friend. The febrile atmosphere subsided, replaced by a quiet, almost stunned relief.
             </p>
             <div
               @click="setActiveAccordion('')"
