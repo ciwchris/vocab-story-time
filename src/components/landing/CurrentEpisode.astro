@@ -1,15 +1,15 @@
 ---
-const word1 = "Denouement";
+const word1 = "Circumspect";
 const definition1 =
-  "The final part of a play, movie, or narrative in which the strands of the plot are drawn together and matters are explained or resolved. It's essentially the resolution after the climax.";
-const word2 = "Febrile";
+  "Careful to consider all circumstances and potential consequences; prudent; cautious.";
+const word2 = "Ecumenical";
 const definition2 =
-  "Having or showing symptoms of a fever. Or, characterized by a great deal of nervous excitement or energy.";
-const word3 = "Prevaricate";
-const definition3 = "To speak or act in an evasive way. To deviate from the truth. To speak misleadingly.";
-const word4 = "Unfurl";
+  "Representing or promoting unity among different religious denominations, especially Christian ones.";
+const word3 = "Penumbra";
+const definition3 = "It can refer to a surrounding region in which something exists to a lesser degree; a marginal or peripheral area.";
+const word4 = "Seditious";
 const definition4 =
-  "To spread out from a rolled or folded state. To open out.";
+  "It describes actions or words intended to provoke discontent or disorder.";
 ---
 
 <section id="current-episode">
@@ -212,9 +212,9 @@ const definition4 =
             fill="none"
             stroke-linecap="round"></path>
           <text class="word" x="8" y="7">{word1.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="12">{word2.toLocaleLowerCase()}</text>
+          <text class="word" x="9" y="12">{word2.toLocaleLowerCase()}</text>
           <text class="word" x="9" y="17">{word3.toLocaleLowerCase()}</text>
-          <text class="word" x="12" y="22">{word4.toLocaleLowerCase()}</text>
+          <text class="word" x="11" y="22">{word4.toLocaleLowerCase()}</text>
         </svg>
       </div>
       <div
@@ -228,7 +228,7 @@ const definition4 =
         </p>
         <div x-data="{ id: $id('accordion') }" class="text-gray-500 text-left">
           <p class="mb-4">
-The small town of Oakhaven had been gripped by a febrile tension for weeks. The missing antique, the legendary Sunstone, had turned neighbor against neighbor, each whispering accusations and refusing to offer straight answers. Mayor Thompson, usually a pillar of the community, began to prevaricate, his explanations about his whereabouts growing increasingly convoluted. The local historian, Mrs. Gable, with her usually calm demeanor, now paced her library, a restless energy radiating from her. The townspeople, caught in the midst of this chaotic mystery, watched as their once peaceful community began to unravel.
+Elara, always a circumspect observer, watched the gathering from the edge of the town square. The air thrummed with a nervous energy, a palpable tension that cast a long, figurative penumbra over the usually placid market. A group, comprised of individuals from various faiths and backgrounds, had assembled, their intent to forge an ecumenical alliance against the oppressive regime. Their leader, a charismatic orator named Kaelen, spoke of unity, of shared struggle, and of a future free from tyranny. His words, though carefully chosen, carried a subtle undercurrent of seditious intent, a call for resistance that resonated deeply with the disenfranchised crowd.
           </p>
           <div
             @click="setActiveAccordion(id)"
@@ -239,7 +239,7 @@ The small town of Oakhaven had been gripped by a febrile tension for weeks. The 
           </div>
           <div x-show="activeAccordion==id" x-collapse="">
             <p>
-Finally, after a dramatic confrontation in the old town hall, the truth was revealed. The Sunstone, it turned out, hadn't been stolen at all. It had been carefully hidden by Mrs. Gable herself, who, in a strange, feverish obsession, wanted to protect it from what she perceived as the town’s unworthy hands. The denouement was swift and unexpected. The stolen artifact was recovered, and the town began to unfurl its collective breath, the tight knot of suspicion loosening. The mayor's evasiveness was explained as a desperate, if misguided, attempt to protect Mrs. Gable, a long-time friend. The febrile atmosphere subsided, replaced by a quiet, almost stunned relief.
+The authorities, ever vigilant, monitored the assembly, their presence a dark cloud on the horizon. They recognized the potential for unrest, the dangerous spark of rebellion that could ignite into a wildfire of revolution. Elara, though sympathetic to the cause, felt a prickle of unease. She understood the necessity of change, but also the perilous path that lay ahead. The delicate balance between hope and destruction hung precariously in the air, a testament to the fragile nature of peace and the ever-present threat of its violent disruption.
             </p>
             <div
               @click="setActiveAccordion('')"
